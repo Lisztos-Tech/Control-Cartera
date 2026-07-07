@@ -1,3 +1,5 @@
 irma:
   email_address: irma@example.com
+  nombre: Irma
+  apellido: Figueroa
   password_digest: <%= BCrypt::Password.create("password") %>

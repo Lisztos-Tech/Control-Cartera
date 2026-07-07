@@ -68,3 +68,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "pagy", "~> 9.3"
+
+gem "rails_icons", "~> 1.9"

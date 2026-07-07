@@ -23,7 +23,8 @@ class Poliza < ApplicationRecord
   enum :estatus, ESTATUS.index_by(&:itself), prefix: true
 
   validates :aseguradora, :canal, :ramo, :forma_pago, :moneda, :estatus, presence: true
-  validates :broker, presence: { message: "es obligatorio cuando el canal es broker" }, if: :broker?
+  # broker puede quedar vacío aun con canal=broker (hay filas del Excel sin
+  # broker identificable); lo que no se permite es broker en canal directo.
   validates :broker, absence: { message: "solo aplica cuando el canal es broker" }, if: :directo?
   validates :prima_total, numericality: { greater_than_or_equal_to: 0 }, allow_nil: true
 

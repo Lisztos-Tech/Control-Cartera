@@ -12,13 +12,20 @@ module Importador
     UMBRAL_FUSION = 0.93   # similitud trigram para considerar el mismo cliente
     UMBRAL_DUDOSO = 0.50   # por arriba de esto (y debajo de fusión) se reporta el par
 
-    HOJAS_VENCIMIENTOS = {
-      "VENCIMIENTOS INBURSA" => { aseguradora: "inbursa", canal: "directo" },
-      "VENC QUALITAS" => { aseguradora: "qualitas", canal: "directo" }
-    }.freeze
+    # Columnas por posición (0-based) de cada hoja de vencimientos.
+    # Los headers reales están desalineados de los datos, así que el layout
+    # se fija por posición observada en el archivo real.
+    LAYOUT_INBURSA = { clave: 0, numero: 1, contratante: 2, venc: 3, importe: 4,
+                       forma: 5, ramo: 6, cobertura: 7, detalle: 8, extra: 9 }.freeze
+    LAYOUT_QUALITAS = { numero: 0, contratante: 1, venc: 2, importe: 3,
+                        forma: 4, ramo: 5, cia: 6, detalle: 8, extra: 9 }.freeze
+    LAYOUT_BROKER = { numero: 0, contratante: 1, venc: 2, importe: 3, cia: 4,
+                      forma: 5, cobertura: 6, detalle: 8, extra: 9, agente: 10 }.freeze
+    LAYOUT_CANCELADAS = { clave: 0, numero: 1, contratante: 2, venc: 3, importe: 4,
+                          forma: 5, ramo: 6 }.freeze
 
     ASEGURADORAS_CIA = {
-      /QUALITAS|QUÁLITAS/i => "qualitas",
+      /QUALITAS|QUÁLITAS|\bQS\b/i => "qualitas",
       /ANA/i => "ana_seguros",
       /ATLAS/i => "seguros_atlas",
       /INBURSA/i => "inbursa"
@@ -40,10 +47,18 @@ module Importador
     def importar!
       @libro = Roo::Excelx.new(@path)
 
-      HOJAS_VENCIMIENTOS.each do |hoja, defaults|
-        con_hoja(hoja) { importar_vencimientos(hoja, **defaults) }
+      con_hoja("VENCIMIENTOS INBURSA") do
+        importar_vencimientos("VENCIMIENTOS INBURSA", LAYOUT_INBURSA,
+                              aseguradora: "inbursa", canal: "directo", vrim: true)
       end
-      con_hoja("VENC QS BROKER") { importar_broker("VENC QS BROKER") }
+      con_hoja("VENC QUALITAS") do
+        importar_vencimientos("VENC QUALITAS", LAYOUT_QUALITAS,
+                              aseguradora: "qualitas", canal: "directo")
+      end
+      con_hoja("VENC QS BROKER") do
+        importar_vencimientos("VENC QS BROKER", LAYOUT_BROKER,
+                              aseguradora: "qualitas", canal: "broker")
+      end
       con_hoja("POLIZAS VIDA") { importar_vida("POLIZAS VIDA") }
       con_hoja("POL CANCELADAS") { importar_canceladas("POL CANCELADAS") }
       con_hoja("FORM PAGO COMI QS") { importar_comisiones("FORM PAGO COMI QS") }
@@ -70,10 +85,13 @@ module Importador
       end
     end
 
-    # ---- Hojas de vencimientos directos (Inbursa / Quálitas) ----
-    # Col A=clave_agente, B=numero_poliza, C=contratante, D=vencimiento,
-    # E=importe, F=forma_pago, G=ramo, H=plan/cobertura, resto=detalle y notas.
-    def importar_vencimientos(hoja, aseguradora:, canal:)
+    def celda(celdas, layout, clave)
+      idx = layout[clave]
+      idx ? celdas[idx] : nil
+    end
+
+    # ---- Hojas de vencimientos (Inbursa / Quálitas / Broker) ----
+    def importar_vencimientos(hoja, layout, aseguradora:, canal:, vrim: false)
       seccion_vrim = false
 
       filas(hoja).each do |num, celdas|
@@ -81,7 +99,7 @@ module Importador
         next if fila_header?(celdas)
 
         texto_fila = celdas.map { |c| c.to_s }.join(" ")
-        if texto_fila.match?(/TARJETAS?\s+VRIM/i)
+        if vrim && texto_fila.match?(/TARJETAS?\s+VRIM/i)
           seccion_vrim = true
           next
         end
@@ -91,124 +109,141 @@ module Importador
           next
         end
 
-        clave, numero, contratante, vencimiento, importe, forma, ramo, cobertura, *resto = celdas
+        cia = L.texto_celda(celda(celdas, layout, :cia))
+        agente = L.texto_celda(celda(celdas, layout, :agente))
+        aseguradora_fila = canal == "broker" ? (mapear_aseguradora(cia) || aseguradora) : aseguradora
+
+        # Columna "Observaciones" del Excel = el bien (FORD RANGER 2012…);
+        # la columna extra sin nombre = notas sueltas → observaciones.
+        detalle = L.texto_celda(celda(celdas, layout, :detalle))
+        observaciones = L.texto_celda(celda(celdas, layout, :extra))
 
         procesar_fila_poliza(
           hoja: hoja, fila: num,
-          contratante: contratante,
-          numero_poliza: L.texto_celda(numero),
-          aseguradora: aseguradora, canal: canal, broker: nil,
-          clave_agente: L.texto_celda(clave),
-          ramo: L.mapear_ramo(ramo) || "otro",
-          cobertura: L.texto_celda(cobertura),
-          forma_pago: L.mapear_forma_pago(forma),
+          contratante: celda(celdas, layout, :contratante),
+          numero_poliza: L.texto_celda(celda(celdas, layout, :numero)),
+          aseguradora: aseguradora_fila,
+          canal: canal,
+          broker: canal == "broker" ? mapear_broker(agente) : nil,
+          clave_agente: L.texto_celda(celda(celdas, layout, :clave)),
+          ramo: L.mapear_ramo(celda(celdas, layout, :ramo)) || "otro",
+          cobertura: L.texto_celda(celda(celdas, layout, :cobertura)),
+          forma_pago: L.mapear_forma_pago(celda(celdas, layout, :forma)),
           moneda: "mxn",
-          vencimiento: vencimiento,
-          importe: importe,
-          detalle_bien: resto.map { |c| L.texto_celda(c) }.compact.join(" | ").presence
+          vencimiento: celda(celdas, layout, :venc),
+          importe: celda(celdas, layout, :importe),
+          detalle_bien: detalle,
+          observaciones: observaciones,
+          aseguradora_desconocida: canal == "broker" && cia.present? && mapear_aseguradora(cia).nil?,
+          broker_desconocido: canal == "broker" && agente.present? && mapear_broker(agente).nil?
         )
       end
     end
 
-    # ---- VENC QS BROKER: columnas por header (CIA = aseguradora real, AGENTE = broker) ----
-    def importar_broker(hoja)
+    # ---- POLIZAS VIDA: reporte de recibos de Inbursa, todo en strings ----
+    # Headers reales: Emisor | Carpeta | Recibo | Importe | Moneda | Tipo Cobro |
+    # Asegurado | Cliente | Fecha Efecto | Fecha Vencimiento | Fecha Pago | Comisión
+    def importar_vida(hoja)
       todas = filas(hoja)
-      header_idx = todas.index { |_, celdas| fila_header?(celdas) }
+      header_idx = todas.index { |_, celdas| celdas.map { |c| c.to_s }.join(" ").match?(/Carpeta|Emisor/i) }
       unless header_idx
-        reporte.ignorar(hoja: hoja, fila: "-", motivo: "no se encontró fila de encabezados")
+        reporte.ignorar(hoja: hoja, fila: "-", motivo: "no se encontró fila de encabezados (Emisor/Carpeta)")
         return
       end
 
-      columnas = mapear_columnas(todas[header_idx][1])
+      headers = todas[header_idx][1].map { |c| L.texto_celda(c).to_s }
+      col = {
+        clave: headers.index { |h| h.match?(/Emisor/i) },
+        numero: headers.index { |h| h.match?(/Carpeta/i) },
+        recibo: headers.index { |h| h.match?(/\ARecibo\z/i) },
+        importe: headers.index { |h| h.match?(/Importe/i) },
+        moneda: headers.index { |h| h.match?(/Moneda/i) },
+        contratante: headers.index { |h| h.match?(/Asegurado/i) },
+        efecto: headers.index { |h| h.match?(/Efecto/i) },
+        venc: headers.index { |h| h.match?(/Vencimiento/i) },
+        pago: headers.index { |h| h.match?(/Pago/i) && !h.match?(/Tipo/i) },
+        comision: headers.index { |h| h.match?(/Comisi/i) }
+      }
 
       todas[(header_idx + 1)..].each do |num, celdas|
-        next if fila_vacia?(celdas) || fila_header?(celdas)
+        next if fila_vacia?(celdas)
 
-        cia = L.texto_celda(celdas[columnas[:cia]]) if columnas[:cia]
-        agente = L.texto_celda(celdas[columnas[:agente]]) if columnas[:agente]
+        efecto = L.parsear_fecha(celdas[col[:efecto]]) if col[:efecto]
+        venc = L.parsear_fecha(celdas[col[:venc]]) if col[:venc]
+        forma = forma_por_periodo(efecto&.fecha, venc&.fecha)
 
-        procesar_fila_poliza(
+        poliza = procesar_fila_poliza(
           hoja: hoja, fila: num,
-          contratante: valor(celdas, columnas, :contratante),
-          numero_poliza: L.texto_celda(valor(celdas, columnas, :numero_poliza)),
-          aseguradora: mapear_aseguradora(cia) || "qualitas",
-          canal: "broker",
-          broker: mapear_broker(agente),
-          clave_agente: nil,
-          ramo: L.mapear_ramo(valor(celdas, columnas, :ramo)) || "otro",
-          cobertura: L.texto_celda(valor(celdas, columnas, :cobertura)),
-          forma_pago: L.mapear_forma_pago(valor(celdas, columnas, :forma_pago)),
-          moneda: "mxn",
-          vencimiento: valor(celdas, columnas, :vencimiento),
-          importe: valor(celdas, columnas, :importe),
-          detalle_bien: L.texto_celda(valor(celdas, columnas, :detalle)),
-          aseguradora_desconocida: cia.present? && mapear_aseguradora(cia).nil?
-        )
-      end
-    end
-
-    # ---- POLIZAS VIDA: todo viene como string, moneda NACIONAL/DOLARES ----
-    def importar_vida(hoja)
-      todas = filas(hoja)
-      header_idx = todas.index { |_, celdas| fila_header?(celdas) } || 0
-      columnas = mapear_columnas(todas[header_idx][1])
-
-      todas[(header_idx + 1)..].each do |num, celdas|
-        next if fila_vacia?(celdas) || fila_header?(celdas)
-
-        procesar_fila_poliza(
-          hoja: hoja, fila: num,
-          contratante: valor(celdas, columnas, :contratante),
-          numero_poliza: L.texto_celda(valor(celdas, columnas, :numero_poliza)),
+          contratante: celdas[col[:contratante]],
+          numero_poliza: L.texto_celda(celdas[col[:numero]]),
           aseguradora: "inbursa",
           canal: "directo",
           broker: nil,
-          clave_agente: L.texto_celda(valor(celdas, columnas, :clave)),
+          clave_agente: L.texto_celda(celdas[col[:clave]]),
           ramo: "vida",
-          cobertura: L.texto_celda(valor(celdas, columnas, :cobertura)),
-          forma_pago: L.mapear_forma_pago(valor(celdas, columnas, :forma_pago)),
-          moneda: L.mapear_moneda(valor(celdas, columnas, :moneda)),
-          vencimiento: valor(celdas, columnas, :vencimiento),
-          importe: valor(celdas, columnas, :importe),
+          cobertura: nil,
+          forma_pago: forma,
+          moneda: L.mapear_moneda(celdas[col[:moneda]]),
+          vencimiento: celdas[col[:venc]],
+          importe: celdas[col[:importe]],
           detalle_bien: nil
         )
+        next unless poliza
+
+        # La fila es un recibo del reporte: si trae fecha de pago, quedó pagado.
+        fecha_pago = L.parsear_fecha(celdas[col[:pago]])&.fecha if col[:pago]
+        recibo = venc && poliza.recibos.find_by(fecha_vencimiento: venc.fecha)
+        if recibo
+          recibo.update!(numero_recibo: L.texto_celda(celdas[col[:recibo]]))
+          recibo.update!(estatus: "pagado", fecha_pago: fecha_pago) if fecha_pago
+        end
+
+        # Comisión reportada por Inbursa en la misma fila (vida sí paga comisión).
+        monto = L.parsear_importe(celdas[col[:comision]])&.importe if col[:comision]
+        if recibo && monto&.positive? && recibo.comision.nil?
+          recibo.create_comision!(
+            monto: monto,
+            estatus: fecha_pago ? "pagada" : "por_cobrar",
+            fecha_cobro: fecha_pago
+          )
+          reporte.contar(:comisiones_creadas)
+        end
       end
     end
 
-    # ---- POL CANCELADAS: estatus derivado del texto del motivo ----
+    # ---- POL CANCELADAS: estatus derivado del texto; el motivo se junta de
+    # las columnas de texto libre al final de la fila ----
     def importar_canceladas(hoja)
-      todas = filas(hoja)
-      header_idx = todas.index { |_, celdas| fila_header?(celdas) } || 0
-      columnas = mapear_columnas(todas[header_idx][1])
-
-      todas[(header_idx + 1)..].each do |num, celdas|
+      filas(hoja).each do |num, celdas|
         next if fila_vacia?(celdas) || fila_header?(celdas)
 
-        motivo = L.texto_celda(valor(celdas, columnas, :motivo)) ||
-                 celdas.map { |c| L.texto_celda(c) }.compact.select { |t| t.match?(/cancel|renov|robo|\bPT\b|perdida|pérdida/i) }.join(" | ").presence
+        texto_libre = celdas[7..].to_a.map { |c| L.texto_celda(c) }.compact
+        motivo = texto_libre.join(" | ").presence
 
         procesar_fila_poliza(
           hoja: hoja, fila: num,
-          contratante: valor(celdas, columnas, :contratante),
-          numero_poliza: L.texto_celda(valor(celdas, columnas, :numero_poliza)),
-          aseguradora: mapear_aseguradora(L.texto_celda(valor(celdas, columnas, :cia))) || "otra",
+          contratante: celda(celdas, LAYOUT_CANCELADAS, :contratante),
+          numero_poliza: L.texto_celda(celda(celdas, LAYOUT_CANCELADAS, :numero)),
+          aseguradora: mapear_aseguradora(texto_libre.join(" ")) || "inbursa",
           canal: "directo",
           broker: nil,
-          clave_agente: nil,
-          ramo: L.mapear_ramo(valor(celdas, columnas, :ramo)) || "otro",
+          clave_agente: L.texto_celda(celda(celdas, LAYOUT_CANCELADAS, :clave)),
+          ramo: L.mapear_ramo(celda(celdas, LAYOUT_CANCELADAS, :ramo)) || "otro",
           cobertura: nil,
-          forma_pago: L.mapear_forma_pago(valor(celdas, columnas, :forma_pago)),
+          forma_pago: L.mapear_forma_pago(celda(celdas, LAYOUT_CANCELADAS, :forma)),
           moneda: "mxn",
           vencimiento: nil, # cancelada: sin recibos pendientes
           importe: nil,
-          detalle_bien: L.texto_celda(valor(celdas, columnas, :detalle)),
+          detalle_bien: nil,
           estatus: L.mapear_estatus_cancelacion(motivo),
           motivo_cancelacion: motivo
         )
       end
     end
 
-    # ---- FORM PAGO COMI QS: varias tablas apiladas con headers repetidos ----
+    # ---- FORM PAGO COMI QS: varias tablas apiladas con headers distintos.
+    # Cada bloque arranca con una fila header que contiene PÓLIZA y PRIMA/COMISIÓN;
+    # las columnas se mapean por nombre dentro de cada bloque. ----
     def importar_comisiones(hoja)
       columnas = nil
 
@@ -224,20 +259,22 @@ module Importador
         numero = L.texto_celda(valor(celdas, columnas, :numero_poliza))
         nombre = L.texto_celda(valor(celdas, columnas, :contratante))
         next if numero.blank? && nombre.blank?
+        next if numero.blank? && !nombre.match?(/\p{Lu}{2,}/) # subtotales y ruido
 
-        poliza = encontrar_poliza(numero, nombre)
+        cia = mapear_aseguradora(L.texto_celda(valor(celdas, columnas, :cia)))
+        poliza = encontrar_poliza(numero, nombre, aseguradora: cia)
         unless poliza
           reporte.ignorar(hoja: hoja, fila: num,
                           motivo: "no se pudo vincular a una póliza (##{numero || 's/n'} #{nombre})")
           next
         end
 
-        fecha_res = L.parsear_fecha(valor(celdas, columnas, :fecha))
-        prima_res = L.parsear_importe(valor(celdas, columnas, :prima_neta))
+        fecha_pago = L.parsear_fecha(valor(celdas, columnas, :fecha_pago))
+        prima_res = L.parsear_importe(valor(celdas, columnas, :prima_neta) || valor(celdas, columnas, :importe))
         monto_res = L.parsear_importe(valor(celdas, columnas, :comision))
         porcentaje = parsear_porcentaje(valor(celdas, columnas, :porcentaje))
 
-        recibo = recibo_para_comision(poliza, fecha_res&.fecha)
+        recibo = recibo_para_comision(poliza, fecha_pago&.fecha)
         if recibo.comision
           reporte.ignorar(hoja: hoja, fila: num, motivo: "el recibo ya tiene comisión (póliza #{poliza.numero_poliza})")
           next
@@ -251,36 +288,53 @@ module Importador
         )
         reporte.contar(:comisiones_creadas)
 
-        flaggear(poliza, hoja, num, "fecha ambigua en hoja de comisiones (#{L.texto_celda(valor(celdas, columnas, :fecha))})") if fecha_res&.ambigua
+        if fecha_pago&.ambigua
+          flaggear(poliza, hoja, num, "fecha ambigua en hoja de comisiones (#{L.texto_celda(valor(celdas, columnas, :fecha_pago))})")
+        end
       end
     end
 
-    # ---- Reconciliación de hojas secundarias (Hoja1/Hoja3/Hoja4): solo reportar ----
+    # ---- Reconciliación de hojas secundarias (Hoja1/Hoja3/Hoja4): solo reportar.
+    # Se identifica la columna de números de póliza (la que más celdas tipo
+    # póliza tenga) para no confundir teléfonos u otros números sueltos. ----
     def reconciliar(hoja)
       numeros_existentes = Poliza.where.not(numero_poliza: nil).pluck(:numero_poliza).to_set
+      todas = filas(hoja)
 
-      filas(hoja).each do |_num, celdas|
-        celdas.each do |celda|
-          texto = L.texto_celda(celda)
-          next unless texto&.match?(/\A[A-Z0-9-]{6,20}\z/i) && texto.match?(/\d{4}/)
-          next if numeros_existentes.include?(texto)
-          next if reporte.reconciliacion.any? { |r| r[:numero_poliza] == texto }
-
-          reporte.reconciliar(hoja: hoja, numero_poliza: texto,
-                              detalle: "aparece en #{hoja} pero no en las hojas primarias")
+      conteo_por_columna = Hash.new(0)
+      todas.each do |_num, celdas|
+        celdas.each_with_index do |celda, idx|
+          conteo_por_columna[idx] += 1 if numero_poliza?(L.texto_celda(celda))
         end
       end
+      col_poliza, coincidencias = conteo_por_columna.max_by { |_, v| v }
+      return if coincidencias.to_i < 3 # sin columna clara de pólizas, no adivinar
+
+      todas.each do |_num, celdas|
+        texto = L.texto_celda(celdas[col_poliza])
+        next unless numero_poliza?(texto)
+        next if numeros_existentes.include?(texto)
+        next if reporte.reconciliacion.any? { |r| r[:numero_poliza] == texto }
+
+        reporte.reconciliar(hoja: hoja, numero_poliza: texto,
+                            detalle: "aparece en #{hoja} pero no en las hojas primarias")
+      end
+    end
+
+    def numero_poliza?(texto)
+      texto.present? && texto.match?(/\A\d{6,12}\z/)
     end
 
     # ---- Núcleo: crear/consolidar póliza + recibo a partir de una fila ----
     def procesar_fila_poliza(hoja:, fila:, contratante:, numero_poliza:, aseguradora:, canal:,
                              broker:, clave_agente:, ramo:, cobertura:, forma_pago:, moneda:,
-                             vencimiento:, importe:, detalle_bien:, estatus: "vigente",
-                             motivo_cancelacion: nil, aseguradora_desconocida: false)
+                             vencimiento:, importe:, detalle_bien:, observaciones: nil,
+                             estatus: "vigente", motivo_cancelacion: nil,
+                             aseguradora_desconocida: false, broker_desconocido: false)
       nombre_res = L.separar_nombre(contratante)
       if nombre_res.nombre.blank?
         reporte.ignorar(hoja: hoja, fila: fila, motivo: "fila sin nombre de contratante")
-        return
+        return nil
       end
 
       cliente = encontrar_o_crear_cliente(nombre_res.nombre)
@@ -294,7 +348,7 @@ module Importador
 
       if poliza
         consolidar_poliza(poliza, hoja, fila, notas: notas, detalle_bien: detalle_bien,
-                          forma_pago: forma_pago, cobertura: cobertura)
+                          observaciones: observaciones, forma_pago: forma_pago, cobertura: cobertura)
       else
         poliza = cliente.polizas.create!(
           numero_poliza: numero_poliza,
@@ -307,15 +361,18 @@ module Importador
           forma_pago: forma_pago || "anual",
           moneda: moneda,
           detalle_bien: detalle_bien,
+          observaciones: observaciones,
           estatus: estatus,
           motivo_cancelacion: motivo_cancelacion,
           notas: notas
         )
         reporte.contar(:polizas_creadas)
-        @polizas_por_numero = nil # invalidar cache
 
-        flaggear(poliza, hoja, fila, "sin forma de pago legible; se asumió anual") if forma_pago.blank?
+        if forma_pago.blank? && estatus == "vigente"
+          flaggear(poliza, hoja, fila, "sin forma de pago legible; se asumió anual")
+        end
         flaggear(poliza, hoja, fila, "aseguradora (CIA) no reconocida") if aseguradora_desconocida
+        flaggear(poliza, hoja, fila, "broker/agente no reconocido") if broker_desconocido
       end
 
       if importe_res&.texto
@@ -326,7 +383,7 @@ module Importador
         flaggear(poliza, hoja, fila, "fecha de vencimiento ilegible (\"#{L.texto_celda(vencimiento)}\")")
       end
 
-      if fecha_res
+      if fecha_res && estatus == "vigente"
         crear_recibo(poliza, fecha_res, importe_res&.importe, hoja, fila)
       end
 
@@ -345,7 +402,7 @@ module Importador
 
     # Regla 5: filas repetidas del mismo número de póliza son recibos futuros.
     # Si difieren en otros campos, conservar la versión con más datos y flaggear.
-    def consolidar_poliza(poliza, hoja, fila, notas:, detalle_bien:, forma_pago:, cobertura:)
+    def consolidar_poliza(poliza, hoja, fila, notas:, detalle_bien:, forma_pago:, cobertura:, observaciones: nil)
       poliza.notas = [ poliza.notas, notas ].compact.join(" | ").presence if notas
 
       diferencias = []
@@ -355,6 +412,9 @@ module Importador
 
       poliza.detalle_bien ||= detalle_bien
       poliza.cobertura ||= cobertura
+      if observaciones.present? && !poliza.observaciones.to_s.include?(observaciones)
+        poliza.observaciones = [ poliza.observaciones, observaciones ].compact_blank.join(" | ")
+      end
       poliza.save!
 
       if diferencias.any?
@@ -421,7 +481,7 @@ module Importador
     end
 
     # ---- Vinculación de comisiones ----
-    def encontrar_poliza(numero, nombre)
+    def encontrar_poliza(numero, nombre, aseguradora: nil)
       if numero.present?
         poliza = Poliza.find_by(numero_poliza: numero)
         return poliza if poliza
@@ -435,22 +495,31 @@ module Importador
         candidato, sim = mas_similar(normalizado)
         cliente = candidato if sim >= UMBRAL_FUSION
       end
-      cliente&.polizas&.order(:created_at)&.last
+      return nil unless cliente
+
+      # Preferir la póliza de la misma aseguradora que reporta la comisión.
+      candidatas = cliente.polizas.order(:created_at)
+      (aseguradora && candidatas.where(aseguradora: aseguradora).last) || candidatas.last
     end
 
+    # Los pagos de la hoja de comisiones son históricos: se vinculan a un recibo
+    # cercano (±45 días) sin comisión, o se crea el recibo pagado de ese periodo.
     def recibo_para_comision(poliza, fecha)
       if fecha
-        cercano = poliza.recibos.min_by { |r| (r.fecha_vencimiento - fecha).abs }
-        return cercano if cercano && !cercano.comision
+        cercano = poliza.recibos
+                        .select { |r| r.comision.nil? && (r.fecha_vencimiento - fecha).abs <= 45 }
+                        .min_by { |r| (r.fecha_vencimiento - fecha).abs }
+        return cercano if cercano
+
+        recibo = poliza.recibos.create!(fecha_vencimiento: fecha, estatus: "pagado", fecha_pago: fecha)
+        reporte.contar(:recibos_creados)
+        return recibo
       end
+
       sin_comision = poliza.recibos.detect { |r| r.comision.nil? }
       return sin_comision if sin_comision
 
-      recibo = poliza.recibos.create!(
-        fecha_vencimiento: fecha || Date.current,
-        estatus: fecha ? "pagado" : "pendiente",
-        fecha_pago: fecha
-      )
+      recibo = poliza.recibos.create!(fecha_vencimiento: Date.current, estatus: "pendiente")
       reporte.contar(:recibos_creados)
       recibo
     end
@@ -463,12 +532,24 @@ module Importador
       pct < 1 ? (pct * 100).round(2) : pct # 0.08 => 8%
     end
 
+    def forma_por_periodo(desde, hasta)
+      return nil unless desde && hasta
+
+      dias = (hasta - desde).to_i
+      case dias
+      when 25..35 then "mensual"
+      when 85..95 then "trimestral"
+      when 175..190 then "semestral"
+      when 360..370 then "anual"
+      end
+    end
+
     # ---- Utilidades de filas y headers ----
     def fila_vacia?(celdas)
       celdas.all? { |c| L.texto_celda(c).blank? }
     end
 
-    HEADER_KEYWORDS = /\A(CLAVE|AGENTE|P[OÓ]LIZA|No\.? ?DE ?P[OÓ]LIZA|CONTRATANTE|ASEGURADO|NOMBRE|VENC|FECHA|IMPORTE|PRIMA|FORMA|RAMO|TIPO|PLAN|COBERTURA|CIA|C[IÍ]A|MONEDA|MOTIVO|DETALLE|VEH[IÍ]CULO|DESCRIPCI[OÓ]N|%|COMI)/i
+    HEADER_KEYWORDS = /\A(CLAVE|AGENTE|P[OÓ]LIZAS?|No\.? ?DE ?P[OÓ]LIZA|CONTRATANTE|ASEGURADO|NOMBRE|VENC|FECHA|IMPORTE|PRIMA|FORMA|F ?PAGO|F DE PAGO|RAMO|TIPO|PLAN|COBERTURA|CIA|C[IÍ]A|MONEDA|MOTIVO|DETALLE|VEH[IÍ]CULO|DESCRIPCI[OÓ]N|OBSERVACIONES|ESTATUS|MARCA|CARACT|COMUNICACI[OÓ]N|%|COMI)/i
 
     def fila_header?(celdas)
       textos = celdas.map { |c| L.texto_celda(c) }.compact
@@ -478,29 +559,24 @@ module Importador
       coincidencias >= [ textos.size / 2, 2 ].max
     end
 
+    # Un bloque de la hoja de comisiones arranca con un header que trae
+    # PÓLIZA y además PRIMA o COMISIÓN (hay tres formatos distintos apilados).
     def fila_header_comisiones?(celdas)
       textos = celdas.map { |c| L.texto_celda(c) }.compact.join(" ")
-      textos.match?(/FECHA ENV/i) && textos.match?(/P[OÓ]LIZA/i)
+      textos.match?(/P[OÓ]LIZA/i) && textos.match?(/PRIMA|COMISI/i) && !textos.match?(/\A\d/)
     end
 
     COLUMNAS = {
-      clave: /\ACLAVE/i,
       numero_poliza: /P[OÓ]LIZA/i,
       contratante: /CONTRATANTE|ASEGURADO|NOMBRE/i,
-      vencimiento: /VENC|VIGENCIA/i,
-      fecha: /\AFECHA/i,
+      fecha_pago: /FECHA DE PAGO/i,
       importe: /IMPORTE|PRIMA TOTAL|\APRIMA\z/i,
       prima_neta: /PRIMA ?NETA/i,
-      forma_pago: /FORMA|PAGO/i,
-      ramo: /RAMO|TIPO/i,
-      cobertura: /PLAN|COBERTURA/i,
-      cia: /\AC[IÍ]A\.?\z|ASEGURADORA/i,
-      agente: /\AAGENTE\z|BROKER/i,
-      moneda: /MONEDA/i,
-      motivo: /MOTIVO|OBSERV/i,
-      detalle: /DETALLE|VEH[IÍ]CULO|DESCRIPCI[OÓ]N|BIEN/i,
+      recibo: /\ARECIBO\z/i,
+      cia: /COMPAÑ[IÍ]A|ASEGURADORA|\AC[IÍ]A\.?\z/i,
+      ramo: /\ARAMO\z/i,
       porcentaje: /%|PORC/i,
-      comision: /COMISI[OÓ]N|COMI\b/i
+      comision: /\ACOMISI[OÓ]N\z|\ACOMI\z/i
     }.freeze
 
     def mapear_columnas(celdas_header)

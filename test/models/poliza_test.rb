@@ -1,12 +1,11 @@
 require "test_helper"
 
 class PolizaTest < ActiveSupport::TestCase
-  test "canal broker exige broker" do
+  test "canal broker admite broker vacío (filas del Excel sin broker identificable)" do
     poliza = polizas(:auto_juan)
     poliza.canal = "broker"
     poliza.broker = nil
-    assert_not poliza.valid?
-    assert poliza.errors[:broker].any?
+    assert poliza.valid?
   end
 
   test "canal directo no admite broker" do

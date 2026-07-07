@@ -1,4 +1,4 @@
-# Control de Pólizas
+# Control Cartera
 
 Sistema de gestión de pólizas de seguros para agente independiente. Reemplaza el
 archivo `COMISIONES-IRMA.xlsx`: vencimientos, recibos, comisiones y clientes en
@@ -79,19 +79,19 @@ créalas antes con un superusuario: `CREATE EXTENSION pg_trgm; CREATE EXTENSION 
 ### 2. Build y arranque
 
 ```bash
-docker build -t control-clientes .
+docker build -t control-cartera .
 
-docker run -d --name control-clientes \
+docker run -d --name control-cartera \
   --restart unless-stopped \
   -p 127.0.0.1:8300:80 \
   -e DATABASE_URL="postgres://usuario:password@172.17.0.1:5432/control_clientes" \
   -e RAILS_MASTER_KEY="..." \
   -e SECRET_KEY_BASE="..." \
-  control-clientes
+  control-cartera
 
 # Primera vez: crear el esquema y la cuenta
 docker exec -e ADMIN_EMAIL=irma@ejemplo.com -e ADMIN_PASSWORD=segura \
-  control-clientes bin/rails db:prepare db:seed
+  control-cartera bin/rails db:prepare db:seed
 ```
 
 El healthcheck es `GET /up` (incluido en Rails 8).
@@ -123,8 +123,8 @@ Nginx debe mandar `X-Forwarded-Proto`.
 Cron diario de `pg_dump` en el host (ajustar usuario/base):
 
 ```cron
-# /etc/cron.d/backup-control-clientes
-0 3 * * * postgres pg_dump -Fc control_clientes > /var/backups/control-clientes/$(date +\%F).dump && find /var/backups/control-clientes -name "*.dump" -mtime +30 -delete
+# /etc/cron.d/backup-control-cartera
+0 3 * * * postgres pg_dump -Fc control_clientes > /var/backups/control-cartera/$(date +\%F).dump && find /var/backups/control-cartera -name "*.dump" -mtime +30 -delete
 ```
 
 Restaurar: `pg_restore -d control_clientes --clean archivo.dump`.
@@ -132,7 +132,7 @@ Restaurar: `pg_restore -d control_clientes --clean archivo.dump`.
 ### 5. Cambiar la contraseña
 
 ```bash
-docker exec -it control-clientes bin/rails runner 'User.first.update!(password: "nueva")'
+docker exec -it control-cartera bin/rails runner 'User.first.update!(password: "nueva")'
 ```
 
 No hay registro público, ni roles, ni reset por email.

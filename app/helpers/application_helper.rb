@@ -1,4 +1,32 @@
 module ApplicationHelper
+  include Pagy::Frontend
+
+  # Enlace del sidebar con estado activo. Acepta texto o un bloque.
+  def enlace_sidebar(texto_o_path, path = nil, activo:, &block)
+    path = texto_o_path if block
+    clases = activo ? "bg-white/10 text-white" : "text-primary-200 hover:bg-white/5 hover:text-white"
+    link_to path, class: "block px-3 py-2 rounded-lg #{clases}" do
+      block ? capture(&block) : texto_o_path
+    end
+  end
+
+  # Icono de lápiz para editar (acciones de fila en tablas).
+  def enlace_editar(path, titulo: "Editar", data: {})
+    link_to path, title: titulo, "aria-label": titulo, data: data,
+            class: "inline-flex items-center justify-center w-7 h-7 rounded-lg text-primary-700 hover:bg-primary-50" do
+      icon "pencil", class: "w-4 h-4"
+    end
+  end
+
+  # Icono de basurero rojo para borrar, con confirmación.
+  def boton_borrar(path, confirmacion:, titulo: "Borrar")
+    button_to path, method: :delete, title: titulo, "aria-label": titulo,
+              form: { data: { turbo_confirm: confirmacion }, class: "inline-block" },
+              class: "inline-flex items-center justify-center w-7 h-7 rounded-lg text-red-600 hover:bg-red-50 cursor-pointer" do
+      icon "trash", class: "w-4 h-4"
+    end
+  end
+
   SEMAFORO_CLASES = {
     rojo: "bg-red-500",
     ambar: "bg-amber-400",

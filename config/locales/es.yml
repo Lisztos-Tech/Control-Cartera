@@ -11,7 +11,7 @@ es:
         separator: "."
         precision: 2
   app:
-    nombre: "Control de Pólizas"
+    nombre: "Control Cartera"
     aseguradoras:
       inbursa: "Inbursa"
       qualitas: "Quálitas"
@@ -80,6 +80,7 @@ es:
         prima_total: "Prima total"
         moneda: "Moneda"
         detalle_bien: "Detalle del bien"
+        observaciones: "Observaciones"
         estatus: "Estatus"
         motivo_cancelacion: "Motivo de cancelación"
         notas: "Notas"

@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+/* Color principal de la app (clases primary-*). Para cambiar el tema completo,
+   basta con reemplazar esta escala. Escala derivada del azul marino #1F3454
+   (anclado en el tono 700, que usan links y textos de marca). */
+@theme {
+  --color-primary-50: #f4f7fb;
+  --color-primary-100: #e5ebf4;
+  --color-primary-200: #c9d6e8;
+  --color-primary-300: #a2b8d4;
+  --color-primary-400: #7292ba;
+  --color-primary-500: #4b6d9c;
+  --color-primary-600: #34517c;
+  --color-primary-700: #1f3454;
+  --color-primary-800: #192a45;
+  --color-primary-900: #131f33;
+}
+
+/* El plugin de forms enfoca en azul; lo alineamos al color primario.
+   Los selectores por atributo igualan la especificidad del plugin. */
+@layer base {
+  [type="text"]:focus, [type="email"]:focus, [type="password"]:focus,
+  [type="number"]:focus, [type="date"]:focus, [type="search"]:focus,
+  [type="tel"]:focus, [type="url"]:focus, [type="datetime-local"]:focus,
+  select:focus, textarea:focus, [multiple]:focus {
+    --tw-ring-color: var(--color-primary-500);
+    border-color: var(--color-primary-500);
+  }
+}

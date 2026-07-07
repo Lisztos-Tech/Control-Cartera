@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2026_07_07_031819) do
+ActiveRecord::Schema[8.0].define(version: 2026_07_07_163000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
   enable_extension "pg_trgm"
@@ -61,6 +61,7 @@ ActiveRecord::Schema[8.0].define(version: 2026_07_07_031819) do
     t.text "motivo_revision"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "observaciones"
     t.index ["cliente_id"], name: "index_polizas_on_cliente_id"
     t.index ["estatus"], name: "index_polizas_on_estatus"
     t.index ["necesita_revision"], name: "index_polizas_on_necesita_revision"
@@ -95,6 +96,8 @@ ActiveRecord::Schema[8.0].define(version: 2026_07_07_031819) do
     t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "nombre"
+    t.string "apellido"
     t.index ["email_address"], name: "index_users_on_email_address", unique: true
   end
 

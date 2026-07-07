@@ -15,18 +15,20 @@ module Importador
       /CAMION|CAMIÓN|TRACTO/i => "camion",
       /AUTO|PICK ?UP|CARRO/i => "autos",
       /VIDA/i => "vida",
-      /GMM|GASTOS ?M|MEDICO|MÉDICO/i => "gmm",
-      /DAÑO|DANO|CASA|HOGAR|INMUEBLE/i => "danos",
+      /GMM|GASTOS ?M|MEDICO|MÉDICO|CANCER|CÁNCER/i => "gmm",
+      /DAÑO|DANO|CASA|HOGAR|INMUEBLE|HABITT?/i => "danos",
       /\bRC\b|RESPONSABILIDAD/i => "rc",
       /COMERCIO|NEGOCIO|EMPRESA/i => "comercio"
     }.freeze
 
+    # El Excel real trae "1.MEN", "2.TRI", "3.SEM", "4.AN" además de las
+    # palabras completas.
     FORMAS_PAGO = {
-      /MENS|1\/12/i => "mensual",
-      /TRIM|3\/12/i => "trimestral",
+      /MEN|1\/12/i => "mensual",
+      /TRI/i => "trimestral",
       /SEM/i => "semestral",
-      /ANUAL|AÑO|ANO\b/i => "anual",
-      /CONTADO|UNICA|ÚNICA|1\/1/i => "contado"
+      /ANUAL|AÑO|\.AN\b|\bAN\b/i => "anual",
+      /CONTADO|UNICA|ÚNICA/i => "contado"
     }.freeze
 
     module_function
@@ -124,22 +126,48 @@ module Importador
       end
     end
 
+    # Frases de estatus que la usuaria pega EN MAYÚSCULAS al final del nombre;
+    # se cortan del nombre y se van a notas.
+    FRASES_ESTADO = Regexp.union(
+      /\b(SE CANCEL[OÓ]|C ?ANCELAD[OA]|CANCELACION)/,
+      /\bPENDIENTE\b/,
+      /\bNO ?SE PAG[OÓ]|\bNO (LA )?PAG[OÓ]\b|\bDEJ[OÓ] DE PAGAR/,
+      /\bNO RENOVAR|\bS?E RENOV[OÓ]/,
+      /\bVENDID[OA]|\bVENTA DEL?\b/,
+      /\bPOR COBRAR|\bCHECAR|\bPAGAD[OA]\b|\bPAGO \d/,
+      /\bSE (HIZO A|REEXPIDI[OÓ]|CAMBI[OÓ]|PAS[OÓ]|PAGO ?A)\b/,
+      /\bPOL(IZA)? DUPLICADA|\bPERDIDA TOT|\bCLIENTE\b/
+    )
+
     # Regla 3: el nombre es el prefijo en MAYÚSCULAS; la cola en minúsculas
-    # ("esta poiza la pagué yo", "2/2", "cancelada") se va a notas.
+    # ("esta poiza la pagué yo", "2/2", "cancelada") se va a notas, igual que
+    # las frases de estatus en mayúsculas.
     def separar_nombre(texto)
-      s = texto.to_s.gsub(/\s+/, " ").strip
+      # [[:space:]] incluye el espacio no separable (U+00A0) que abunda en el Excel.
+      s = texto.to_s.gsub(/[[:space:]]+/, " ").strip
       return NombreResultado.new(nombre: nil, notas: nil) if s.empty?
 
       tokens = s.split(" ")
       corte = tokens.index { |t| !token_de_nombre?(t) } || tokens.length
 
-      nombre = tokens[0...corte].join(" ").presence
+      nombre = tokens[0...corte].join(" ")
       notas = tokens[corte..].join(" ").presence
-      NombreResultado.new(nombre: nombre, notas: notas)
+
+      if (m = nombre.match(FRASES_ESTADO))
+        notas = [ nombre[m.begin(0)..].strip, notas ].compact.join(" | ").presence
+        nombre = nombre[0...m.begin(0)]
+      end
+
+      # Conectores colgantes al final del nombre ("...GONZALEZ NO" cuando el
+      # resto de la frase iba en minúsculas y ya se fue a notas).
+      nombre = nombre.strip.sub(/(\s+(NO|SE|YA|LA|EL|DEL?))+\z/, "")
+
+      NombreResultado.new(nombre: nombre.presence, notas: notas)
     end
 
     def token_de_nombre?(token)
-      token.match?(/\p{Lu}/) && !token.match?(/\p{Ll}/)
+      # Mayúsculas puras y sin dígitos ("2DE", "2/2" son anotaciones, no nombre)
+      token.match?(/\p{Lu}/) && !token.match?(/\p{Ll}/) && !token.match?(/\d/)
     end
 
     def mapear_ramo(texto)

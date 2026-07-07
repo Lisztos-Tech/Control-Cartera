@@ -3,7 +3,7 @@
 <% poliza = @comision.recibo.poliza %>
 <h1 class="text-2xl font-bold mb-1">Editar comisión</h1>
 <p class="text-gray-500 mb-4">
-  Póliza <%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza), class: "text-indigo-700 hover:underline" %>
+  Póliza <%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza), class: "text-primary-700 hover:underline" %>
   de <%= poliza.cliente.nombre %> · recibo con vencimiento <%= fecha(@comision.recibo.fecha_vencimiento) %>
 </p>
 
@@ -47,7 +47,7 @@
   </div>
 
   <div class="mt-6 flex gap-3">
-    <%= f.submit "Guardar cambios", class: "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-lg cursor-pointer" %>
+    <%= f.submit "Guardar cambios", class: "bg-primary-600 hover:bg-primary-700 text-white font-semibold px-5 py-2 rounded-lg cursor-pointer" %>
     <%= link_to "Cancelar", comisiones_path, class: "text-gray-600 hover:text-gray-900 px-4 py-2" %>
   </div>
 <% end %>

@@ -1,0 +1,28 @@
+<% if pagy.pages > 1 %>
+  <nav class="flex items-center justify-between px-4 py-3 border-t border-gray-100 text-sm bg-white">
+    <p class="text-gray-500"><%= pagy.from %>–<%= pagy.to %> de <%= pagy.count %></p>
+    <div class="flex items-center gap-1">
+      <% if pagy.prev %>
+        <%= link_to "‹ Anterior", pagy_url_for(pagy, pagy.prev),
+            data: { turbo_action: "advance" },
+            class: "px-3 py-1.5 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" %>
+      <% end %>
+      <% pagy.series.each do |item| %>
+        <% if item == :gap %>
+          <span class="px-2 text-gray-400">…</span>
+        <% elsif item.is_a?(String) %><%# la página actual viene como String %>
+          <span class="px-3 py-1.5 rounded-lg bg-primary-600 text-white font-semibold"><%= item %></span>
+        <% else %>
+          <%= link_to item, pagy_url_for(pagy, item),
+              data: { turbo_action: "advance" },
+              class: "px-3 py-1.5 rounded-lg text-gray-600 hover:bg-gray-100" %>
+        <% end %>
+      <% end %>
+      <% if pagy.next %>
+        <%= link_to "Siguiente ›", pagy_url_for(pagy, pagy.next),
+            data: { turbo_action: "advance" },
+            class: "px-3 py-1.5 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" %>
+      <% end %>
+    </div>
+  </nav>
+<% end %>

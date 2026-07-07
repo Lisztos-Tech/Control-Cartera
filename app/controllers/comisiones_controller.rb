@@ -13,7 +13,11 @@ class ComisionesController < ApplicationController
     end
 
     respond_to do |format|
-      format.html
+      format.html do
+        # Solo la tabla plana de pagadas se pagina; "por cobrar" se muestra
+        # completa porque va agrupada por broker/canal con totales.
+        @pagy, @comisiones = pagy(@comisiones) if @tab == "pagadas"
+      end
       format.xlsx do
         render xlsx: "export", filename: "comisiones_#{@tab}_#{Date.current.strftime('%Y%m%d')}.xlsx"
       end
@@ -43,7 +47,13 @@ class ComisionesController < ApplicationController
   private
 
   def grupo_de(poliza)
-    poliza.broker.present? ? "broker_#{poliza.broker}" : "directo_#{poliza.aseguradora}"
+    if poliza.broker.present?
+      "broker_#{poliza.broker}"
+    elsif poliza.broker?
+      "broker_" # canal broker sin broker identificado
+    else
+      "directo_#{poliza.aseguradora}"
+    end
   end
 
   def comision_params

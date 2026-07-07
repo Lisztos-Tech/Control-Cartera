@@ -10,6 +10,9 @@ class FlujosCriticosTest < ApplicationSystemTestCase
   test "marcar recibo pagado y crear el siguiente con un clic" do
     recibo = recibos(:vencido_juan) # póliza mensual vigente
 
+    # "Marcar pagado" vive en el detalle de la póliza; la tabla de
+    # vencimientos solo tiene el lápiz de edición.
+    visit poliza_path(recibo.poliza)
     within "#recibo_#{recibo.id}" do
       click_button "Marcar pagado"
     end
@@ -26,8 +29,8 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     assert_equal recibo.fecha_vencimiento + 1.month, nuevo.fecha_vencimiento
   end
 
-  test "búsqueda y filtros del dashboard se combinan y viven en la URL" do
-    visit root_path
+  test "búsqueda y filtros de vencimientos se combinan y viven en la URL" do
+    visit vencimientos_path
     assert_text "JUAN PEREZ LOPEZ"
     assert_text "MARIA GARCIA HERNANDEZ"
 

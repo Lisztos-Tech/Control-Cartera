@@ -3,14 +3,14 @@
 <div class="flex items-center justify-between mb-4">
   <h1 class="text-2xl font-bold">Comisiones</h1>
   <%= link_to "Exportar a Excel", comisiones_path(format: :xlsx, tab: @tab),
-      class: "text-sm font-medium text-indigo-700 border border-indigo-200 hover:bg-indigo-50 px-3 py-1.5 rounded-lg" %>
+      class: "text-sm font-medium text-primary-700 border border-primary-200 hover:bg-primary-50 px-3 py-1.5 rounded-lg" %>
 </div>
 
 <div class="flex gap-1 mb-4 border-b border-gray-200">
   <%= link_to "Por cobrar", comisiones_path(tab: "por_cobrar"),
-      class: "px-4 py-2 text-sm font-medium rounded-t-lg #{@tab == 'por_cobrar' ? 'bg-white border border-b-white border-gray-200 text-indigo-700 -mb-px' : 'text-gray-500 hover:text-gray-800'}" %>
+      class: "px-4 py-2 text-sm font-medium rounded-t-lg #{@tab == 'por_cobrar' ? 'bg-white border border-b-white border-gray-200 text-primary-700 -mb-px' : 'text-gray-500 hover:text-gray-800'}" %>
   <%= link_to "Pagadas", comisiones_path(tab: "pagadas"),
-      class: "px-4 py-2 text-sm font-medium rounded-t-lg #{@tab == 'pagadas' ? 'bg-white border border-b-white border-gray-200 text-indigo-700 -mb-px' : 'text-gray-500 hover:text-gray-800'}" %>
+      class: "px-4 py-2 text-sm font-medium rounded-t-lg #{@tab == 'pagadas' ? 'bg-white border border-b-white border-gray-200 text-primary-700 -mb-px' : 'text-gray-500 hover:text-gray-800'}" %>
 </div>
 
 <% if @tab == "por_cobrar" %>
@@ -18,11 +18,15 @@
     <div class="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">Sin comisiones por cobrar.</div>
   <% end %>
   <% @grupos.each do |grupo, comisiones| %>
-    <div class="bg-white rounded-xl border border-gray-200 overflow-hidden mb-6">
+    <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
       <div class="flex items-center justify-between px-4 py-3 border-b border-gray-100 bg-gray-50">
         <h2 class="font-semibold text-gray-700">
           <% tipo, valor = grupo.split("_", 2) %>
-          <%= tipo == "broker" ? etiqueta_broker(valor) : "Directo — #{etiqueta_aseguradora(valor)}" %>
+          <% if tipo == "broker" %>
+            <%= valor.present? ? etiqueta_broker(valor) : "Broker (sin identificar)" %>
+          <% else %>
+            Directo — <%= etiqueta_aseguradora(valor) %>
+          <% end %>
         </h2>
         <p class="text-sm font-bold text-gray-800">
           Total: <%= moneda(comisiones.sum { |c| c.monto || 0 }) %>
@@ -44,16 +48,18 @@
           <% comisiones.each do |comision| %>
             <% poliza = comision.recibo.poliza %>
             <tr class="hover:bg-gray-50">
-              <td class="px-4 py-2"><%= link_to poliza.cliente.nombre, cliente_path(poliza.cliente), class: "text-indigo-700 hover:underline" %></td>
-              <td class="px-4 py-2"><%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza), class: "text-indigo-700 hover:underline" %></td>
+              <td class="px-4 py-2"><%= link_to poliza.cliente.nombre, cliente_path(poliza.cliente), class: "text-primary-700 hover:underline" %></td>
+              <td class="px-4 py-2"><%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza), class: "text-primary-700 hover:underline" %></td>
               <td class="px-4 py-2 whitespace-nowrap"><%= fecha(comision.recibo.fecha_vencimiento) %></td>
               <td class="px-4 py-2 text-right"><%= moneda(comision.prima_neta) %></td>
               <td class="px-4 py-2 text-right"><%= comision.porcentaje ? "#{comision.porcentaje.to_f}%" : "—" %></td>
               <td class="px-4 py-2 text-right font-medium"><%= moneda(comision.monto) %></td>
               <td class="px-4 py-2 text-right whitespace-nowrap">
-                <%= link_to "Editar", edit_comision_path(comision), class: "text-xs text-indigo-700 hover:underline mr-2" %>
-                <%= button_to "Marcar pagada", marcar_pagada_comision_path(comision), method: :patch,
-                    class: "text-xs font-semibold text-white bg-green-600 hover:bg-green-700 px-3 py-1.5 rounded-lg inline-block cursor-pointer" %>
+                <div class="flex items-center justify-end gap-1">
+                  <%= enlace_editar edit_comision_path(comision), titulo: "Editar comisión" %>
+                  <%= button_to "Marcar pagada", marcar_pagada_comision_path(comision), method: :patch,
+                      class: "text-xs font-semibold text-white bg-green-600 hover:bg-green-700 px-3 py-1.5 rounded-lg inline-block cursor-pointer" %>
+                </div>
               </td>
             </tr>
           <% end %>
@@ -62,7 +68,7 @@
     </div>
   <% end %>
 <% else %>
-  <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+  <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
     <table class="w-full text-sm">
       <thead class="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500">
         <tr>
@@ -81,17 +87,18 @@
         <% @comisiones.each do |comision| %>
           <% poliza = comision.recibo.poliza %>
           <tr class="hover:bg-gray-50">
-            <td class="px-4 py-2"><%= link_to poliza.cliente.nombre, cliente_path(poliza.cliente), class: "text-indigo-700 hover:underline" %></td>
-            <td class="px-4 py-2"><%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza), class: "text-indigo-700 hover:underline" %></td>
+            <td class="px-4 py-2"><%= link_to poliza.cliente.nombre, cliente_path(poliza.cliente), class: "text-primary-700 hover:underline" %></td>
+            <td class="px-4 py-2"><%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza), class: "text-primary-700 hover:underline" %></td>
             <td class="px-4 py-2"><%= poliza.broker.present? ? etiqueta_broker(poliza.broker) : "Directo — #{etiqueta_aseguradora(poliza.aseguradora)}" %></td>
             <td class="px-4 py-2 text-right font-medium"><%= moneda(comision.monto) %></td>
             <td class="px-4 py-2"><%= fecha(comision.fecha_cobro) %></td>
             <td class="px-4 py-2 text-right">
-              <%= link_to "Editar", edit_comision_path(comision), class: "text-xs text-indigo-700 hover:underline" %>
+              <%= enlace_editar edit_comision_path(comision), titulo: "Editar comisión" %>
             </td>
           </tr>
         <% end %>
       </tbody>
     </table>
+    <%= render "shared/paginacion", pagy: @pagy %>
   </div>
 <% end %>

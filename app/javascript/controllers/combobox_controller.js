@@ -39,7 +39,7 @@ export default class extends Controller {
       const opcion = document.createElement("button")
       opcion.type = "button"
       opcion.textContent = cliente.nombre
-      opcion.className = "block w-full text-left px-3 py-2 text-sm hover:bg-indigo-50"
+      opcion.className = "block w-full text-left px-3 py-2 text-sm hover:bg-primary-50"
       opcion.addEventListener("mousedown", () => this.elegir(cliente))
       this.listaTarget.appendChild(opcion)
     })

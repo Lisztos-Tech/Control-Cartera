@@ -6,7 +6,9 @@ class ClientesController < ApplicationController
     @clientes = @clientes.buscar(params[:q]) if params[:q].present?
 
     respond_to do |format|
-      format.html
+      format.html do
+        @pagy, @clientes = pagy(@clientes)
+      end
       # El combobox de "Nueva póliza" consume esta búsqueda.
       format.json { render json: @clientes.limit(10).select(:id, :nombre) }
     end

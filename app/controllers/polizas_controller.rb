@@ -37,11 +37,13 @@ class PolizasController < ApplicationController
   def canceladas
     @polizas = Poliza.no_vigentes.includes(:cliente).order(updated_at: :desc)
     @polizas = @polizas.buscar(params[:q]) if params[:q].present?
+    @pagy, @polizas = pagy(@polizas)
   end
 
   # Pólizas flaggeadas por el importador, con su motivo.
   def revision
     @polizas = Poliza.necesitan_revision.includes(:cliente).order(:created_at)
+    @pagy, @polizas = pagy(@polizas)
   end
 
   def reactivar
@@ -59,7 +61,7 @@ class PolizasController < ApplicationController
     params.require(:poliza).permit(
       :numero_poliza, :aseguradora, :canal, :broker, :clave_agente, :ramo,
       :cobertura, :forma_pago, :prima_total, :moneda, :detalle_bien,
-      :estatus, :motivo_cancelacion, :notas
+      :observaciones, :estatus, :motivo_cancelacion, :notas
     )
   end
 

@@ -21,7 +21,9 @@ class RecibosController < ApplicationController
 
   def update
     if @recibo.update(recibo_params)
-      redirect_to @recibo.poliza, notice: "Recibo actualizado."
+      # Vuelve a donde se abrió la edición (tabla de vencimientos o la póliza).
+      destino = params[:volver_a] == "vencimientos" ? vencimientos_path : @recibo.poliza
+      redirect_to destino, notice: "Recibo actualizado."
     else
       render :edit, status: :unprocessable_entity
     end
