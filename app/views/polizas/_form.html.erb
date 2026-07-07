@@ -1,0 +1,112 @@
+<%= form_with model: poliza, class: "bg-white rounded-xl border border-gray-200 p-6 max-w-3xl" do |f| %>
+  <% if poliza.errors.any? %>
+    <div class="mb-4 rounded-lg bg-red-50 border border-red-200 text-red-800 px-4 py-3 text-sm">
+      <ul class="list-disc list-inside">
+        <% poliza.errors.full_messages.each do |mensaje| %>
+          <li><%= mensaje %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="grid grid-cols-2 gap-4">
+    <% if poliza.new_record? %>
+      <div class="col-span-2" data-controller="combobox" data-combobox-url-value="<%= clientes_path(format: :json) %>">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Cliente</label>
+        <input type="text"
+               placeholder="Escribe para buscar; si no existe, se crea con ese nombre"
+               value="<%= poliza.cliente&.nombre %>"
+               name="poliza[cliente_nombre]"
+               autocomplete="off"
+               data-combobox-target="entrada"
+               data-action="input->combobox#buscar focus->combobox#buscar blur->combobox#cerrarLuego"
+               class="w-full rounded-lg border-gray-300">
+        <input type="hidden" name="poliza[cliente_id]" value="<%= poliza.cliente_id %>" data-combobox-target="clienteId">
+        <div data-combobox-target="lista"
+             class="hidden absolute z-20 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-56 overflow-auto w-full max-w-md"></div>
+        <p class="text-xs text-gray-500 mt-1" data-combobox-target="ayuda"></p>
+      </div>
+    <% else %>
+      <div class="col-span-2">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Cliente</label>
+        <p class="font-medium"><%= link_to poliza.cliente.nombre, cliente_path(poliza.cliente), class: "text-indigo-700 hover:underline" %></p>
+      </div>
+    <% end %>
+
+    <div>
+      <%= f.label :numero_poliza, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_field :numero_poliza, class: "w-full rounded-lg border-gray-300" %>
+      <% if poliza.persisted? && poliza.posible_duplicado? %>
+        <p class="text-xs text-amber-600 mt-1">Ya existe otra póliza con este número y aseguradora.</p>
+      <% end %>
+    </div>
+    <div>
+      <%= f.label :aseguradora, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.select :aseguradora, opciones_aseguradora, {}, { class: "w-full rounded-lg border-gray-300" } %>
+    </div>
+
+    <div>
+      <%= f.label :canal, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.select :canal, opciones_canal, {}, { class: "w-full rounded-lg border-gray-300" } %>
+    </div>
+    <div>
+      <%= f.label :broker, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.select :broker, opciones_broker, { include_blank: "— (solo canal broker)" }, { class: "w-full rounded-lg border-gray-300" } %>
+    </div>
+
+    <div>
+      <%= f.label :ramo, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.select :ramo, opciones_ramo, {}, { class: "w-full rounded-lg border-gray-300" } %>
+    </div>
+    <div>
+      <%= f.label :cobertura, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_field :cobertura, placeholder: "AMPLIA, LIMITADA, RC BASICO…", class: "w-full rounded-lg border-gray-300" %>
+    </div>
+
+    <div>
+      <%= f.label :forma_pago, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.select :forma_pago, opciones_forma_pago, {}, { class: "w-full rounded-lg border-gray-300" } %>
+    </div>
+    <div>
+      <%= f.label :clave_agente, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_field :clave_agente, placeholder: "10202, 92491…", class: "w-full rounded-lg border-gray-300" %>
+    </div>
+
+    <div>
+      <%= f.label :prima_total, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.number_field :prima_total, step: 0.01, min: 0, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+    <div>
+      <%= f.label :moneda, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.select :moneda, opciones_moneda, {}, { class: "w-full rounded-lg border-gray-300" } %>
+    </div>
+
+    <div class="col-span-2">
+      <%= f.label :detalle_bien, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_field :detalle_bien, placeholder: "FORD RANGER 2012, HABITT JACARANDAS…", class: "w-full rounded-lg border-gray-300" %>
+    </div>
+
+    <% if poliza.persisted? %>
+      <div>
+        <%= f.label :estatus, class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.select :estatus, opciones_estatus_poliza, {}, { class: "w-full rounded-lg border-gray-300" } %>
+      </div>
+      <div>
+        <%= f.label :motivo_cancelacion, class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.text_field :motivo_cancelacion, class: "w-full rounded-lg border-gray-300" %>
+      </div>
+    <% end %>
+
+    <div class="col-span-2">
+      <%= f.label :notas, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_area :notas, rows: 3, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+  </div>
+
+  <div class="mt-6 flex gap-3">
+    <%= f.submit poliza.new_record? ? "Crear póliza" : "Guardar cambios",
+        class: "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-lg cursor-pointer" %>
+    <%= link_to "Cancelar", poliza.persisted? ? poliza_path(poliza) : root_path,
+        class: "text-gray-600 hover:text-gray-900 px-4 py-2" %>
+  </div>
+<% end %>

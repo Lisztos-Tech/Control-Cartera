@@ -1,0 +1,41 @@
+<%= form_with model: recibo, url: url, method: metodo, class: "bg-white rounded-xl border border-gray-200 p-6 max-w-xl" do |f| %>
+  <% if recibo.errors.any? %>
+    <div class="mb-4 rounded-lg bg-red-50 border border-red-200 text-red-800 px-4 py-3 text-sm">
+      <ul class="list-disc list-inside">
+        <% recibo.errors.full_messages.each do |mensaje| %>
+          <li><%= mensaje %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div>
+      <%= f.label :numero_recibo, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_field :numero_recibo, placeholder: "2/12, 3.SEM…", class: "w-full rounded-lg border-gray-300" %>
+    </div>
+    <div>
+      <%= f.label :fecha_vencimiento, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.date_field :fecha_vencimiento, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+    <div>
+      <%= f.label :importe, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.number_field :importe, step: 0.01, min: 0, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+    <div>
+      <%= f.label :estatus, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.select :estatus, [ [ "Pendiente", "pendiente" ], [ "Pagado", "pagado" ] ], {}, { class: "w-full rounded-lg border-gray-300" } %>
+    </div>
+    <div>
+      <%= f.label :fecha_pago, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.date_field :fecha_pago, class: "w-full rounded-lg border-gray-300" %>
+      <p class="text-xs text-gray-500 mt-1">Solo si el recibo ya está pagado.</p>
+    </div>
+  </div>
+
+  <div class="mt-6 flex gap-3">
+    <%= f.submit recibo.new_record? ? "Crear recibo" : "Guardar cambios",
+        class: "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-lg cursor-pointer" %>
+    <%= link_to "Cancelar", poliza_path(recibo.poliza), class: "text-gray-600 hover:text-gray-900 px-4 py-2" %>
+  </div>
+<% end %>

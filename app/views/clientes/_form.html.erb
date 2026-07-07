@@ -1,0 +1,37 @@
+<%= form_with model: cliente, class: "bg-white rounded-xl border border-gray-200 p-6 max-w-xl" do |f| %>
+  <% if cliente.errors.any? %>
+    <div class="mb-4 rounded-lg bg-red-50 border border-red-200 text-red-800 px-4 py-3 text-sm">
+      <ul class="list-disc list-inside">
+        <% cliente.errors.full_messages.each do |mensaje| %>
+          <li><%= mensaje %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="space-y-4">
+    <div>
+      <%= f.label :nombre, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_field :nombre, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+    <div>
+      <%= f.label :telefono, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.telephone_field :telefono, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+    <div>
+      <%= f.label :email, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.email_field :email, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+    <div>
+      <%= f.label :notas, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.text_area :notas, rows: 3, class: "w-full rounded-lg border-gray-300" %>
+    </div>
+  </div>
+
+  <div class="mt-6 flex gap-3">
+    <%= f.submit cliente.new_record? ? "Crear cliente" : "Guardar cambios",
+        class: "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-lg cursor-pointer" %>
+    <%= link_to "Cancelar", cliente.persisted? ? cliente_path(cliente) : clientes_path,
+        class: "text-gray-600 hover:text-gray-900 px-4 py-2" %>
+  </div>
+<% end %>

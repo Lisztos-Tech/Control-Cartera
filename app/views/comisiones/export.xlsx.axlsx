@@ -1,0 +1,33 @@
+wb = xlsx_package.workbook
+
+wb.add_worksheet(name: @tab == "pagadas" ? "Comisiones pagadas" : "Comisiones por cobrar") do |hoja|
+  encabezado = wb.styles.add_style(b: true, bg_color: "E5E7EB")
+  fecha_estilo = wb.styles.add_style(format_code: "dd/mm/yyyy")
+  dinero = wb.styles.add_style(format_code: "$#,##0.00")
+
+  hoja.add_row [ "Cliente", "Póliza", "Aseguradora", "Canal / Broker", "Vence recibo",
+                 "Prima neta", "%", "Comisión", "Estatus", "Fecha de cobro" ], style: encabezado
+
+  @comisiones.each do |comision|
+    poliza = comision.recibo.poliza
+    hoja.add_row [
+      poliza.cliente.nombre,
+      poliza.numero_poliza,
+      t("app.aseguradoras.#{poliza.aseguradora}"),
+      poliza.broker.present? ? t("app.brokers.#{poliza.broker}") : t("app.canales.#{poliza.canal}"),
+      comision.recibo.fecha_vencimiento,
+      comision.prima_neta&.to_f,
+      comision.porcentaje&.to_f,
+      comision.monto&.to_f,
+      t("app.estatus_comision.#{comision.estatus}"),
+      comision.fecha_cobro
+    ], style: [ nil, nil, nil, nil, fecha_estilo, dinero, nil, dinero, nil, fecha_estilo ]
+  end
+
+  total = @comisiones.sum { |c| c.monto || 0 }
+  hoja.add_row []
+  hoja.add_row [ "TOTAL", nil, nil, nil, nil, nil, nil, total.to_f ],
+               style: [ encabezado, nil, nil, nil, nil, nil, nil, dinero ]
+
+  hoja.column_widths 34, 14, 14, 16, 12, 12, 8, 12, 12, 12
+end

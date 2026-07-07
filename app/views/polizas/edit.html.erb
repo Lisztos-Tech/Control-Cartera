@@ -1,0 +1,3 @@
+<% content_for :title, "Editar póliza — #{t('app.nombre')}" %>
+<h1 class="text-2xl font-bold mb-4">Editar póliza <%= @poliza.numero_poliza || "s/n" %></h1>
+<%= render "form", poliza: @poliza %>
