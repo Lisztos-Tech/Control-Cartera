@@ -24,7 +24,7 @@ gem "bcrypt", "~> 3.1.7"
 gem "rails-i18n", "~> 8.0"
 
 # Lectura del Excel fuente (importador)
-gem "roo", "~> 2.10"
+gem "roo", "~> 3.0"
 gem "csv" # requerido por roo en Ruby >= 3.4
 # Exportación a XLSX
 gem "caxlsx", "~> 4.1"
