@@ -14,3 +14,16 @@ module ActiveSupport
     # Add more helper methods to be used by all tests here...
   end
 end
+
+class ActionDispatch::IntegrationTest
+  # Cuenta única: casi todas las pantallas requieren sesión.
+  setup { iniciar_sesion }
+
+  def iniciar_sesion(user = users(:irma))
+    post session_url, params: { email_address: user.email_address, password: "password" }
+  end
+
+  def cerrar_sesion
+    delete session_url
+  end
+end

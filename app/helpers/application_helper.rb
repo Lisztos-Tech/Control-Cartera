@@ -9,7 +9,7 @@ module ApplicationHelper
     return "—" if importe.blank?
 
     simbolo = moneda == "usd" ? "US$" : "$"
-    number_to_currency(importe, unit: simbolo, delimiter: ",", separator: ".")
+    number_to_currency(importe, unit: simbolo, delimiter: ",", separator: ".", format: "%u%n")
   end
 
   def fecha(valor)

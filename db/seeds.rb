@@ -1,3 +1,9 @@
+# Cuenta única de la app. En producción define ADMIN_EMAIL / ADMIN_PASSWORD
+# la primera vez; después cámbiala por consola si hace falta.
+User.find_or_create_by!(email_address: ENV.fetch("ADMIN_EMAIL", "irma@example.com")) do |user|
+  user.password = ENV.fetch("ADMIN_PASSWORD", "cambiame123")
+end
+
 # Datos sintéticos de desarrollo: 10 clientes, ~20 pólizas, recibos variados.
 # Idempotente: no duplica si ya corrió.
 
