@@ -1,0 +1,16 @@
+# Imagen de desarrollo (la de producción es ./Dockerfile)
+FROM ruby:3.4-slim
+
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y build-essential git libpq-dev libyaml-dev pkg-config curl && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /rails
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+COPY . .
+
+EXPOSE 3000
+CMD ["bin/dev"]

@@ -1,0 +1,46 @@
+auto_juan:
+  cliente: juan
+  numero_poliza: "1234567"
+  aseguradora: inbursa
+  canal: directo
+  clave_agente: "10202"
+  ramo: autos
+  cobertura: AMPLIA
+  forma_pago: mensual
+  prima_total: 12000.00
+  moneda: mxn
+  detalle_bien: FORD RANGER 2012
+  estatus: vigente
+
+vida_maria:
+  cliente: maria
+  numero_poliza: "VI-889"
+  aseguradora: inbursa
+  canal: directo
+  ramo: vida
+  forma_pago: anual
+  prima_total: 1500.00
+  moneda: usd
+  estatus: vigente
+
+broker_maria:
+  cliente: maria
+  numero_poliza: "Q-5544"
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  ramo: autos
+  forma_pago: contado
+  prima_total: 8000.00
+  moneda: mxn
+  estatus: vigente
+
+cancelada_juan:
+  cliente: juan
+  numero_poliza: "OLD-1"
+  aseguradora: qualitas
+  canal: directo
+  ramo: autos
+  forma_pago: anual
+  estatus: cancelada
+  motivo_cancelacion: no se renovó

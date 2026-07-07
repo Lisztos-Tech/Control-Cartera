@@ -1,0 +1,28 @@
+vencido_juan:
+  poliza: auto_juan
+  numero_recibo: "2/12"
+  fecha_vencimiento: <%= Date.current - 10 %>
+  importe: 1000.00
+  estatus: pendiente
+
+proximo_juan:
+  poliza: auto_juan
+  numero_recibo: "3/12"
+  fecha_vencimiento: <%= Date.current + 20 %>
+  importe: 1000.00
+  estatus: pendiente
+
+lejano_maria:
+  poliza: vida_maria
+  numero_recibo: "1/1"
+  fecha_vencimiento: <%= Date.current + 90 %>
+  importe: 1500.00
+  estatus: pendiente
+
+pagado_broker:
+  poliza: broker_maria
+  numero_recibo: "1/1"
+  fecha_vencimiento: <%= Date.current - 30 %>
+  importe: 8000.00
+  fecha_pago: <%= Date.current - 28 %>
+  estatus: pagado

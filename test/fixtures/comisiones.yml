@@ -1,0 +1,6 @@
+comision_broker:
+  recibo: pagado_broker
+  prima_neta: 6800.00
+  porcentaje: 10.0
+  monto: 680.00
+  estatus: por_cobrar
