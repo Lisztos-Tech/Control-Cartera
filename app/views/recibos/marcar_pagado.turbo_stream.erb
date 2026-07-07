@@ -1,0 +1,22 @@
+<%= turbo_stream.replace dom_id(@recibo) do %>
+  <tr id="<%= dom_id(@recibo) %>" class="bg-green-50">
+    <td class="px-3 py-2"><span class="inline-block h-3 w-3 rounded-full bg-green-500"></span></td>
+    <td class="px-3 py-3 whitespace-nowrap" colspan="8">
+      <span class="font-medium text-green-800">
+        Recibo de <%= @recibo.poliza.cliente.nombre %> marcado como pagado (<%= fecha(@recibo.fecha_pago) %>).
+      </span>
+      <% if @siguiente %>
+        <span class="text-gray-600 ml-2">
+          ¿Crear el siguiente recibo con vencimiento <strong><%= fecha(@siguiente.fecha_vencimiento) %></strong>
+          por <strong><%= moneda(@siguiente.importe, @recibo.poliza.moneda) %></strong>?
+        </span>
+      <% end %>
+    </td>
+    <td class="px-3 py-2 text-right whitespace-nowrap">
+      <% if @siguiente %>
+        <%= button_to "Crear siguiente recibo", crear_siguiente_recibo_path(@recibo), method: :post,
+            class: "text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 rounded-lg cursor-pointer" %>
+      <% end %>
+    </td>
+  </tr>
+<% end %>

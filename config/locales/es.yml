@@ -1,0 +1,100 @@
+es:
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      largo: "%d de %B de %Y"
+  number:
+    currency:
+      format:
+        unit: "$"
+        delimiter: ","
+        separator: "."
+        precision: 2
+  app:
+    nombre: "Control de Pólizas"
+    aseguradoras:
+      inbursa: "Inbursa"
+      qualitas: "Quálitas"
+      ana_seguros: "ANA Seguros"
+      seguros_atlas: "Seguros Atlas"
+      otra: "Otra"
+    canales:
+      directo: "Directo"
+      broker: "Broker"
+    brokers:
+      cano: "Broker Cano"
+      carmona: "Broker Carmona"
+    ramos:
+      autos: "Autos"
+      moto: "Moto"
+      camion: "Camión"
+      vida: "Vida"
+      gmm: "GMM"
+      danos: "Daños"
+      rc: "RC"
+      comercio: "Comercio"
+      otro: "Otro"
+    formas_pago:
+      mensual: "Mensual"
+      trimestral: "Trimestral"
+      semestral: "Semestral"
+      anual: "Anual"
+      contado: "Contado"
+    monedas:
+      mxn: "MXN"
+      usd: "USD"
+    estatus_poliza:
+      vigente: "Vigente"
+      cancelada: "Cancelada"
+      no_renovada: "No renovada"
+      perdida_total: "Pérdida total"
+    estatus_recibo:
+      pendiente: "Pendiente"
+      pagado: "Pagado"
+      vencido: "Vencido"
+    estatus_comision:
+      por_cobrar: "Por cobrar"
+      pagada: "Pagada"
+  activerecord:
+    models:
+      cliente: "Cliente"
+      poliza: "Póliza"
+      recibo: "Recibo"
+      comision: "Comisión"
+    attributes:
+      cliente:
+        nombre: "Nombre"
+        telefono: "Teléfono"
+        email: "Email"
+        notas: "Notas"
+      poliza:
+        cliente: "Cliente"
+        numero_poliza: "Número de póliza"
+        aseguradora: "Aseguradora"
+        canal: "Canal"
+        broker: "Broker"
+        clave_agente: "Clave de agente"
+        ramo: "Ramo"
+        cobertura: "Cobertura"
+        forma_pago: "Forma de pago"
+        prima_total: "Prima total"
+        moneda: "Moneda"
+        detalle_bien: "Detalle del bien"
+        estatus: "Estatus"
+        motivo_cancelacion: "Motivo de cancelación"
+        notas: "Notas"
+        necesita_revision: "Necesita revisión"
+        motivo_revision: "Motivo de revisión"
+      recibo:
+        numero_recibo: "Número de recibo"
+        fecha_vencimiento: "Fecha de vencimiento"
+        importe: "Importe"
+        fecha_pago: "Fecha de pago"
+        estatus: "Estatus"
+      comision:
+        prima_neta: "Prima neta"
+        porcentaje: "Porcentaje"
+        monto: "Monto"
+        estatus: "Estatus"
+        fecha_cobro: "Fecha de cobro"
+        notas: "Notas"
