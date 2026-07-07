@@ -34,9 +34,18 @@ class DashboardControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "exporta xlsx respetando filtros" do
+  test "exporta xlsx respetando filtros y el archivo abre sin errores" do
     get root_path(format: :xlsx, aseguradora: "inbursa")
     assert_response :success
     assert_equal Mime[:xlsx].to_s, response.media_type
+
+    archivo = Rails.root.join("tmp/export_test.xlsx")
+    File.binwrite(archivo, response.body)
+    libro = Roo::Excelx.new(archivo.to_s)
+    assert_equal "Vencimientos", libro.sheets.first
+    assert_equal "Cliente", libro.cell(1, 2)
+    # Filtrado: solo pólizas Inbursa
+    contenido = (2..libro.last_row).map { |fila| libro.cell(fila, 4) }
+    assert contenido.all? { |aseg| aseg == "Inbursa" }
   end
 end
