@@ -67,11 +67,13 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     visit edit_poliza_path(poliza)
     fill_in "Cobertura", with: "AMPLIA PLUS"
     fill_in "Detalle del bien", with: "FORD RANGER 2014"
-    click_button "Guardar cambios"
+    enviar_formulario_principal
 
-    assert_current_path poliza_path(poliza)
-    assert_text "Póliza actualizada"
-    assert_text "AMPLIA PLUS"
+    using_wait_time(10) do
+      assert_current_path poliza_path(poliza)
+      assert_text "Póliza actualizada"
+      assert_text "AMPLIA PLUS"
+    end
     poliza.reload
     assert_equal "FORD RANGER 2014", poliza.detalle_bien
     assert_not poliza.necesita_revision

@@ -34,4 +34,11 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
       select.closest("form").requestSubmit();
     JS
   end
+
+  def enviar_formulario_principal
+    page.execute_script(<<~JS)
+      const form = document.querySelector("main form");
+      if (form) form.requestSubmit();
+    JS
+  end
 end
