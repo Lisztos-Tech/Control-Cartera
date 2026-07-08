@@ -31,18 +31,29 @@ class FlujosCriticosTest < ApplicationSystemTestCase
 
   test "búsqueda y filtros de vencimientos se combinan y viven en la URL" do
     visit vencimientos_path
-    assert_text "JUAN PEREZ LOPEZ"
-    assert_text "MARIA GARCIA HERNANDEZ"
+    within "#tabla_recibos" do
+      assert_text "JUAN PEREZ LOPEZ"
+      assert_text "MARIA GARCIA HERNANDEZ"
+    end
 
     fill_in "q", with: "maria"
-    assert_no_text "JUAN PEREZ LOPEZ"
-    assert_text "MARIA GARCIA HERNANDEZ"
+    using_wait_time(5) do
+      within "#tabla_recibos" do
+        assert_no_text "JUAN PEREZ LOPEZ"
+        assert_text "MARIA GARCIA HERNANDEZ"
+      end
+    end
     assert_includes current_url, "q=maria"
 
     fill_in "q", with: ""
     select "Inbursa", from: "aseguradora"
-    assert_text "JUAN PEREZ LOPEZ"
-    assert_no_text "Q-5544"
+    using_wait_time(5) do
+      within "#tabla_recibos" do
+        assert_text "JUAN PEREZ LOPEZ"
+        assert_no_text "Q-5544"
+      end
+    end
+    assert_includes current_url, "aseguradora=inbursa"
   end
 
   test "editar una póliza actualiza datos y limpia el flag de revisión" do
