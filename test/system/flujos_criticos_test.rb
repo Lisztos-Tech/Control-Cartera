@@ -37,6 +37,7 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     end
 
     fill_in "q", with: "maria"
+    enviar_filtros_busqueda
     using_wait_time(5) do
       within "#tabla_recibos" do
         assert_no_text "JUAN PEREZ LOPEZ"
@@ -46,6 +47,7 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     assert_includes current_url, "q=maria"
 
     fill_in "q", with: ""
+    enviar_filtros_busqueda
     select "Inbursa", from: "aseguradora"
     using_wait_time(5) do
       within "#tabla_recibos" do

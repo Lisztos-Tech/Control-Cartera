@@ -16,4 +16,9 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     click_button "Entrar"
     assert_text "Vencimientos"
   end
+
+  # Headless Chrome on CI sometimes skips Stimulus input handlers used for debounce.
+  def enviar_filtros_busqueda
+    find("[data-controller~='busqueda']").execute_script("this.requestSubmit()")
+  end
 end
