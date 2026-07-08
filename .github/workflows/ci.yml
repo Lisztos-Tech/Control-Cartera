@@ -95,7 +95,11 @@ jobs:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@localhost:5432
           # REDIS_URL: redis://localhost:6379/0
-        run: bin/rails db:test:prepare test test:system
+        run: |
+          # Runner image ships an older chromedriver than google-chrome-stable;
+          # drop it so Selenium Manager downloads a matching driver.
+          sudo rm -f /usr/bin/chromedriver
+          bin/rails db:test:prepare test test:system
 
       - name: Keep screenshots from failed system tests
         uses: actions/upload-artifact@v4

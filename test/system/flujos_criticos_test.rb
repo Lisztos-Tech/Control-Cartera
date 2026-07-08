@@ -54,6 +54,7 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     fill_in "Detalle del bien", with: "FORD RANGER 2014"
     click_button "Guardar cambios"
 
+    assert_current_path poliza_path(poliza)
     assert_text "Póliza actualizada"
     assert_text "AMPLIA PLUS"
     poliza.reload
