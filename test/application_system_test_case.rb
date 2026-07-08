@@ -17,8 +17,21 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     assert_text "Vencimientos"
   end
 
-  # Headless Chrome on CI sometimes skips Stimulus input handlers used for debounce.
-  def enviar_filtros_busqueda
-    find("[data-controller~='busqueda']").execute_script("this.requestSubmit()")
+  # Headless Chrome on CI can miss Stimulus debounce handlers; set value and submit in-page.
+  def buscar_vencimientos(termino)
+    page.execute_script(<<~JS, termino)
+      const input = document.querySelector("input[name='q']");
+      input.value = arguments[0];
+      input.closest("form").requestSubmit();
+    JS
+  end
+
+  def filtrar_aseguradora(valor)
+    page.execute_script(<<~JS, valor)
+      const select = document.querySelector("select[name='aseguradora']");
+      select.value = arguments[0];
+      select.dispatchEvent(new Event("change", { bubbles: true }));
+      select.closest("form").requestSubmit();
+    JS
   end
 end

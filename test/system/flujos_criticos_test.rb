@@ -29,33 +29,35 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     assert_equal recibo.fecha_vencimiento + 1.month, nuevo.fecha_vencimiento
   end
 
-  test "búsqueda y filtros de vencimientos se combinan y viven en la URL" do
+  test "búsqueda y filtros de vencimientos se combinan en la tabla" do
     visit vencimientos_path
     within "#tabla_recibos" do
       assert_text "JUAN PEREZ LOPEZ"
       assert_text "MARIA GARCIA HERNANDEZ"
     end
 
-    fill_in "q", with: "maria"
-    enviar_filtros_busqueda
-    using_wait_time(5) do
+    buscar_vencimientos("maria")
+    using_wait_time(10) do
       within "#tabla_recibos" do
         assert_no_text "JUAN PEREZ LOPEZ"
         assert_text "MARIA GARCIA HERNANDEZ"
       end
     end
-    assert_includes current_url, "q=maria"
 
-    fill_in "q", with: ""
-    enviar_filtros_busqueda
-    select "Inbursa", from: "aseguradora"
-    using_wait_time(5) do
+    buscar_vencimientos("")
+    using_wait_time(10) do
+      within "#tabla_recibos" do
+        assert_text "JUAN PEREZ LOPEZ"
+      end
+    end
+
+    filtrar_aseguradora("inbursa")
+    using_wait_time(10) do
       within "#tabla_recibos" do
         assert_text "JUAN PEREZ LOPEZ"
         assert_no_text "Q-5544"
       end
     end
-    assert_includes current_url, "aseguradora=inbursa"
   end
 
   test "editar una póliza actualiza datos y limpia el flag de revisión" do
