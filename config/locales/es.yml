@@ -1,8 +1,8 @@
 es:
   date:
     formats:
-      default: "%d/%m/%Y"
-      largo: "%d de %B de %Y"
+      default: "%d. %B %Y"
+      largo: "%d. %B %Y"
   number:
     currency:
       format:
@@ -12,10 +12,13 @@ es:
         precision: 2
   app:
     nombre: "Control Cartera"
+    footer:
+      desarrollado_por: "Plataforma desarrollada por"
+      empresa: "Lisztos Tech"
     aseguradoras:
       inbursa: "Inbursa"
-      qualitas: "Quálitas"
-      ana_seguros: "ANA Seguros"
+      qualitas: "Qualitas"
+      ana_seguros: "Ana Seguros"
       seguros_atlas: "Seguros Atlas"
       otra: "Otra"
     canales:
@@ -55,6 +58,14 @@ es:
     estatus_comision:
       por_cobrar: "Por cobrar"
       pagada: "Pagada"
+  sesion:
+    titulo: "Bienvenido de nuevo"
+    subtitulo: "Inicia sesión en tu cuenta de %{app}"
+    email: "Correo electrónico"
+    email_placeholder: "tu@correo.com"
+    password: "Contraseña"
+    entrar: "Entrar"
+    descripcion: "Gestión de pólizas, vencimientos y comisiones."
   activerecord:
     models:
       cliente: "Cliente"

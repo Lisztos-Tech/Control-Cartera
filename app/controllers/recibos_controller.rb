@@ -20,10 +20,19 @@ class RecibosController < ApplicationController
   end
 
   def update
-    if @recibo.update(recibo_params)
-      # Vuelve a donde se abrió la edición (tabla de vencimientos o la póliza).
+    @poliza = @recibo.poliza
+    ok = false
+
+    ActiveRecord::Base.transaction do
+      ok = @recibo.update(recibo_params)
+      ok &&= @poliza.update(poliza_params) if params[:volver_a] == "vencimientos" && params[:poliza].present?
+      raise ActiveRecord::Rollback unless ok
+    end
+
+    if ok
       destino = params[:volver_a] == "vencimientos" ? vencimientos_path : @recibo.poliza
-      redirect_to destino, notice: "Recibo actualizado."
+      notice = params[:volver_a] == "vencimientos" ? "Vencimiento actualizado." : "Recibo actualizado."
+      redirect_to destino, notice: notice
     else
       render :edit, status: :unprocessable_entity
     end
@@ -58,7 +67,7 @@ class RecibosController < ApplicationController
 
     respond_to do |format|
       format.turbo_stream
-      format.html { redirect_back fallback_location: root_path, notice: "Siguiente recibo creado (vence #{l @nuevo.fecha_vencimiento})." }
+      format.html { redirect_back fallback_location: root_path, notice: "Siguiente recibo creado (vence #{helpers.fecha(@nuevo.fecha_vencimiento)})." }
     end
   end
 
@@ -70,5 +79,12 @@ class RecibosController < ApplicationController
 
   def recibo_params
     params.require(:recibo).permit(:numero_recibo, :fecha_vencimiento, :importe, :fecha_pago, :estatus)
+  end
+
+  def poliza_params
+    params.require(:poliza).permit(
+      :numero_poliza, :aseguradora, :ramo, :detalle_bien,
+      :observaciones, :forma_pago, :moneda
+    )
   end
 end

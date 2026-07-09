@@ -43,7 +43,7 @@
             <%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza),
                 class: "text-primary-700 hover:underline font-medium" %>
           </td>
-          <td class="px-4 py-2"><%= etiqueta_aseguradora(poliza.aseguradora) %></td>
+          <td class="px-4 py-2"><%= badge_aseguradora(poliza.aseguradora) %></td>
           <td class="px-4 py-2"><%= etiqueta_ramo(poliza.ramo) %></td>
           <td class="px-4 py-2 text-gray-500"><%= poliza.detalle_bien.presence || "—" %></td>
           <td class="px-4 py-2"><%= fecha(poliza.proximo_vencimiento) %></td>

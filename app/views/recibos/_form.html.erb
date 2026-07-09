@@ -1,12 +1,59 @@
-<%= form_with model: recibo, url: url, method: metodo, class: "bg-white rounded-xl border border-gray-200 p-6 max-w-xl" do |f| %>
-  <% if recibo.errors.any? %>
+<% desde_vencimientos = params[:volver_a] == "vencimientos" %>
+<% poliza = recibo.poliza %>
+<%= form_with model: recibo, url: url, method: metodo,
+      class: "bg-white rounded-xl border border-gray-200 p-6 #{desde_vencimientos ? "max-w-3xl" : "max-w-xl"}" do |f| %>
+  <% errores = recibo.errors.full_messages + (desde_vencimientos ? poliza.errors.full_messages : []) %>
+  <% if errores.any? %>
     <div class="mb-4 rounded-lg bg-red-50 border border-red-200 text-red-800 px-4 py-3 text-sm">
       <ul class="list-disc list-inside">
-        <% recibo.errors.full_messages.each do |mensaje| %>
+        <% errores.each do |mensaje| %>
           <li><%= mensaje %></li>
         <% end %>
       </ul>
     </div>
+  <% end %>
+
+  <% if desde_vencimientos %>
+    <h2 class="font-semibold text-gray-700 mb-3">Póliza</h2>
+    <p class="text-sm text-gray-500 mb-4">
+      Cliente:
+      <%= link_to poliza.cliente.nombre, cliente_path(poliza.cliente), class: "text-primary-700 hover:underline font-medium" %>
+    </p>
+
+    <%= fields_for :poliza, poliza do |pf| %>
+      <div class="grid grid-cols-2 gap-4 mb-6 pb-6 border-b border-gray-100">
+        <div>
+          <%= pf.label :numero_poliza, "Póliza", class: "block text-sm font-medium text-gray-700 mb-1" %>
+          <%= pf.text_field :numero_poliza, class: "w-full rounded-lg border-gray-300" %>
+        </div>
+        <div>
+          <%= pf.label :aseguradora, class: "block text-sm font-medium text-gray-700 mb-1" %>
+          <%= pf.select :aseguradora, opciones_aseguradora, {}, { class: "w-full rounded-lg border-gray-300" } %>
+        </div>
+        <div>
+          <%= pf.label :ramo, class: "block text-sm font-medium text-gray-700 mb-1" %>
+          <%= pf.select :ramo, opciones_ramo, {}, { class: "w-full rounded-lg border-gray-300" } %>
+        </div>
+        <div>
+          <%= pf.label :forma_pago, "Forma de pago", class: "block text-sm font-medium text-gray-700 mb-1" %>
+          <%= pf.select :forma_pago, opciones_forma_pago, {}, { class: "w-full rounded-lg border-gray-300" } %>
+        </div>
+        <div>
+          <%= pf.label :moneda, class: "block text-sm font-medium text-gray-700 mb-1" %>
+          <%= pf.select :moneda, opciones_moneda, {}, { class: "w-full rounded-lg border-gray-300" } %>
+        </div>
+        <div class="col-span-2">
+          <%= pf.label :detalle_bien, "Tipo / bien asegurado", class: "block text-sm font-medium text-gray-700 mb-1" %>
+          <%= pf.text_field :detalle_bien, placeholder: "FORD RANGER 2012, HABITT JACARANDAS…", class: "w-full rounded-lg border-gray-300" %>
+        </div>
+        <div class="col-span-2">
+          <%= pf.label :observaciones, class: "block text-sm font-medium text-gray-700 mb-1" %>
+          <%= pf.text_field :observaciones, class: "w-full rounded-lg border-gray-300" %>
+        </div>
+      </div>
+    <% end %>
+
+    <h2 class="font-semibold text-gray-700 mb-3">Recibo</h2>
   <% end %>
 
   <div class="grid grid-cols-2 gap-4">
@@ -15,7 +62,7 @@
       <%= f.text_field :numero_recibo, placeholder: "2/12, 3.SEM…", class: "w-full rounded-lg border-gray-300" %>
     </div>
     <div>
-      <%= f.label :fecha_vencimiento, class: "block text-sm font-medium text-gray-700 mb-1" %>
+      <%= f.label :fecha_vencimiento, "Vence", class: "block text-sm font-medium text-gray-700 mb-1" %>
       <%= f.date_field :fecha_vencimiento, class: "w-full rounded-lg border-gray-300" %>
     </div>
     <div>
@@ -37,7 +84,7 @@
     <%= f.submit recibo.new_record? ? "Crear recibo" : "Guardar cambios",
         class: "bg-primary-600 hover:bg-primary-700 text-white font-semibold px-5 py-2 rounded-lg cursor-pointer" %>
     <%= link_to "Cancelar",
-        params[:volver_a] == "vencimientos" ? vencimientos_path : poliza_path(recibo.poliza),
+        desde_vencimientos ? vencimientos_path : poliza_path(recibo.poliza),
         class: "text-gray-600 hover:text-gray-900 px-4 py-2" %>
   </div>
 <% end %>

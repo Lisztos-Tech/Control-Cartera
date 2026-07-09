@@ -1,0 +1,2262 @@
+---
+- id: 364
+  poliza_id: 405
+  numero_recibo:
+  fecha_vencimiento: '2026-02-24'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 365
+  poliza_id: 406
+  numero_recibo:
+  fecha_vencimiento: '2026-06-05'
+  importe: '2290.62'
+  fecha_pago:
+  estatus: pendiente
+- id: 366
+  poliza_id: 407
+  numero_recibo:
+  fecha_vencimiento: '2026-06-17'
+  importe: '8037.64'
+  fecha_pago:
+  estatus: pendiente
+- id: 367
+  poliza_id: 408
+  numero_recibo:
+  fecha_vencimiento: '2026-07-01'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 368
+  poliza_id: 409
+  numero_recibo:
+  fecha_vencimiento: '2026-07-10'
+  importe: '1528.21'
+  fecha_pago:
+  estatus: pendiente
+- id: 369
+  poliza_id: 410
+  numero_recibo:
+  fecha_vencimiento: '2026-07-11'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 370
+  poliza_id: 411
+  numero_recibo:
+  fecha_vencimiento: '2026-07-14'
+  importe: '3751.44'
+  fecha_pago:
+  estatus: pendiente
+- id: 371
+  poliza_id: 412
+  numero_recibo:
+  fecha_vencimiento: '2026-07-19'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 372
+  poliza_id: 413
+  numero_recibo:
+  fecha_vencimiento: '2026-07-20'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 373
+  poliza_id: 414
+  numero_recibo:
+  fecha_vencimiento: '2026-07-21'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 374
+  poliza_id: 415
+  numero_recibo:
+  fecha_vencimiento: '2026-08-04'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 375
+  poliza_id: 416
+  numero_recibo:
+  fecha_vencimiento: '2026-08-05'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 376
+  poliza_id: 417
+  numero_recibo:
+  fecha_vencimiento: '2026-08-13'
+  importe: '7027.28'
+  fecha_pago:
+  estatus: pendiente
+- id: 377
+  poliza_id: 418
+  numero_recibo:
+  fecha_vencimiento: '2026-08-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 378
+  poliza_id: 419
+  numero_recibo:
+  fecha_vencimiento: '2026-08-18'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 379
+  poliza_id: 420
+  numero_recibo:
+  fecha_vencimiento: '2026-08-20'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 380
+  poliza_id: 421
+  numero_recibo:
+  fecha_vencimiento: '2026-08-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 381
+  poliza_id: 422
+  numero_recibo:
+  fecha_vencimiento: '2026-08-24'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 382
+  poliza_id: 405
+  numero_recibo:
+  fecha_vencimiento: '2026-08-24'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 383
+  poliza_id: 423
+  numero_recibo:
+  fecha_vencimiento: '2026-08-25'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 384
+  poliza_id: 424
+  numero_recibo:
+  fecha_vencimiento: '2026-08-27'
+  importe: '269.0'
+  fecha_pago:
+  estatus: pendiente
+- id: 385
+  poliza_id: 425
+  numero_recibo:
+  fecha_vencimiento: '2026-08-30'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 386
+  poliza_id: 426
+  numero_recibo:
+  fecha_vencimiento: '2026-08-31'
+  importe: '2273.0'
+  fecha_pago:
+  estatus: pendiente
+- id: 387
+  poliza_id: 427
+  numero_recibo:
+  fecha_vencimiento: '2026-09-05'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 388
+  poliza_id: 428
+  numero_recibo:
+  fecha_vencimiento: '2026-09-06'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 389
+  poliza_id: 429
+  numero_recibo:
+  fecha_vencimiento: '2026-09-07'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 390
+  poliza_id: 430
+  numero_recibo:
+  fecha_vencimiento: '2026-09-11'
+  importe: '608.7'
+  fecha_pago:
+  estatus: pendiente
+- id: 391
+  poliza_id: 431
+  numero_recibo:
+  fecha_vencimiento: '2026-09-13'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 392
+  poliza_id: 432
+  numero_recibo:
+  fecha_vencimiento: '2026-09-15'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 393
+  poliza_id: 433
+  numero_recibo:
+  fecha_vencimiento: '2026-09-16'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 394
+  poliza_id: 434
+  numero_recibo:
+  fecha_vencimiento: '2026-09-19'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 395
+  poliza_id: 435
+  numero_recibo:
+  fecha_vencimiento: '2026-09-28'
+  importe: '1528.21'
+  fecha_pago:
+  estatus: pendiente
+- id: 396
+  poliza_id: 436
+  numero_recibo:
+  fecha_vencimiento: '2026-10-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 397
+  poliza_id: 437
+  numero_recibo:
+  fecha_vencimiento: '2026-10-11'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 398
+  poliza_id: 438
+  numero_recibo:
+  fecha_vencimiento: '2026-10-22'
+  importe: '1528.21'
+  fecha_pago:
+  estatus: pendiente
+- id: 399
+  poliza_id: 439
+  numero_recibo:
+  fecha_vencimiento: '2026-10-25'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 400
+  poliza_id: 440
+  numero_recibo:
+  fecha_vencimiento: '2026-10-30'
+  importe: '44028.03'
+  fecha_pago:
+  estatus: pendiente
+- id: 401
+  poliza_id: 441
+  numero_recibo:
+  fecha_vencimiento: '2026-11-01'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 402
+  poliza_id: 442
+  numero_recibo:
+  fecha_vencimiento: '2026-11-05'
+  importe: '11010.6'
+  fecha_pago:
+  estatus: pendiente
+- id: 403
+  poliza_id: 443
+  numero_recibo:
+  fecha_vencimiento: '2026-11-08'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 404
+  poliza_id: 444
+  numero_recibo:
+  fecha_vencimiento: '2026-11-12'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 405
+  poliza_id: 445
+  numero_recibo:
+  fecha_vencimiento: '2026-11-15'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 406
+  poliza_id: 446
+  numero_recibo:
+  fecha_vencimiento: '2026-11-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 407
+  poliza_id: 447
+  numero_recibo:
+  fecha_vencimiento: '2026-11-22'
+  importe: '4537.31'
+  fecha_pago:
+  estatus: pendiente
+- id: 408
+  poliza_id: 423
+  numero_recibo:
+  fecha_vencimiento: '2026-11-25'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 409
+  poliza_id: 448
+  numero_recibo:
+  fecha_vencimiento: '2026-11-30'
+  importe: '3123.88'
+  fecha_pago:
+  estatus: pendiente
+- id: 410
+  poliza_id: 449
+  numero_recibo:
+  fecha_vencimiento: '2026-11-30'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 411
+  poliza_id: 450
+  numero_recibo:
+  fecha_vencimiento: '2026-12-01'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 412
+  poliza_id: 451
+  numero_recibo:
+  fecha_vencimiento: '2026-12-08'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 413
+  poliza_id: 452
+  numero_recibo:
+  fecha_vencimiento: '2026-12-19'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 414
+  poliza_id: 453
+  numero_recibo:
+  fecha_vencimiento: '2026-12-21'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 415
+  poliza_id: 454
+  numero_recibo:
+  fecha_vencimiento: '2026-12-23'
+  importe: '269.0'
+  fecha_pago:
+  estatus: pendiente
+- id: 416
+  poliza_id: 455
+  numero_recibo:
+  fecha_vencimiento: '2026-12-24'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 417
+  poliza_id: 456
+  numero_recibo:
+  fecha_vencimiento: '2026-12-27'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 418
+  poliza_id: 457
+  numero_recibo:
+  fecha_vencimiento: '2026-12-30'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 419
+  poliza_id: 458
+  numero_recibo:
+  fecha_vencimiento: '2026-12-30'
+  importe: '6922.67'
+  fecha_pago:
+  estatus: pendiente
+- id: 420
+  poliza_id: 459
+  numero_recibo:
+  fecha_vencimiento: '2027-01-04'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 421
+  poliza_id: 460
+  numero_recibo:
+  fecha_vencimiento: '2027-01-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 422
+  poliza_id: 461
+  numero_recibo:
+  fecha_vencimiento: '2027-01-16'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 423
+  poliza_id: 462
+  numero_recibo:
+  fecha_vencimiento: '2027-01-20'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 424
+  poliza_id: 463
+  numero_recibo:
+  fecha_vencimiento: '2027-01-21'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 425
+  poliza_id: 464
+  numero_recibo:
+  fecha_vencimiento: '2027-01-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 426
+  poliza_id: 465
+  numero_recibo:
+  fecha_vencimiento: '2027-01-26'
+  importe: '6301.24'
+  fecha_pago:
+  estatus: pendiente
+- id: 427
+  poliza_id: 466
+  numero_recibo:
+  fecha_vencimiento: '2027-01-30'
+  importe: '5576.4'
+  fecha_pago:
+  estatus: pendiente
+- id: 428
+  poliza_id: 467
+  numero_recibo:
+  fecha_vencimiento: '2027-01-30'
+  importe: '5168.96'
+  fecha_pago:
+  estatus: pendiente
+- id: 429
+  poliza_id: 468
+  numero_recibo:
+  fecha_vencimiento: '2027-01-31'
+  importe: '62135.4'
+  fecha_pago:
+  estatus: pendiente
+- id: 430
+  poliza_id: 469
+  numero_recibo:
+  fecha_vencimiento: '2027-02-05'
+  importe: '6088.84'
+  fecha_pago:
+  estatus: pendiente
+- id: 431
+  poliza_id: 470
+  numero_recibo:
+  fecha_vencimiento: '2027-02-06'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 432
+  poliza_id: 471
+  numero_recibo:
+  fecha_vencimiento: '2027-02-07'
+  importe: '970.78'
+  fecha_pago:
+  estatus: pendiente
+- id: 433
+  poliza_id: 419
+  numero_recibo:
+  fecha_vencimiento: '2027-02-18'
+  importe: '1332.84'
+  fecha_pago:
+  estatus: pendiente
+- id: 434
+  poliza_id: 472
+  numero_recibo:
+  fecha_vencimiento: '2027-02-21'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 435
+  poliza_id: 423
+  numero_recibo:
+  fecha_vencimiento: '2027-02-25'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 436
+  poliza_id: 473
+  numero_recibo:
+  fecha_vencimiento: '2027-03-05'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 437
+  poliza_id: 474
+  numero_recibo:
+  fecha_vencimiento: '2027-03-06'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 438
+  poliza_id: 475
+  numero_recibo:
+  fecha_vencimiento: '2027-03-06'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 439
+  poliza_id: 429
+  numero_recibo:
+  fecha_vencimiento: '2027-03-07'
+  importe: '6301.24'
+  fecha_pago:
+  estatus: pendiente
+- id: 440
+  poliza_id: 476
+  numero_recibo:
+  fecha_vencimiento: '2027-03-10'
+  importe: '7201.42'
+  fecha_pago:
+  estatus: pendiente
+- id: 441
+  poliza_id: 430
+  numero_recibo:
+  fecha_vencimiento: '2027-03-11'
+  importe: '608.7'
+  fecha_pago:
+  estatus: pendiente
+- id: 442
+  poliza_id: 431
+  numero_recibo:
+  fecha_vencimiento: '2027-03-13'
+  importe: '12443.44'
+  fecha_pago:
+  estatus: pendiente
+- id: 443
+  poliza_id: 477
+  numero_recibo:
+  fecha_vencimiento: '2027-03-14'
+  importe: '8999.77'
+  fecha_pago:
+  estatus: pendiente
+- id: 444
+  poliza_id: 433
+  numero_recibo:
+  fecha_vencimiento: '2027-03-16'
+  importe: '6364.84'
+  fecha_pago:
+  estatus: pendiente
+- id: 445
+  poliza_id: 478
+  numero_recibo:
+  fecha_vencimiento: '2027-03-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 446
+  poliza_id: 479
+  numero_recibo:
+  fecha_vencimiento: '2027-03-18'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 447
+  poliza_id: 480
+  numero_recibo:
+  fecha_vencimiento: '2027-03-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 448
+  poliza_id: 481
+  numero_recibo:
+  fecha_vencimiento: '2027-03-31'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 449
+  poliza_id: 482
+  numero_recibo:
+  fecha_vencimiento: '2027-03-31'
+  importe: '7080.61'
+  fecha_pago:
+  estatus: pendiente
+- id: 450
+  poliza_id: 483
+  numero_recibo:
+  fecha_vencimiento: '2027-04-02'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 451
+  poliza_id: 484
+  numero_recibo:
+  fecha_vencimiento: '2027-04-11'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 452
+  poliza_id: 485
+  numero_recibo:
+  fecha_vencimiento: '2027-04-15'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 453
+  poliza_id: 486
+  numero_recibo:
+  fecha_vencimiento: '2027-04-22'
+  importe: '10123.1'
+  fecha_pago:
+  estatus: pendiente
+- id: 454
+  poliza_id: 487
+  numero_recibo:
+  fecha_vencimiento: '2027-04-26'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 455
+  poliza_id: 488
+  numero_recibo:
+  fecha_vencimiento: '2027-04-27'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 456
+  poliza_id: 489
+  numero_recibo:
+  fecha_vencimiento: '2027-04-27'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 457
+  poliza_id: 490
+  numero_recibo:
+  fecha_vencimiento: '2027-04-28'
+  importe: '1528.21'
+  fecha_pago:
+  estatus: pendiente
+- id: 458
+  poliza_id: 442
+  numero_recibo:
+  fecha_vencimiento: '2027-05-05'
+  importe: '5853.3'
+  fecha_pago:
+  estatus: pendiente
+- id: 459
+  poliza_id: 491
+  numero_recibo:
+  fecha_vencimiento: '2027-05-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 460
+  poliza_id: 492
+  numero_recibo:
+  fecha_vencimiento: '2027-05-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 461
+  poliza_id: 493
+  numero_recibo:
+  fecha_vencimiento: '2027-05-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 462
+  poliza_id: 494
+  numero_recibo:
+  fecha_vencimiento: '2027-05-19'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 463
+  poliza_id: 423
+  numero_recibo:
+  fecha_vencimiento: '2027-05-25'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 464
+  poliza_id: 495
+  numero_recibo:
+  fecha_vencimiento: '2027-05-30'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 465
+  poliza_id: 496
+  numero_recibo:
+  fecha_vencimiento: '2027-05-30'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 466
+  poliza_id: 497
+  numero_recibo:
+  fecha_vencimiento: '2027-06-01'
+  importe: '5060.95'
+  fecha_pago:
+  estatus: pendiente
+- id: 467
+  poliza_id: 498
+  numero_recibo:
+  fecha_vencimiento: '2027-06-01'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 468
+  poliza_id: 499
+  numero_recibo:
+  fecha_vencimiento: '2027-06-01'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 469
+  poliza_id: 500
+  numero_recibo:
+  fecha_vencimiento: '2027-06-02'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 470
+  poliza_id: 501
+  numero_recibo:
+  fecha_vencimiento: '2027-06-05'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 471
+  poliza_id: 502
+  numero_recibo:
+  fecha_vencimiento: '2027-06-07'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 472
+  poliza_id: 503
+  numero_recibo:
+  fecha_vencimiento: '2027-06-08'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 473
+  poliza_id: 504
+  numero_recibo:
+  fecha_vencimiento: '2027-06-10'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 474
+  poliza_id: 507
+  numero_recibo:
+  fecha_vencimiento: '2027-06-30'
+  importe: '8626.64'
+  fecha_pago:
+  estatus: pendiente
+- id: 475
+  poliza_id: 508
+  numero_recibo:
+  fecha_vencimiento: '2026-06-29'
+  importe: '8678.88'
+  fecha_pago:
+  estatus: pendiente
+- id: 476
+  poliza_id: 509
+  numero_recibo:
+  fecha_vencimiento: '2026-07-10'
+  importe: '5194.68'
+  fecha_pago:
+  estatus: pendiente
+- id: 477
+  poliza_id: 510
+  numero_recibo:
+  fecha_vencimiento: '2026-07-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 478
+  poliza_id: 511
+  numero_recibo:
+  fecha_vencimiento: '2026-07-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 479
+  poliza_id: 512
+  numero_recibo:
+  fecha_vencimiento: '2026-07-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 480
+  poliza_id: 513
+  numero_recibo:
+  fecha_vencimiento: '2026-07-30'
+  importe: '8969.4'
+  fecha_pago:
+  estatus: pendiente
+- id: 481
+  poliza_id: 514
+  numero_recibo:
+  fecha_vencimiento: '2026-07-31'
+  importe: '2553.25'
+  fecha_pago:
+  estatus: pendiente
+- id: 482
+  poliza_id: 515
+  numero_recibo:
+  fecha_vencimiento: '2026-08-05'
+  importe: '5734.37'
+  fecha_pago:
+  estatus: pendiente
+- id: 483
+  poliza_id: 516
+  numero_recibo:
+  fecha_vencimiento: '2026-08-14'
+  importe: '9073.0'
+  fecha_pago:
+  estatus: pendiente
+- id: 484
+  poliza_id: 517
+  numero_recibo:
+  fecha_vencimiento: '2026-08-25'
+  importe: '9471.05'
+  fecha_pago:
+  estatus: pendiente
+- id: 485
+  poliza_id: 518
+  numero_recibo:
+  fecha_vencimiento: '2026-09-21'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 486
+  poliza_id: 519
+  numero_recibo:
+  fecha_vencimiento: '2026-09-23'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 487
+  poliza_id: 520
+  numero_recibo:
+  fecha_vencimiento: '2026-09-23'
+  importe: '8813.78'
+  fecha_pago:
+  estatus: pendiente
+- id: 488
+  poliza_id: 521
+  numero_recibo:
+  fecha_vencimiento: '2026-10-04'
+  importe: '0.0'
+  fecha_pago:
+  estatus: pendiente
+- id: 489
+  poliza_id: 510
+  numero_recibo:
+  fecha_vencimiento: '2026-10-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 490
+  poliza_id: 511
+  numero_recibo:
+  fecha_vencimiento: '2026-10-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 491
+  poliza_id: 512
+  numero_recibo:
+  fecha_vencimiento: '2026-10-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 492
+  poliza_id: 522
+  numero_recibo:
+  fecha_vencimiento: '2026-11-18'
+  importe: '1753.19'
+  fecha_pago:
+  estatus: pendiente
+- id: 493
+  poliza_id: 523
+  numero_recibo:
+  fecha_vencimiento: '2026-11-21'
+  importe: '66218.62'
+  fecha_pago:
+  estatus: pendiente
+- id: 494
+  poliza_id: 524
+  numero_recibo:
+  fecha_vencimiento: '2026-11-22'
+  importe: '4285.45'
+  fecha_pago:
+  estatus: pendiente
+- id: 495
+  poliza_id: 525
+  numero_recibo:
+  fecha_vencimiento: '2026-11-27'
+  importe: '13749.5'
+  fecha_pago:
+  estatus: pendiente
+- id: 496
+  poliza_id: 526
+  numero_recibo:
+  fecha_vencimiento: '2026-11-30'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 497
+  poliza_id: 527
+  numero_recibo:
+  fecha_vencimiento: '2026-11-30'
+  importe: '10575.77'
+  fecha_pago:
+  estatus: pendiente
+- id: 498
+  poliza_id: 528
+  numero_recibo:
+  fecha_vencimiento: '2026-12-01'
+  importe: '4726.99'
+  fecha_pago:
+  estatus: pendiente
+- id: 499
+  poliza_id: 529
+  numero_recibo:
+  fecha_vencimiento: '2026-12-02'
+  importe: '29187.66'
+  fecha_pago:
+  estatus: pendiente
+- id: 500
+  poliza_id: 530
+  numero_recibo:
+  fecha_vencimiento: '2026-12-06'
+  importe: '7769.45'
+  fecha_pago:
+  estatus: pendiente
+- id: 501
+  poliza_id: 531
+  numero_recibo:
+  fecha_vencimiento: '2026-12-09'
+  importe: '13682.61'
+  fecha_pago:
+  estatus: pendiente
+- id: 502
+  poliza_id: 532
+  numero_recibo:
+  fecha_vencimiento: '2026-12-15'
+  importe: '11202.28'
+  fecha_pago:
+  estatus: pendiente
+- id: 503
+  poliza_id: 533
+  numero_recibo:
+  fecha_vencimiento: '2026-12-17'
+  importe: '4779.3'
+  fecha_pago:
+  estatus: pendiente
+- id: 504
+  poliza_id: 534
+  numero_recibo:
+  fecha_vencimiento: '2026-12-20'
+  importe: '12171.96'
+  fecha_pago:
+  estatus: pendiente
+- id: 505
+  poliza_id: 535
+  numero_recibo:
+  fecha_vencimiento: '2026-12-23'
+  importe: '1691.86'
+  fecha_pago:
+  estatus: pendiente
+- id: 506
+  poliza_id: 536
+  numero_recibo:
+  fecha_vencimiento: '2027-01-05'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 507
+  poliza_id: 537
+  numero_recibo:
+  fecha_vencimiento: '2027-01-05'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 508
+  poliza_id: 538
+  numero_recibo:
+  fecha_vencimiento: '2027-01-05'
+  importe: '16288.36'
+  fecha_pago:
+  estatus: pendiente
+- id: 509
+  poliza_id: 539
+  numero_recibo:
+  fecha_vencimiento: '2027-01-05'
+  importe: '6907.6'
+  fecha_pago:
+  estatus: pendiente
+- id: 510
+  poliza_id: 540
+  numero_recibo:
+  fecha_vencimiento: '2027-01-06'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 511
+  poliza_id: 509
+  numero_recibo:
+  fecha_vencimiento: '2027-01-10'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 512
+  poliza_id: 510
+  numero_recibo:
+  fecha_vencimiento: '2027-01-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 513
+  poliza_id: 511
+  numero_recibo:
+  fecha_vencimiento: '2027-01-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 514
+  poliza_id: 512
+  numero_recibo:
+  fecha_vencimiento: '2027-01-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 515
+  poliza_id: 541
+  numero_recibo:
+  fecha_vencimiento: '2027-01-27'
+  importe: '10248.76'
+  fecha_pago:
+  estatus: pendiente
+- id: 516
+  poliza_id: 542
+  numero_recibo:
+  fecha_vencimiento: '2027-01-31'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 517
+  poliza_id: 543
+  numero_recibo:
+  fecha_vencimiento: '2027-02-04'
+  importe: '3592.71'
+  fecha_pago:
+  estatus: pendiente
+- id: 518
+  poliza_id: 544
+  numero_recibo:
+  fecha_vencimiento: '2027-02-10'
+  importe: '7170.1'
+  fecha_pago:
+  estatus: pendiente
+- id: 519
+  poliza_id: 545
+  numero_recibo:
+  fecha_vencimiento: '2027-02-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 520
+  poliza_id: 520
+  numero_recibo:
+  fecha_vencimiento: '2027-03-23'
+  importe: '8813.78'
+  fecha_pago:
+  estatus: pendiente
+- id: 521
+  poliza_id: 510
+  numero_recibo:
+  fecha_vencimiento: '2027-04-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 522
+  poliza_id: 511
+  numero_recibo:
+  fecha_vencimiento: '2027-04-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 523
+  poliza_id: 512
+  numero_recibo:
+  fecha_vencimiento: '2027-04-17'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 524
+  poliza_id: 546
+  numero_recibo:
+  fecha_vencimiento: '2027-04-23'
+  importe: '5788.48'
+  fecha_pago:
+  estatus: pendiente
+- id: 525
+  poliza_id: 547
+  numero_recibo:
+  fecha_vencimiento: '2027-05-08'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 526
+  poliza_id: 548
+  numero_recibo:
+  fecha_vencimiento: '2027-05-21'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 527
+  poliza_id: 530
+  numero_recibo:
+  fecha_vencimiento: '2027-06-06'
+  importe: '3513.52'
+  fecha_pago:
+  estatus: pendiente
+- id: 528
+  poliza_id: 549
+  numero_recibo:
+  fecha_vencimiento: '2027-06-08'
+  importe: '22712.0'
+  fecha_pago:
+  estatus: pendiente
+- id: 529
+  poliza_id: 550
+  numero_recibo:
+  fecha_vencimiento: '2027-06-15'
+  importe: '10578.0'
+  fecha_pago:
+  estatus: pendiente
+- id: 530
+  poliza_id: 552
+  numero_recibo:
+  fecha_vencimiento: '2026-01-01'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 531
+  poliza_id: 553
+  numero_recibo:
+  fecha_vencimiento: '2026-07-14'
+  importe: '9339.11'
+  fecha_pago:
+  estatus: pendiente
+- id: 532
+  poliza_id: 554
+  numero_recibo:
+  fecha_vencimiento: '2026-07-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 533
+  poliza_id: 555
+  numero_recibo:
+  fecha_vencimiento: '2026-07-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 534
+  poliza_id: 556
+  numero_recibo:
+  fecha_vencimiento: '2026-07-25'
+  importe: '7743.32'
+  fecha_pago:
+  estatus: pendiente
+- id: 535
+  poliza_id: 557
+  numero_recibo:
+  fecha_vencimiento: '2026-08-11'
+  importe: '8990.51'
+  fecha_pago:
+  estatus: pendiente
+- id: 536
+  poliza_id: 558
+  numero_recibo:
+  fecha_vencimiento: '2026-08-16'
+  importe: '7636.54'
+  fecha_pago:
+  estatus: pendiente
+- id: 537
+  poliza_id: 559
+  numero_recibo:
+  fecha_vencimiento: '2026-08-20'
+  importe: '6952.89'
+  fecha_pago:
+  estatus: pendiente
+- id: 538
+  poliza_id: 560
+  numero_recibo:
+  fecha_vencimiento: '2026-08-29'
+  importe: '3897.09'
+  fecha_pago:
+  estatus: pendiente
+- id: 539
+  poliza_id: 561
+  numero_recibo:
+  fecha_vencimiento: '2026-09-01'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 540
+  poliza_id: 562
+  numero_recibo:
+  fecha_vencimiento: '2026-09-19'
+  importe: '10662.36'
+  fecha_pago:
+  estatus: pendiente
+- id: 541
+  poliza_id: 563
+  numero_recibo:
+  fecha_vencimiento: '2026-09-20'
+  importe: '6228.52'
+  fecha_pago:
+  estatus: pendiente
+- id: 542
+  poliza_id: 564
+  numero_recibo:
+  fecha_vencimiento: '2026-09-25'
+  importe: '4295.07'
+  fecha_pago:
+  estatus: pendiente
+- id: 543
+  poliza_id: 554
+  numero_recibo:
+  fecha_vencimiento: '2026-10-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 544
+  poliza_id: 565
+  numero_recibo:
+  fecha_vencimiento: '2026-12-01'
+  importe: '9437.77'
+  fecha_pago:
+  estatus: pendiente
+- id: 545
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2027-01-05'
+  importe: '8082.9'
+  fecha_pago:
+  estatus: pendiente
+- id: 546
+  poliza_id: 567
+  numero_recibo:
+  fecha_vencimiento: '2027-01-10'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 547
+  poliza_id: 554
+  numero_recibo:
+  fecha_vencimiento: '2027-01-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 548
+  poliza_id: 568
+  numero_recibo:
+  fecha_vencimiento: '2027-02-02'
+  importe: '4921.5'
+  fecha_pago:
+  estatus: pendiente
+- id: 549
+  poliza_id: 569
+  numero_recibo:
+  fecha_vencimiento: '2027-02-06'
+  importe: '4498.99'
+  fecha_pago:
+  estatus: pendiente
+- id: 550
+  poliza_id: 570
+  numero_recibo:
+  fecha_vencimiento: '2027-02-22'
+  importe: '5464.99'
+  fecha_pago:
+  estatus: pendiente
+- id: 551
+  poliza_id: 571
+  numero_recibo:
+  fecha_vencimiento: '2027-04-08'
+  importe: '9135.88'
+  fecha_pago:
+  estatus: pendiente
+- id: 552
+  poliza_id: 572
+  numero_recibo:
+  fecha_vencimiento: '2027-04-16'
+  importe: '5922.46'
+  fecha_pago:
+  estatus: pendiente
+- id: 553
+  poliza_id: 573
+  numero_recibo:
+  fecha_vencimiento: '2027-04-18'
+  importe: '4767.63'
+  fecha_pago:
+  estatus: pendiente
+- id: 554
+  poliza_id: 554
+  numero_recibo:
+  fecha_vencimiento: '2027-04-22'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 555
+  poliza_id: 574
+  numero_recibo:
+  fecha_vencimiento: '2027-05-18'
+  importe: '24783.57'
+  fecha_pago:
+  estatus: pendiente
+- id: 556
+  poliza_id: 575
+  numero_recibo:
+  fecha_vencimiento: '2027-06-23'
+  importe: '9782.3'
+  fecha_pago:
+  estatus: pendiente
+- id: 557
+  poliza_id: 476
+  numero_recibo: '94255407'
+  fecha_vencimiento: '2023-10-13'
+  importe: '600.22'
+  fecha_pago: '2023-09-14'
+  estatus: pagado
+- id: 558
+  poliza_id: 481
+  numero_recibo: '94243536'
+  fecha_vencimiento: '2023-09-28'
+  importe: '137.8'
+  fecha_pago: '2023-08-28'
+  estatus: pagado
+- id: 559
+  poliza_id: 424
+  numero_recibo: '94294865'
+  fecha_vencimiento: '2023-09-24'
+  importe: '269.0'
+  fecha_pago: '2023-08-24'
+  estatus: pagado
+- id: 560
+  poliza_id: 576
+  numero_recibo: '94242519'
+  fecha_vencimiento: '2023-10-14'
+  importe: '99.3'
+  fecha_pago: '2023-09-14'
+  estatus: pagado
+- id: 561
+  poliza_id: 487
+  numero_recibo: '94252909'
+  fecha_vencimiento: '2023-09-26'
+  importe: '2204.7'
+  fecha_pago: '2023-08-26'
+  estatus: pagado
+- id: 562
+  poliza_id: 453
+  numero_recibo: '93105571'
+  fecha_vencimiento: '2023-10-21'
+  importe: '416.6'
+  fecha_pago: '2023-09-21'
+  estatus: pagado
+- id: 563
+  poliza_id: 420
+  numero_recibo: '94280157'
+  fecha_vencimiento: '2024-08-20'
+  importe: '7536.8'
+  fecha_pago: '2023-08-24'
+  estatus: pagado
+- id: 564
+  poliza_id: 418
+  numero_recibo: '94279926'
+  fecha_vencimiento: '2023-10-17'
+  importe: '73.2'
+  fecha_pago: '2023-09-17'
+  estatus: pagado
+- id: 565
+  poliza_id: 653
+  numero_recibo:
+  fecha_vencimiento: '2023-01-13'
+  importe:
+  fecha_pago: '2023-01-13'
+  estatus: pagado
+- id: 566
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2023-04-13'
+  importe:
+  fecha_pago: '2023-04-13'
+  estatus: pagado
+- id: 567
+  poliza_id: 678
+  numero_recibo:
+  fecha_vencimiento: '2023-05-14'
+  importe:
+  fecha_pago: '2023-05-14'
+  estatus: pagado
+- id: 568
+  poliza_id: 522
+  numero_recibo:
+  fecha_vencimiento: '2023-05-15'
+  importe:
+  fecha_pago: '2023-05-15'
+  estatus: pagado
+- id: 569
+  poliza_id: 698
+  numero_recibo:
+  fecha_vencimiento: '2023-05-25'
+  importe:
+  fecha_pago: '2023-05-25'
+  estatus: pagado
+- id: 570
+  poliza_id: 726
+  numero_recibo:
+  fecha_vencimiento: '2023-06-07'
+  importe:
+  fecha_pago: '2023-06-07'
+  estatus: pagado
+- id: 571
+  poliza_id: 575
+  numero_recibo:
+  fecha_vencimiento: '2023-06-07'
+  importe:
+  fecha_pago: '2023-06-07'
+  estatus: pagado
+- id: 572
+  poliza_id: 679
+  numero_recibo:
+  fecha_vencimiento: '2023-07-10'
+  importe:
+  fecha_pago: '2023-07-10'
+  estatus: pagado
+- id: 573
+  poliza_id: 553
+  numero_recibo:
+  fecha_vencimiento: '2023-07-11'
+  importe:
+  fecha_pago: '2023-07-11'
+  estatus: pagado
+- id: 574
+  poliza_id: 571
+  numero_recibo:
+  fecha_vencimiento: '2023-04-20'
+  importe:
+  fecha_pago: '2023-04-20'
+  estatus: pagado
+- id: 575
+  poliza_id: 573
+  numero_recibo:
+  fecha_vencimiento: '2023-05-05'
+  importe:
+  fecha_pago: '2023-05-05'
+  estatus: pagado
+- id: 576
+  poliza_id: 764
+  numero_recibo:
+  fecha_vencimiento: '2023-05-05'
+  importe:
+  fecha_pago: '2023-05-05'
+  estatus: pagado
+- id: 577
+  poliza_id: 725
+  numero_recibo:
+  fecha_vencimiento: '2023-05-24'
+  importe:
+  fecha_pago: '2023-05-24'
+  estatus: pagado
+- id: 578
+  poliza_id: 668
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 579
+  poliza_id: 653
+  numero_recibo:
+  fecha_vencimiento: '2023-01-13'
+  importe:
+  fecha_pago: '2023-01-13'
+  estatus: pagado
+- id: 580
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 581
+  poliza_id: 679
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 582
+  poliza_id: 658
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 583
+  poliza_id: 568
+  numero_recibo:
+  fecha_vencimiento: '2023-02-23'
+  importe:
+  fecha_pago: '2023-02-23'
+  estatus: pagado
+- id: 584
+  poliza_id: 569
+  numero_recibo:
+  fecha_vencimiento: '2023-02-15'
+  importe:
+  fecha_pago: '2023-02-15'
+  estatus: pagado
+- id: 585
+  poliza_id: 571
+  numero_recibo:
+  fecha_vencimiento: '2023-04-20'
+  importe:
+  fecha_pago: '2023-04-20'
+  estatus: pagado
+- id: 586
+  poliza_id: 573
+  numero_recibo:
+  fecha_vencimiento: '2023-05-05'
+  importe:
+  fecha_pago: '2023-05-05'
+  estatus: pagado
+- id: 587
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2023-04-13'
+  importe:
+  fecha_pago: '2023-04-13'
+  estatus: pagado
+- id: 588
+  poliza_id: 764
+  numero_recibo:
+  fecha_vencimiento: '2023-05-05'
+  importe:
+  fecha_pago: '2023-05-05'
+  estatus: pagado
+- id: 589
+  poliza_id: 725
+  numero_recibo:
+  fecha_vencimiento: '2023-05-24'
+  importe:
+  fecha_pago: '2023-05-24'
+  estatus: pagado
+- id: 590
+  poliza_id: 678
+  numero_recibo:
+  fecha_vencimiento: '2023-05-14'
+  importe:
+  fecha_pago: '2023-05-14'
+  estatus: pagado
+- id: 591
+  poliza_id: 574
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 592
+  poliza_id: 522
+  numero_recibo:
+  fecha_vencimiento: '2023-05-15'
+  importe:
+  fecha_pago: '2023-05-15'
+  estatus: pagado
+- id: 593
+  poliza_id: 698
+  numero_recibo:
+  fecha_vencimiento: '2023-05-25'
+  importe:
+  fecha_pago: '2023-05-25'
+  estatus: pagado
+- id: 594
+  poliza_id: 726
+  numero_recibo:
+  fecha_vencimiento: '2023-06-07'
+  importe:
+  fecha_pago: '2023-06-07'
+  estatus: pagado
+- id: 595
+  poliza_id: 773
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 596
+  poliza_id: 675
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 597
+  poliza_id: 575
+  numero_recibo:
+  fecha_vencimiento: '2023-06-07'
+  importe:
+  fecha_pago: '2023-06-07'
+  estatus: pagado
+- id: 598
+  poliza_id: 553
+  numero_recibo:
+  fecha_vencimiento: '2023-07-11'
+  importe:
+  fecha_pago: '2023-07-11'
+  estatus: pagado
+- id: 599
+  poliza_id: 675
+  numero_recibo:
+  fecha_vencimiento: '2023-05-29'
+  importe:
+  fecha_pago: '2023-05-29'
+  estatus: pagado
+- id: 600
+  poliza_id: 778
+  numero_recibo:
+  fecha_vencimiento: '2023-06-12'
+  importe:
+  fecha_pago: '2023-06-12'
+  estatus: pagado
+- id: 601
+  poliza_id: 555
+  numero_recibo:
+  fecha_vencimiento: '2023-07-22'
+  importe:
+  fecha_pago: '2023-07-22'
+  estatus: pagado
+- id: 602
+  poliza_id: 730
+  numero_recibo:
+  fecha_vencimiento: '2023-07-25'
+  importe:
+  fecha_pago: '2023-07-25'
+  estatus: pagado
+- id: 603
+  poliza_id: 681
+  numero_recibo:
+  fecha_vencimiento: '2023-07-26'
+  importe:
+  fecha_pago: '2023-07-26'
+  estatus: pagado
+- id: 604
+  poliza_id: 687
+  numero_recibo:
+  fecha_vencimiento: '2023-08-19'
+  importe:
+  fecha_pago: '2023-08-19'
+  estatus: pagado
+- id: 605
+  poliza_id: 558
+  numero_recibo:
+  fecha_vencimiento: '2023-08-31'
+  importe:
+  fecha_pago: '2023-08-31'
+  estatus: pagado
+- id: 606
+  poliza_id: 575
+  numero_recibo:
+  fecha_vencimiento: '2023-07-06'
+  importe:
+  fecha_pago: '2023-07-06'
+  estatus: pagado
+- id: 607
+  poliza_id: 739
+  numero_recibo:
+  fecha_vencimiento: '2023-08-27'
+  importe:
+  fecha_pago: '2023-08-27'
+  estatus: pagado
+- id: 608
+  poliza_id: 560
+  numero_recibo:
+  fecha_vencimiento: '2023-08-29'
+  importe:
+  fecha_pago: '2023-08-29'
+  estatus: pagado
+- id: 609
+  poliza_id: 559
+  numero_recibo:
+  fecha_vencimiento: '2023-08-29'
+  importe:
+  fecha_pago: '2023-08-29'
+  estatus: pagado
+- id: 610
+  poliza_id: 564
+  numero_recibo:
+  fecha_vencimiento: '2023-09-25'
+  importe:
+  fecha_pago: '2023-09-25'
+  estatus: pagado
+- id: 611
+  poliza_id: 562
+  numero_recibo:
+  fecha_vencimiento: '2023-09-22'
+  importe:
+  fecha_pago: '2023-09-22'
+  estatus: pagado
+- id: 612
+  poliza_id: 747
+  numero_recibo:
+  fecha_vencimiento: '2023-11-13'
+  importe:
+  fecha_pago: '2023-11-13'
+  estatus: pagado
+- id: 613
+  poliza_id: 734
+  numero_recibo:
+  fecha_vencimiento: '2023-11-14'
+  importe:
+  fecha_pago: '2023-11-14'
+  estatus: pagado
+- id: 614
+  poliza_id: 527
+  numero_recibo:
+  fecha_vencimiento: '2023-11-29'
+  importe:
+  fecha_pago: '2023-11-29'
+  estatus: pagado
+- id: 615
+  poliza_id: 750
+  numero_recibo:
+  fecha_vencimiento: '2023-06-12'
+  importe:
+  fecha_pago: '2023-06-12'
+  estatus: pagado
+- id: 616
+  poliza_id: 677
+  numero_recibo:
+  fecha_vencimiento: '2023-08-12'
+  importe:
+  fecha_pago: '2023-08-12'
+  estatus: pagado
+- id: 617
+  poliza_id: 533
+  numero_recibo:
+  fecha_vencimiento: '2023-12-15'
+  importe:
+  fecha_pago: '2023-12-15'
+  estatus: pagado
+- id: 618
+  poliza_id: 703
+  numero_recibo:
+  fecha_vencimiento: '2023-12-27'
+  importe:
+  fecha_pago: '2023-12-27'
+  estatus: pagado
+- id: 619
+  poliza_id: 682
+  numero_recibo:
+  fecha_vencimiento: '2023-12-21'
+  importe:
+  fecha_pago: '2023-12-21'
+  estatus: pagado
+- id: 620
+  poliza_id: 697
+  numero_recibo:
+  fecha_vencimiento: '2023-12-22'
+  importe:
+  fecha_pago: '2023-12-22'
+  estatus: pagado
+- id: 621
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2024-08-01'
+  importe:
+  fecha_pago: '2024-08-01'
+  estatus: pagado
+- id: 622
+  poliza_id: 567
+  numero_recibo:
+  fecha_vencimiento: '2024-01-09'
+  importe:
+  fecha_pago: '2024-01-09'
+  estatus: pagado
+- id: 623
+  poliza_id: 708
+  numero_recibo:
+  fecha_vencimiento: '2024-01-11'
+  importe:
+  fecha_pago: '2024-01-11'
+  estatus: pagado
+- id: 624
+  poliza_id: 701
+  numero_recibo:
+  fecha_vencimiento: '2024-01-24'
+  importe:
+  fecha_pago: '2024-01-24'
+  estatus: pagado
+- id: 625
+  poliza_id: 568
+  numero_recibo:
+  fecha_vencimiento: '2024-02-02'
+  importe:
+  fecha_pago: '2024-02-02'
+  estatus: pagado
+- id: 626
+  poliza_id: 756
+  numero_recibo:
+  fecha_vencimiento: '2025-02-21'
+  importe:
+  fecha_pago: '2025-02-21'
+  estatus: pagado
+- id: 627
+  poliza_id: 569
+  numero_recibo:
+  fecha_vencimiento: '2024-02-08'
+  importe:
+  fecha_pago: '2024-02-08'
+  estatus: pagado
+- id: 628
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2024-04-08'
+  importe:
+  fecha_pago: '2024-04-08'
+  estatus: pagado
+- id: 629
+  poliza_id: 571
+  numero_recibo:
+  fecha_vencimiento: '2024-04-08'
+  importe:
+  fecha_pago: '2024-04-08'
+  estatus: pagado
+- id: 630
+  poliza_id: 571
+  numero_recibo:
+  fecha_vencimiento: '2024-04-08'
+  importe:
+  fecha_pago: '2024-04-08'
+  estatus: pagado
+- id: 631
+  poliza_id: 522
+  numero_recibo:
+  fecha_vencimiento: '2024-05-17'
+  importe:
+  fecha_pago: '2024-05-17'
+  estatus: pagado
+- id: 632
+  poliza_id: 574
+  numero_recibo:
+  fecha_vencimiento: '2024-05-20'
+  importe:
+  fecha_pago: '2024-05-20'
+  estatus: pagado
+- id: 633
+  poliza_id: 726
+  numero_recibo:
+  fecha_vencimiento: '2024-05-29'
+  importe:
+  fecha_pago: '2024-05-29'
+  estatus: pagado
+- id: 634
+  poliza_id: 698
+  numero_recibo:
+  fecha_vencimiento: '2024-05-27'
+  importe:
+  fecha_pago: '2024-05-27'
+  estatus: pagado
+- id: 635
+  poliza_id: 734
+  numero_recibo:
+  fecha_vencimiento: '2024-06-12'
+  importe:
+  fecha_pago: '2024-06-12'
+  estatus: pagado
+- id: 636
+  poliza_id: 575
+  numero_recibo:
+  fecha_vencimiento: '2024-06-21'
+  importe:
+  fecha_pago: '2024-06-21'
+  estatus: pagado
+- id: 637
+  poliza_id: 750
+  numero_recibo:
+  fecha_vencimiento: '2024-06-28'
+  importe:
+  fecha_pago: '2024-06-28'
+  estatus: pagado
+- id: 638
+  poliza_id: 553
+  numero_recibo:
+  fecha_vencimiento: '2024-08-02'
+  importe:
+  fecha_pago: '2024-08-02'
+  estatus: pagado
+- id: 639
+  poliza_id: 730
+  numero_recibo:
+  fecha_vencimiento: '2024-08-01'
+  importe:
+  fecha_pago: '2024-08-01'
+  estatus: pagado
+- id: 640
+  poliza_id: 698
+  numero_recibo:
+  fecha_vencimiento: '2024-08-28'
+  importe:
+  fecha_pago: '2024-08-28'
+  estatus: pagado
+- id: 641
+  poliza_id: 724
+  numero_recibo:
+  fecha_vencimiento: '2024-05-20'
+  importe:
+  fecha_pago: '2024-05-20'
+  estatus: pagado
+- id: 642
+  poliza_id: 555
+  numero_recibo:
+  fecha_vencimiento: '2024-08-22'
+  importe:
+  fecha_pago: '2024-08-22'
+  estatus: pagado
+- id: 643
+  poliza_id: 559
+  numero_recibo:
+  fecha_vencimiento: '2024-09-03'
+  importe:
+  fecha_pago: '2024-09-03'
+  estatus: pagado
+- id: 644
+  poliza_id: 739
+  numero_recibo:
+  fecha_vencimiento: '2024-08-27'
+  importe:
+  fecha_pago: '2024-08-27'
+  estatus: pagado
+- id: 645
+  poliza_id: 560
+  numero_recibo:
+  fecha_vencimiento: '2024-08-30'
+  importe:
+  fecha_pago: '2024-08-30'
+  estatus: pagado
+- id: 646
+  poliza_id: 563
+  numero_recibo:
+  fecha_vencimiento: '2024-09-18'
+  importe:
+  fecha_pago: '2024-09-18'
+  estatus: pagado
+- id: 647
+  poliza_id: 562
+  numero_recibo:
+  fecha_vencimiento: '2024-09-18'
+  importe:
+  fecha_pago: '2024-09-18'
+  estatus: pagado
+- id: 648
+  poliza_id: 564
+  numero_recibo:
+  fecha_vencimiento: '2024-09-20'
+  importe:
+  fecha_pago: '2024-09-20'
+  estatus: pagado
+- id: 649
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2024-11-12'
+  importe:
+  fecha_pago: '2024-11-12'
+  estatus: pagado
+- id: 650
+  poliza_id: 525
+  numero_recibo:
+  fecha_vencimiento: '2024-11-12'
+  importe:
+  fecha_pago: '2024-11-12'
+  estatus: pagado
+- id: 651
+  poliza_id: 748
+  numero_recibo:
+  fecha_vencimiento: '2024-11-27'
+  importe:
+  fecha_pago: '2024-11-27'
+  estatus: pagado
+- id: 652
+  poliza_id: 564
+  numero_recibo:
+  fecha_vencimiento: '2024-09-20'
+  importe:
+  fecha_pago: '2024-09-20'
+  estatus: pagado
+- id: 653
+  poliza_id: 749
+  numero_recibo:
+  fecha_vencimiento: '2024-12-05'
+  importe:
+  fecha_pago: '2024-12-05'
+  estatus: pagado
+- id: 654
+  poliza_id: 566
+  numero_recibo:
+  fecha_vencimiento: '2025-02-19'
+  importe:
+  fecha_pago: '2025-02-19'
+  estatus: pagado
+- id: 655
+  poliza_id: 569
+  numero_recibo:
+  fecha_vencimiento: '2025-02-10'
+  importe:
+  fecha_pago: '2025-02-10'
+  estatus: pagado
+- id: 656
+  poliza_id: 763
+  numero_recibo:
+  fecha_vencimiento: '2025-05-19'
+  importe:
+  fecha_pago: '2025-05-19'
+  estatus: pagado
+- id: 657
+  poliza_id: 525
+  numero_recibo:
+  fecha_vencimiento: '2025-05-21'
+  importe:
+  fecha_pago: '2025-05-21'
+  estatus: pagado
+- id: 658
+  poliza_id: 772
+  numero_recibo:
+  fecha_vencimiento: '2025-05-30'
+  importe:
+  fecha_pago: '2025-05-30'
+  estatus: pagado
+- id: 659
+  poliza_id: 773
+  numero_recibo:
+  fecha_vencimiento: '2025-06-01'
+  importe:
+  fecha_pago: '2025-06-01'
+  estatus: pagado
+- id: 660
+  poliza_id: 750
+  numero_recibo:
+  fecha_vencimiento: '2025-06-28'
+  importe:
+  fecha_pago: '2025-06-28'
+  estatus: pagado
+- id: 661
+  poliza_id: 778
+  numero_recibo:
+  fecha_vencimiento: '2025-06-07'
+  importe:
+  fecha_pago: '2025-06-07'
+  estatus: pagado
+- id: 662
+  poliza_id: 575
+  numero_recibo:
+  fecha_vencimiento: '2025-07-09'
+  importe:
+  fecha_pago: '2025-07-09'
+  estatus: pagado
+- id: 663
+  poliza_id: 553
+  numero_recibo:
+  fecha_vencimiento: '2025-07-14'
+  importe:
+  fecha_pago: '2025-07-14'
+  estatus: pagado
+- id: 664
+  poliza_id: 555
+  numero_recibo:
+  fecha_vencimiento: '2025-07-21'
+  importe:
+  fecha_pago: '2025-07-21'
+  estatus: pagado
+- id: 665
+  poliza_id: 554
+  numero_recibo:
+  fecha_vencimiento: '2025-07-22'
+  importe:
+  fecha_pago: '2025-07-22'
+  estatus: pagado
+- id: 666
+  poliza_id: 778
+  numero_recibo:
+  fecha_vencimiento: '2025-06-07'
+  importe:
+  fecha_pago: '2025-06-07'
+  estatus: pagado
+- id: 667
+  poliza_id: 558
+  numero_recibo:
+  fecha_vencimiento: '2025-08-25'
+  importe:
+  fecha_pago: '2025-08-25'
+  estatus: pagado
+- id: 668
+  poliza_id: 560
+  numero_recibo:
+  fecha_vencimiento: '2025-08-27'
+  importe:
+  fecha_pago: '2025-08-27'
+  estatus: pagado
+- id: 669
+  poliza_id: 563
+  numero_recibo:
+  fecha_vencimiento: '2025-09-15'
+  importe:
+  fecha_pago: '2025-09-15'
+  estatus: pagado
+- id: 670
+  poliza_id: 562
+  numero_recibo:
+  fecha_vencimiento: '2025-09-15'
+  importe:
+  fecha_pago: '2025-09-15'
+  estatus: pagado
+- id: 671
+  poliza_id: 520
+  numero_recibo:
+  fecha_vencimiento: '2025-09-23'
+  importe:
+  fecha_pago: '2025-09-23'
+  estatus: pagado
+- id: 672
+  poliza_id: 554
+  numero_recibo:
+  fecha_vencimiento: '2025-10-31'
+  importe:
+  fecha_pago: '2025-10-31'
+  estatus: pagado
+- id: 673
+  poliza_id: 770
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 674
+  poliza_id: 568
+  numero_recibo:
+  fecha_vencimiento: '2026-02-04'
+  importe:
+  fecha_pago: '2026-02-04'
+  estatus: pagado
+- id: 675
+  poliza_id: 545
+  numero_recibo:
+  fecha_vencimiento: '2026-03-02'
+  importe:
+  fecha_pago: '2026-03-02'
+  estatus: pagado
+- id: 676
+  poliza_id: 569
+  numero_recibo:
+  fecha_vencimiento: '2026-02-11'
+  importe:
+  fecha_pago: '2026-02-11'
+  estatus: pagado
+- id: 677
+  poliza_id: 570
+  numero_recibo:
+  fecha_vencimiento: '2026-07-09'
+  importe:
+  fecha_pago:
+  estatus: pendiente
+- id: 678
+  poliza_id: 545
+  numero_recibo:
+  fecha_vencimiento: '2026-03-17'
+  importe:
+  fecha_pago: '2026-03-17'
+  estatus: pagado
+- id: 679
+  poliza_id: 545
+  numero_recibo:
+  fecha_vencimiento: '2026-04-17'
+  importe:
+  fecha_pago: '2026-04-17'
+  estatus: pagado
+- id: 680
+  poliza_id: 554
+  numero_recibo:
+  fecha_vencimiento: '2026-04-29'
+  importe:
+  fecha_pago: '2026-04-29'
+  estatus: pagado
+- id: 681
+  poliza_id: 572
+  numero_recibo:
+  fecha_vencimiento: '2026-04-29'
+  importe:
+  fecha_pago: '2026-04-29'
+  estatus: pagado
+- id: 682
+  poliza_id: 520
+  numero_recibo:
+  fecha_vencimiento: '2026-03-23'
+  importe:
+  fecha_pago: '2026-03-23'
+  estatus: pagado
+- id: 683
+  poliza_id: 571
+  numero_recibo:
+  fecha_vencimiento: '2026-04-13'
+  importe:
+  fecha_pago: '2026-04-13'
+  estatus: pagado
+- id: 684
+  poliza_id: 573
+  numero_recibo:
+  fecha_vencimiento: '2026-04-27'
+  importe:
+  fecha_pago: '2026-04-27'
+  estatus: pagado
+- id: 685
+  poliza_id: 669
+  numero_recibo:
+  fecha_vencimiento: '2026-05-07'
+  importe:
+  fecha_pago: '2026-05-07'
+  estatus: pagado
+- id: 686
+  poliza_id: 767
+  numero_recibo:
+  fecha_vencimiento: '2026-05-07'
+  importe:
+  fecha_pago: '2026-05-07'
+  estatus: pagado

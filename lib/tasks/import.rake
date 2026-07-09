@@ -6,11 +6,9 @@ namespace :import do
     abort "No existe el archivo: #{path}" unless File.exist?(path)
 
     if ENV["LIMPIAR"] == "1"
+      require Rails.root.join("lib/importador/reset")
       puts "Borrando datos existentes (LIMPIAR=1)..."
-      Comision.delete_all
-      Recibo.delete_all
-      Poliza.delete_all
-      Cliente.delete_all
+      Importador::Reset.limpiar!
     elsif Poliza.any?
       abort "La base ya tiene datos. Corre con LIMPIAR=1 para borrar y reimportar (el importador no es incremental)."
     end

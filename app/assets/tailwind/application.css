@@ -15,6 +15,7 @@
   --color-primary-700: #1f3454;
   --color-primary-800: #192a45;
   --color-primary-900: #131f33;
+  --width-sidebar: 12.5rem;
 }
 
 /* El plugin de forms enfoca en azul; lo alineamos al color primario.

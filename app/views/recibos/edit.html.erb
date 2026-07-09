@@ -1,5 +1,6 @@
-<% content_for :title, "Editar recibo — #{t('app.nombre')}" %>
-<h1 class="text-2xl font-bold mb-1">Editar recibo</h1>
+<% desde_vencimientos = params[:volver_a] == "vencimientos" %>
+<% content_for :title, "#{desde_vencimientos ? "Editar vencimiento" : "Editar recibo"} — #{t('app.nombre')}" %>
+<h1 class="text-2xl font-bold mb-1"><%= desde_vencimientos ? "Editar vencimiento" : "Editar recibo" %></h1>
 <p class="text-gray-500 mb-4">
   Póliza <%= @recibo.poliza.numero_poliza || "s/n" %> de <%= @recibo.poliza.cliente.nombre %>
 </p>

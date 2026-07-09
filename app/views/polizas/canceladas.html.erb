@@ -34,7 +34,7 @@
                   class: "text-primary-700 hover:underline font-medium", data: { turbo_frame: "_top" } %>
             </td>
             <td class="px-4 py-2"><%= poliza.cliente.nombre %></td>
-            <td class="px-4 py-2"><%= etiqueta_aseguradora(poliza.aseguradora) %></td>
+            <td class="px-4 py-2"><%= badge_aseguradora(poliza.aseguradora) %></td>
             <td class="px-4 py-2"><%= etiqueta_ramo(poliza.ramo) %></td>
             <td class="px-4 py-2"><%= badge_estatus_poliza(poliza) %></td>
             <td class="px-4 py-2 text-gray-500 max-w-64 truncate" title="<%= poliza.motivo_cancelacion %>"><%= poliza.motivo_cancelacion.presence || "—" %></td>

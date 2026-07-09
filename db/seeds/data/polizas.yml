@@ -1,0 +1,7242 @@
+---
+- id: 405
+  cliente_id: 259
+  numero_poliza: '20794605'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: AMARO 2019
+  estatus: vigente
+  motivo_cancelacion:
+  notas: esta poiza la pagué yo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 406
+  cliente_id: 260
+  numero_poliza: '30039002'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: gmm
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CR V
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones: silvia
+- id: 407
+  cliente_id: 259
+  numero_poliza: '20777385'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD RANGER 2012
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 408
+  cliente_id: 261
+  numero_poliza: '20754328'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: TOYOTA HILLUX
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 409
+  cliente_id: 262
+  numero_poliza: '20801269'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: rc
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: alberto calleja
+- id: 410
+  cliente_id: 263
+  numero_poliza: '20005753'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: GOL 2009
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 411
+  cliente_id: 264
+  numero_poliza: '20778035'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10207'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CR Z HIBRIDO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 412
+  cliente_id: 265
+  numero_poliza: '20801535'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: MARCH
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 413
+  cliente_id: 266
+  numero_poliza: '20754943'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: JEEP
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 414
+  cliente_id: 267
+  numero_poliza: '30050006'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura: RC
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: RC RESTAURANT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 415
+  cliente_id: 268
+  numero_poliza: '30005645'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: comercio
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: DAÑOS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 416
+  cliente_id: 269
+  numero_poliza: '20005815'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: rc
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: VW HIGH UP
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: eduardo jaimes
+- id: 417
+  cliente_id: 270
+  numero_poliza: '30003586'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10207'
+  ramo: otro
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: CHEVROLET CARGO. VAN
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 418
+  cliente_id: 268
+  numero_poliza: '93108202'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VALOR INBURSA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 419
+  cliente_id: 271
+  numero_poliza: '20785633'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: BEAT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (forma_pago)
+  observaciones: CLAVE ROGELIO JAIMES
+- id: 420
+  cliente_id: 272
+  numero_poliza: '93129421'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: RETIRO ACTIVO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 421
+  cliente_id: 273
+  numero_poliza: '20756077'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CHEVY
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 422
+  cliente_id: 274
+  numero_poliza: '20771041'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: KIA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 423
+  cliente_id: 275
+  numero_poliza: '20808164'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: GOLF
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 424
+  cliente_id: 276
+  numero_poliza: '93137984'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VIDA EXPRESS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 425
+  cliente_id: 277
+  numero_poliza: '30046030'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: gmm
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: GMM
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 426
+  cliente_id: 278
+  numero_poliza: '93136690'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura: '0'
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: RETIRO ACTIVO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 427
+  cliente_id: 279
+  numero_poliza: '90024272'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas: Pedir renovacion
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 428
+  cliente_id: 280
+  numero_poliza: '20001141'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10207'
+  ramo: autos
+  cobertura: '0'
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VOYAGER
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 429
+  cliente_id: 281
+  numero_poliza: '20785937'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: KOLEOS ICONIC
+  estatus: vigente
+  motivo_cancelacion:
+  notas: 2/2
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 430
+  cliente_id: 282
+  numero_poliza: '90027732'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: VIDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 431
+  cliente_id: 283
+  numero_poliza: '20790850'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: camion
+  cobertura: LIMITADA
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: NISSA NP 300 2019
+  estatus: vigente
+  motivo_cancelacion:
+  notas: "( PRIMO VICENTE ROSAS) | ( PRIMO VICENTE ROSAS)"
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 432
+  cliente_id: 268
+  numero_poliza: '93141620'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: DOTAL 15 AÑOS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 433
+  cliente_id: 284
+  numero_poliza: '20782814'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: XTRAIL
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 434
+  cliente_id: 285
+  numero_poliza: '20756647'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: KIA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 435
+  cliente_id: 286
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura: RC
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CADILLAC
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 436
+  cliente_id: 287
+  numero_poliza: '20757183'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: ATTITUDE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 437
+  cliente_id: 259
+  numero_poliza: '20795668'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD F 150 2007
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 438
+  cliente_id: 286
+  numero_poliza: '20003256'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10207'
+  ramo: autos
+  cobertura: R
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CIVIC
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 439
+  cliente_id: 288
+  numero_poliza: '93125434'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD F 150 2007
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 440
+  cliente_id: 289
+  numero_poliza: '30037317'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura: '22536.02'
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: COMERCIO INTEGRAL
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 441
+  cliente_id: 290
+  numero_poliza: '20004736'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: NISSAN NP 300
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 442
+  cliente_id: 291
+  numero_poliza: '20783779'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: NISSAN NP 300
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 443
+  cliente_id: 292
+  numero_poliza: '30048653'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: HABITT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 444
+  cliente_id: 293
+  numero_poliza: '20757423'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: SENTRA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 445
+  cliente_id: 294
+  numero_poliza: '20757343'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: VW SEDAN
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 446
+  cliente_id: 295
+  numero_poliza: '20764460'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: TOYOTA HIBRIDO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 447
+  cliente_id: 296
+  numero_poliza: '20796499'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VOYAGER
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 448
+  cliente_id: 297
+  numero_poliza: '20780335'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura: LIMITADA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CAVALIER
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 449
+  cliente_id: 298
+  numero_poliza: '20764834'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: AVEO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 450
+  cliente_id: 284
+  numero_poliza: '20037764'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura: '2'
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD TRANSIT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 451
+  cliente_id: 299
+  numero_poliza: '20000473'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '92498'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: RAV 4
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 452
+  cliente_id: 300
+  numero_poliza: '20037844'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura: '2'
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VENTURE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 453
+  cliente_id: 301
+  numero_poliza: '93100086'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: TEMPORAL
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 454
+  cliente_id: 302
+  numero_poliza: '90000546'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '92491'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 455
+  cliente_id: 268
+  numero_poliza: '30032642'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: danos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: COMERCIO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 456
+  cliente_id: 303
+  numero_poliza: '20697060'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: VOYAGER
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 457
+  cliente_id: 304
+  numero_poliza: '20788676'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 458
+  cliente_id: 305
+  numero_poliza: '20788471'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: OUTLANDER
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 459
+  cliente_id: 306
+  numero_poliza: '30037969'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: gmm
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: SEGUCANCER
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 460
+  cliente_id: 300
+  numero_poliza: '20806308'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura: '2'
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CHEVROLET SONIC
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 461
+  cliente_id: 307
+  numero_poliza: '20797522'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: SEAT IBIZA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 462
+  cliente_id: 308
+  numero_poliza: '20015671'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MAXIMA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 463
+  cliente_id: 261
+  numero_poliza: '20766468'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: PARTNER
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 464
+  cliente_id: 309
+  numero_poliza: '20797648'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: COROLLA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 465
+  cliente_id: 281
+  numero_poliza: '20785198'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: KOLEOS DYNAMIC
+  estatus: vigente
+  motivo_cancelacion:
+  notas: No se pago
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 466
+  cliente_id: 310
+  numero_poliza: '20789531'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: JETTA EUROPA 2006
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 467
+  cliente_id: 311
+  numero_poliza: '20781664'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: POLO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 468
+  cliente_id: 312
+  numero_poliza: '20797853'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CADILLAC
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 469
+  cliente_id: 313
+  numero_poliza: '20781977'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MAZDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIMES
+- id: 470
+  cliente_id: 314
+  numero_poliza: '20798004'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: BMW
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones: CLAVE ROGELIO JAIME
+- id: 471
+  cliente_id: 315
+  numero_poliza: '20804006'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones: CLAVE ROGELIO JAIMES
+- id: 472
+  cliente_id: 302
+  numero_poliza: '93123891'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VIDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones: CLAVE ROGELIO JAIMES
+- id: 473
+  cliente_id: 316
+  numero_poliza: '20767216'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: YARIS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 474
+  cliente_id: 317
+  numero_poliza: '332795'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: gmm
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 475
+  cliente_id: 318
+  numero_poliza: '30008474'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: gmm
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 476
+  cliente_id: 319
+  numero_poliza: '93140364'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: TEMPORAL
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 477
+  cliente_id: 320
+  numero_poliza: '20775430'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD FOCUS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 478
+  cliente_id: 264
+  numero_poliza: '20775519'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: PEUGEOT ALLURE 2016
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 479
+  cliente_id: 294
+  numero_poliza: '20767341'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: AUDI
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CLAVE ROGELIO JAIME
+- id: 480
+  cliente_id: 321
+  numero_poliza: '20752482'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: COROLLA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 481
+  cliente_id: 306
+  numero_poliza: '93138714'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 482
+  cliente_id: 318
+  numero_poliza: '20767751'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: AVEO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 483
+  cliente_id: 322
+  numero_poliza: '30001765'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: RC AGENTES
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 484
+  cliente_id: 271
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: ERTIGA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 485
+  cliente_id: 323
+  numero_poliza: '20799496'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: CHRYSLER 200
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 486
+  cliente_id: 324
+  numero_poliza: '30051586'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: gmm
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 487
+  cliente_id: 325
+  numero_poliza: '93133684'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: EDUCA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 488
+  cliente_id: 291
+  numero_poliza: '20792215'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 489
+  cliente_id: 291
+  numero_poliza: '20792206'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 490
+  cliente_id: 326
+  numero_poliza: '20799655'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: rc
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 491
+  cliente_id: 286
+  numero_poliza: '20799913'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 492
+  cliente_id: 327
+  numero_poliza: '357367'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: GMM
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 493
+  cliente_id: 328
+  numero_poliza: '20292572'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 494
+  cliente_id: 329
+  numero_poliza: '93129001'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VIDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 495
+  cliente_id: 330
+  numero_poliza: '93133746'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 496
+  cliente_id: 331
+  numero_poliza: '20784153'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones: CLAVE ROGELIO JAIME
+- id: 497
+  cliente_id: 284
+  numero_poliza: '20773290'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD TRANSIT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 498
+  cliente_id: 294
+  numero_poliza: '30041311'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: HABITT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 499
+  cliente_id: 294
+  numero_poliza: '30041320'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: HABITT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 500
+  cliente_id: 321
+  numero_poliza: '20753944'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: SIENNA 2007
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 501
+  cliente_id: 332
+  numero_poliza: '20754006'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura: '0'
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: XTRAIL
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 502
+  cliente_id: 333
+  numero_poliza: '20002104'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10207'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: HONDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 503
+  cliente_id: 334
+  numero_poliza: '30043649'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: gmm
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: GMM
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 504
+  cliente_id: 335
+  numero_poliza: '20811748'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: ECOSPORT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 505
+  cliente_id: 288
+  numero_poliza: '90027377'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 506
+  cliente_id: 336
+  numero_poliza: '93123463'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 507
+  cliente_id: 338
+  numero_poliza: '960988559'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: T CROSS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 508
+  cliente_id: 339
+  numero_poliza: '960992244'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD FOCUS 2012
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: ANGELICA CERVANTES acervantesbt@hotmail.com
+- id: 509
+  cliente_id: 262
+  numero_poliza: '960994311'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: VW VIRTUS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 510
+  cliente_id: 340
+  numero_poliza: '961046555'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: VERSA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 511
+  cliente_id: 340
+  numero_poliza: '961046564'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: MARCH
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 512
+  cliente_id: 340
+  numero_poliza: '961046560'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: VENTO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 513
+  cliente_id: 341
+  numero_poliza: '960995579'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: SUZUKI
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 514
+  cliente_id: 342
+  numero_poliza: '960945608'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: PASSAT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 515
+  cliente_id: 343
+  numero_poliza: '960998486'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: JEEP PATRIOT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: EDUARDO JAIMES SANTANA
+- id: 516
+  cliente_id: 344
+  numero_poliza: '960999741'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VENTO COMFORTLINE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 517
+  cliente_id: 345
+  numero_poliza: '960934534'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MARCH
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: OLYMPIA GARCIA ULLOA
+- id: 518
+  cliente_id: 346
+  numero_poliza: '961005821'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VERSA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 519
+  cliente_id: 347
+  numero_poliza: '961006182'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: VESA SENSE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 520
+  cliente_id: 348
+  numero_poliza: '8650173881'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: HONDA CITY EX
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 521
+  cliente_id: 349
+  numero_poliza: '960941622'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: NISSAN SENTRA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 522
+  cliente_id: 350
+  numero_poliza: '961014394'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MOTO ITALIKA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 523
+  cliente_id: 312
+  numero_poliza: '961015152'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: PORSCHE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 524
+  cliente_id: 351
+  numero_poliza: '961015203'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 525
+  cliente_id: 352
+  numero_poliza: '961015837'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: ERTIGA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 526
+  cliente_id: 353
+  numero_poliza: '961016376'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MAZDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 527
+  cliente_id: 339
+  numero_poliza: '961016399'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: camion
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD F150
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 528
+  cliente_id: 354
+  numero_poliza: '961016481'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: MOTO VENTO CYCLONE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 529
+  cliente_id: 355
+  numero_poliza: '961016951'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: BMW
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 530
+  cliente_id: 356
+  numero_poliza: '961017648'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: SEAT IBIZA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (detalle_bien)
+  observaciones:
+- id: 531
+  cliente_id: 357
+  numero_poliza: '961017655'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CHRYSLER RAM
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 532
+  cliente_id: 358
+  numero_poliza: '961017487'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: RAIZE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 533
+  cliente_id: 357
+  numero_poliza: '961019699'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: KEEWAY SUPERLIGHT 2016
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 534
+  cliente_id: 359
+  numero_poliza: '961020500'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MO CF MOTO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 535
+  cliente_id: 360
+  numero_poliza: '961020972'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: TAHOE 2001
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 536
+  cliente_id: 361
+  numero_poliza: '6940018496'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura: QUALITAS
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CAMRY 2022
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (detalle_bien, forma_pago)
+  observaciones: BROKER CANO
+- id: 537
+  cliente_id: 361
+  numero_poliza: '6940018476'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura: QUALITAS
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MAZDA TOURING
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (forma_pago)
+  observaciones: BROKER CANO
+- id: 538
+  cliente_id: 362
+  numero_poliza: '6940018484'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura: QUALITAS
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: PEUGEOT PARTNER RAPID
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (detalle_bien, forma_pago)
+  observaciones: BROKER CANO
+- id: 539
+  cliente_id: 363
+  numero_poliza: '961022607'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: PONTIAC
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 540
+  cliente_id: 362
+  numero_poliza: '961024020'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: PEUGEOT ALLURE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 541
+  cliente_id: 365
+  numero_poliza: '0960894683'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: ERTIGA SUZUKI
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 542
+  cliente_id: 366
+  numero_poliza: '0961028368'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MARCH
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 543
+  cliente_id: 367
+  numero_poliza: '961029783'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MOTO HONDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 544
+  cliente_id: 305
+  numero_poliza: '960896966'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: SIENNA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: CARMONA
+- id: 545
+  cliente_id: 368
+  numero_poliza: '960966561'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien: GROOVE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: BROOKER CANO
+- id: 546
+  cliente_id: 367
+  numero_poliza: '961047861'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CHEVY
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 547
+  cliente_id: 340
+  numero_poliza: '961050710'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: MBENZ
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 548
+  cliente_id: 367
+  numero_poliza: '961053370'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 549
+  cliente_id: 361
+  numero_poliza: '961057365'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MAZDA 3 I SPORT 2025
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 550
+  cliente_id: 369
+  numero_poliza: '961058580'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MARCH
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 551
+  cliente_id: 360
+  numero_poliza:
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 552
+  cliente_id: 370
+  numero_poliza:
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas: "(cotizar en Enero 2025)"
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 553
+  cliente_id: 371
+  numero_poliza: '8650204705'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: NISSAN NP 300 2018
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 554
+  cliente_id: 342
+  numero_poliza: '8650167214'
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: QUALITAS
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien: VENTO COMFORTLINE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (cobertura)
+  observaciones:
+- id: 555
+  cliente_id: 372
+  numero_poliza: '8650165206'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: AVEO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 556
+  cliente_id: 373
+  numero_poliza: '5346978'
+  aseguradora: ana_seguros
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: ANA SEGUROS
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: RAIZE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 557
+  cliente_id: 373
+  numero_poliza: '5366307'
+  aseguradora: ana_seguros
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: ANA SEGUROS
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: COROLLA.HIBRIDO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 558
+  cliente_id: 374
+  numero_poliza: '8650169468'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: HONDA FIT
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 559
+  cliente_id: 375
+  numero_poliza: '8650130569'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: HYUNDAI TUCSON
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 560
+  cliente_id: 376
+  numero_poliza: '8650130718'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD FIESTA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 561
+  cliente_id: 312
+  numero_poliza:
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: PORSCHE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 562
+  cliente_id: 377
+  numero_poliza: '8650135404'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: BMW XA DRIVE
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 563
+  cliente_id: 378
+  numero_poliza: '8650133159'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: RENAULT SCALA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones: MAMA MA EUGENIA
+- id: 564
+  cliente_id: 379
+  numero_poliza: '8650098181'
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: FORD FIGO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 565
+  cliente_id: 321
+  numero_poliza: '5527499'
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: ANA SEGUROS
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: SIENNA 2020
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 566
+  cliente_id: 361
+  numero_poliza: '8650110056'
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MAZDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 567
+  cliente_id: 381
+  numero_poliza: '8650110834'
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: KIA RIO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 568
+  cliente_id: 382
+  numero_poliza: '8650113838'
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 569
+  cliente_id: 339
+  numero_poliza: DC3-1-1-364
+  aseguradora: seguros_atlas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien: FOCUS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 570
+  cliente_id: 383
+  numero_poliza: '8650150742'
+  aseguradora: qualitas
+  canal: broker
+  broker: cano
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: DODGE WAGON
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 571
+  cliente_id: 384
+  numero_poliza: '8650155408'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: TOYOTA PRIUS
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual | broker/agente no reconocido
+  observaciones:
+- id: 572
+  cliente_id: 297
+  numero_poliza: '6940021048'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: SEAT IBIZA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 573
+  cliente_id: 385
+  numero_poliza: '8650194762'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: NISSAN TIIDA
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 574
+  cliente_id: 386
+  numero_poliza: '4331873'
+  aseguradora: ana_seguros
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: CAMION HINO
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 575
+  cliente_id: 297
+  numero_poliza: '8650200799'
+  aseguradora: qualitas
+  canal: broker
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura: AMPLIA
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien: MAZDA TOURING
+  estatus: vigente
+  motivo_cancelacion:
+  notas:
+  necesita_revision: true
+  motivo_revision: sin forma de pago legible; se asumió anual
+  observaciones:
+- id: 576
+  cliente_id: 387
+  numero_poliza: '93134488'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: usd
+  detalle_bien:
+  estatus: vigente
+  motivo_cancelacion:
+  notas: DEJO DE PAGAR
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 577
+  cliente_id: 321
+  numero_poliza: '20752641'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: cancelada | CAMRY
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 578
+  cliente_id: 388
+  numero_poliza: '20755817'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: cancelada | SE CANCELO POR VENTA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 579
+  cliente_id: 389
+  numero_poliza: '20747514'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: cancelada | YA LO VENDIO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 580
+  cliente_id: 390
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '96060640007'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: cancelada | RENAULT CLIO cancelada
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 581
+  cliente_id: 391
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '960644072'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: cancelada | HONDA ACCORD
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 582
+  cliente_id: 392
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '960603103'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: cancelada | SEAT ALTEA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 583
+  cliente_id: 393
+  numero_poliza: '90027251'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: Pagó hasta este año
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 584
+  cliente_id: 307
+  numero_poliza: '30045237'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CANCELADA | GMM
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 585
+  cliente_id: 394
+  numero_poliza: '30045371'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TRANSPORTES
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 586
+  cliente_id: 395
+  numero_poliza: '20035766'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TRACKER
+  notas: CANCELADA
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 587
+  cliente_id: 309
+  numero_poliza: '20038148'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 1 | FORD ESCAPE
+  notas: C ANCELADO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 588
+  cliente_id: 259
+  numero_poliza: '20776045'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: KENWORTH ESTACAS ANTIGUO 1990
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 589
+  cliente_id: 365
+  numero_poliza: '20773487'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AVANZA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 590
+  cliente_id: 396
+  numero_poliza: '30045442'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: RC CHAPULTEPEC
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 591
+  cliente_id: 397
+  numero_poliza: '20752204'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: '0'
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 592
+  cliente_id: 398
+  numero_poliza: '20767485'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: '0'
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 593
+  cliente_id: 399
+  numero_poliza: '20754934'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 3 | CRUZE
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 594
+  cliente_id: 309
+  numero_poliza: '20770596'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: COROLLA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 595
+  cliente_id: 400
+  numero_poliza: '20762266'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CAMION NISSAN
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 596
+  cliente_id: 401
+  numero_poliza: '2000403'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CHEVY RC AUTOS
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 597
+  cliente_id: 259
+  numero_poliza: '20776037'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD F 350 2012
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 598
+  cliente_id: 368
+  numero_poliza: '20772237'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD ESCAPE
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 599
+  cliente_id: 353
+  numero_poliza: '20037069'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AVANZA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 600
+  cliente_id: 402
+  numero_poliza: '348010'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: VOYAGER
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 601
+  cliente_id: 402
+  numero_poliza: '20034749'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: POINTER
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 602
+  cliente_id: 306
+  numero_poliza: '30030234'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 0 | cancelada
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 603
+  cliente_id: 342
+  numero_poliza: '20775234'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: perdida_total
+  motivo_cancelacion: perdida tot
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 604
+  cliente_id: 403
+  numero_poliza: '20037862'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: '1'
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 605
+  cliente_id: 304
+  numero_poliza: '20773566'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: BMW
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 606
+  cliente_id: 404
+  numero_poliza: '30000016'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10215'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: COMERCIO INTEGRAL
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 607
+  cliente_id: 405
+  numero_poliza: '20719233'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: '6'
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 608
+  cliente_id: 406
+  numero_poliza: '20031298'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 6 | SE CAMBIO A QUALITAS
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 609
+  cliente_id: 313
+  numero_poliza: '20751633'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 0 | ATTITUDE
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 610
+  cliente_id: 259
+  numero_poliza: '6330045667'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TORTON
+  notas: PENDIENTE DE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 611
+  cliente_id: 291
+  numero_poliza: '6330035746'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD F 350 ESTACAS 2008
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 612
+  cliente_id: 291
+  numero_poliza: '6330035750'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD F 350 ESTACAS 2008
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 613
+  cliente_id: 407
+  numero_poliza: '6330038420'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: RAV 4
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 614
+  cliente_id: 408
+  numero_poliza: '20004709'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: VENTO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 615
+  cliente_id: 286
+  numero_poliza: '63300'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FIAT
+  notas: NO SE PAGO EL PRIMER RECIBO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 616
+  cliente_id: 409
+  numero_poliza: '20038004'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: PILOT
+  notas: VENDIDO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 617
+  cliente_id: 410
+  numero_poliza: '6330047289'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: VOLVO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 618
+  cliente_id: 387
+  numero_poliza: '93127539'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 6 | RETIRO ACTIVO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 619
+  cliente_id: 411
+  numero_poliza: '20775528'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: PEUGEOT ALLURE 2016
+  notas: no se va a renovar
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 620
+  cliente_id: 412
+  numero_poliza: '20037167'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 621
+  cliente_id: 413
+  numero_poliza: '20028676'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 7 | HONDA ACCORD
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 622
+  cliente_id: 414
+  numero_poliza: '20753294'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 623
+  cliente_id: 415
+  numero_poliza: '90028651'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TEMPORAL
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 624
+  cliente_id: 416
+  numero_poliza: '20776894'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: PLATINA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 625
+  cliente_id: 417
+  numero_poliza: '20761187'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: camion
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TRACTO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 626
+  cliente_id: 417
+  numero_poliza: '20769517'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: camion
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: PLATAFORMA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 627
+  cliente_id: 286
+  numero_poliza: '6330056563'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CADILLAC
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 628
+  cliente_id: 418
+  numero_poliza: '6330042051'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas: SE CAMBIO A INBURSA
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 629
+  cliente_id: 419
+  numero_poliza: '5680035929'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QUALITAS
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 630
+  cliente_id: 291
+  numero_poliza: '6330043006'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: NISSAN ESTACAS 2015
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 631
+  cliente_id: 259
+  numero_poliza: '6330068461'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QUALITAS RC
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TORTON
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 632
+  cliente_id: 420
+  numero_poliza: '20753481'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: COROLLA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 633
+  cliente_id: 302
+  numero_poliza: '20782547'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CH-R
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 634
+  cliente_id: 421
+  numero_poliza: '20717431'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CHEVROLET CORSA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 635
+  cliente_id: 266
+  numero_poliza: '30000631'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: GMM
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 636
+  cliente_id: 304
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: RC ANTIGUO GRAND MARQUIZ
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 637
+  cliente_id: 422
+  numero_poliza: '6330044228'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MOTO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 638
+  cliente_id: 423
+  numero_poliza: '6330046213'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QUALITAS RC
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: no_renovada
+  motivo_cancelacion: GM TERRAIN 2014 | NO SE RENOVO
+  notas: CLIENTE SILVIA
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 639
+  cliente_id: 306
+  numero_poliza: '30044041'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: A 255182 | HABITT TLALPAN | CANCELADA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 640
+  cliente_id: 259
+  numero_poliza: '20778669'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: perdida_total
+  motivo_cancelacion: FORD F350 CHASIS CAB 2012  4838B | PT POR ROBO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 641
+  cliente_id: 424
+  numero_poliza: '20779766'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | MOTO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 642
+  cliente_id: 286
+  numero_poliza: '20779891'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: LIMITADA | PONTIAC
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 643
+  cliente_id: 306
+  numero_poliza: '20764237'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 0 | AVANZA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 644
+  cliente_id: 425
+  numero_poliza: '20784000'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: KICKS
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 645
+  cliente_id: 307
+  numero_poliza: '20769269'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AUDI
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 646
+  cliente_id: 427
+  numero_poliza: '2023-05-12'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '8650087933'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA COMFORTLINE 2016 | RAUL
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 647
+  cliente_id: 428
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '5680042169'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: VENTO ACTIVE | IRMA
+  notas: no se renovó. Le avisé pero ya no se hizo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 648
+  cliente_id: 429
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '5680041889'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 65164 MO BAJAJ DOMINAR STD
+  notas: no se renovo ELVIA VILLEGAS. Le avisé a ella, pero ya no dijo nada
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 649
+  cliente_id: 430
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '5680041888'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD LOBO SUPER CAB 4X2 AUT
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 650
+  cliente_id: 357
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '5680042838'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: "(I)MO KEEWAY SUPERLIGHT 200 200CC STD. | 2016"
+  notas: SE CANCELO.
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 651
+  cliente_id: 431
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '5680042736'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA
+  notas: no se va a renovar
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 652
+  cliente_id: 304
+  numero_poliza: '6330054988'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: BMW | IRMA | SE CAMBIO A INBURSA
+  notas: Se paso a Inbursa
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 653
+  cliente_id: 361
+  numero_poliza: '5680042926'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: ANUAL
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: no_renovada
+  motivo_cancelacion: COROLLA | YA NOTIENEN EL COCHE NO SE RENOVO
+  notas: Ya no lo tiene
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 654
+  cliente_id: 432
+  numero_poliza: '960880826'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MAZDA GRAND TOURING | IRMA
+  notas: NO SE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 655
+  cliente_id: 298
+  numero_poliza: '30008688'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: danos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: HABITT JACARANDAS
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 656
+  cliente_id: 433
+  numero_poliza: '20773600'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MARCH
+  notas: no se pago
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 657
+  cliente_id: 434
+  numero_poliza: '5680042961'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TIIDA DRIVE 2013
+  notas: ya no la quiso
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 658
+  cliente_id: 435
+  numero_poliza: '8000003198'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: AMPLIA
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: EQ F 600 CHASIS CAB 1982
+  notas: no se pago
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 659
+  cliente_id: 436
+  numero_poliza: '8650113463'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: ANUAL
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AUDI
+  notas: SE CAMBIO DE AGENTE
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 660
+  cliente_id: 437
+  numero_poliza: '20775706'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: VOYAGER
+  notas: no la pagó
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 661
+  cliente_id: 271
+  numero_poliza: '20032019'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AVANZA
+  notas: cancelada
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 662
+  cliente_id: 438
+  numero_poliza: '20783118'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: VENTO
+  notas: no renovar hasta que regrese}
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 663
+  cliente_id: 367
+  numero_poliza: '6330041438'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS MOTO RC
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MOTO 2015 | CARMONA
+  notas: según no lo atendí bien
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 664
+  cliente_id: 367
+  numero_poliza: '6330041437'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: QS MOTO RC
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MOTO 2018 | CARMONA
+  notas: mas bien no le gustó el precio de QS
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 665
+  cliente_id: 392
+  numero_poliza: '20790663'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: LIMITADA | MAZDA CX3 I SPORT AUT 2018
+  notas: no se pago
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 666
+  cliente_id: 302
+  numero_poliza: '20001196'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10207'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: EQUINOX
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 667
+  cliente_id: 439
+  numero_poliza: '20776126'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AUTOS | SENTRA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 668
+  cliente_id: 427
+  numero_poliza: '8650087933'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: vencido | JETTA COMFORTLINE
+  notas: no se pagó
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 669
+  cliente_id: 425
+  numero_poliza: '6330068189'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | MARCH | CARMONA
+  notas: SE RENOVO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 670
+  cliente_id: 259
+  numero_poliza: '20776046'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD LOBO 2008
+  notas: no se renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 671
+  cliente_id: 259
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD 2004
+  notas: siniestro robo | NO SE PAGÓ | NO SE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 672
+  cliente_id: 408
+  numero_poliza: '20004914'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA 2000
+  notas: cancelada
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 673
+  cliente_id: 286
+  numero_poliza:
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | AVANZA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 674
+  cliente_id: 440
+  numero_poliza: '6330070439'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | AUDI Q2 | CARMONA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 675
+  cliente_id: 441
+  numero_poliza: '8650087935'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: '6592.58'
+  notas: Cancelada
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 676
+  cliente_id: 358
+  numero_poliza: '20747872'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: RENAULT KOLEOS robado
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 677
+  cliente_id: 442
+  numero_poliza: '8650107530'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: '8806.16'
+  notas: Cancelada | Jorge Olivera No se pago camion descompuesto
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 678
+  cliente_id: 443
+  numero_poliza: '8650123043'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 6904.74 | 2023-05-14 | TOYOTA SIENNA
+  notas: no se pagó
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 679
+  cliente_id: 444
+  numero_poliza: '5680043422'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 3262 | 2023-07-10
+  notas: Ya no contestó mensajes
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 680
+  cliente_id: 446
+  numero_poliza: '20757441'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: HONDA CITY
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 681
+  cliente_id: 447
+  numero_poliza: '8650093093'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: '2543.02'
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 682
+  cliente_id: 448
+  numero_poliza: '8650107533'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 3475.14 | JETTA | 2015
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 683
+  cliente_id: 449
+  numero_poliza: '21170064'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '18105'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: KIA SOUL hacer cambio de conducto julio
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 684
+  cliente_id: 259
+  numero_poliza: '20785447'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMARO
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 685
+  cliente_id: 450
+  numero_poliza: '0960870323'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | MOTO | IRMA
+  notas: SE RENOVÓ
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 686
+  cliente_id: 451
+  numero_poliza: '960870664'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | CRV TOURING | IRMA
+  notas: NO SE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 687
+  cliente_id: 452
+  numero_poliza: '8650130529'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 6115.76 | JETTA
+  notas: SE REEXPIDIO Y NO SE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 688
+  cliente_id: 453
+  numero_poliza: '20786375'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 689
+  cliente_id: 390
+  numero_poliza: '960877670'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | PEUGEOT VAG | IRMA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 690
+  cliente_id: 342
+  numero_poliza: '20785152'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA
+  notas: 2DE 4 | se cambio a qualitas | E RENOVO EN BROKER
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 691
+  cliente_id: 286
+  numero_poliza: '960889292'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | CADILLAC
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 692
+  cliente_id: 296
+  numero_poliza: '960879710'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: LIMITADA | VOYAGER 1996 | IRMA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 693
+  cliente_id: 286
+  numero_poliza: '0960889292'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CADILLAC
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 694
+  cliente_id: 449
+  numero_poliza: '21256739'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '18105'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD BRONCO OUTER BANKS
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 695
+  cliente_id: 310
+  numero_poliza: '20005129'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA EUROPA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 696
+  cliente_id: 425
+  numero_poliza: '960877580'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | PAGADA | AUDI 2023 | IRMA
+  notas: no se localizó
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 697
+  cliente_id: 454
+  numero_poliza: '8650109226'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 698
+  cliente_id: 455
+  numero_poliza: '8650123425'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: KIA
+  notas: se pagARON DOS TRIM | se pago un trimestre | VENDIDO
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (forma_pago)
+  observaciones:
+- id: 699
+  cliente_id: 456
+  numero_poliza: '960948909'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | ACURA 2011
+  notas: NO SE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 700
+  cliente_id: 457
+  numero_poliza: '960921607'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: BMW
+  notas: NO SE PAGOEL | 2DO SEM
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 701
+  cliente_id: 458
+  numero_poliza: '8650111259'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: NEON
+  notas: VENDIDO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 702
+  cliente_id: 459
+  numero_poliza: '20785134'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CHRYLER 200
+  notas: NO LA PAGO | NO PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 703
+  cliente_id: 460
+  numero_poliza: '8650107524'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 8330.44 | HUNDAY CRETA | 2020
+  notas: NO SE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 704
+  cliente_id: 410
+  numero_poliza: '960942559'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: GRAND CHEROKEE
+  notas: NO SE PAGO EL | 2DO RECIBO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 705
+  cliente_id: 461
+  numero_poliza: '960893474'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | NISSAN XTRAIL
+  notas: SE RENOVO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 706
+  cliente_id: 462
+  numero_poliza: '0960894650'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | VW TAOS
+  notas: NO SE PAGO EL | 3ER REICBO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 707
+  cliente_id: 463
+  numero_poliza: '0960896878'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: COROLLA XLE AUT 2009
+  notas: VENDIDO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 708
+  cliente_id: 444
+  numero_poliza: '8650110897'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 3262 | HONDA CITY LX 2014 AUT
+  notas: SE RENOVO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 709
+  cliente_id: 307
+  numero_poliza: '096869781'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | PAGADA | TIGUAN
+  notas: VENDIDA
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 710
+  cliente_id: 464
+  numero_poliza: '960913084'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | NISSAN V DRIVE
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 711
+  cliente_id: 305
+  numero_poliza: '0960904290'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | JETTA 2016
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 712
+  cliente_id: 465
+  numero_poliza: '960906300'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | SENTRA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 713
+  cliente_id: 392
+  numero_poliza: '20781940'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CX3 I SPORT AUT 2018
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 714
+  cliente_id: 466
+  numero_poliza: '30049260'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MULTIMODAL EMPRESARIAL
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 715
+  cliente_id: 392
+  numero_poliza: '207666985'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: ODYSSEY TOURNG
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 716
+  cliente_id: 467
+  numero_poliza: '20782413'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: ATTITUDE
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 717
+  cliente_id: 468
+  numero_poliza: '20005566'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | CIVIC
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 718
+  cliente_id: 426
+  numero_poliza: '30000597'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: POLIZA DAÑOS
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 719
+  cliente_id: 453
+  numero_poliza: '20783252'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 720
+  cliente_id: 469
+  numero_poliza: '20776199'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JOURNEY
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 721
+  cliente_id: 470
+  numero_poliza: '20768386'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MIRAGE MITSUBISHI
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 722
+  cliente_id: 471
+  numero_poliza: '20005628'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 723
+  cliente_id: 472
+  numero_poliza: '30019293'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: gmm
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas: cambio de conducto
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 724
+  cliente_id: 473
+  numero_poliza: '8650123423'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 9363.54 | 2023-05-25 | MERCEDES BENZ
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 725
+  cliente_id: 474
+  numero_poliza: '8650087934'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: "$4,500.10 | 2023-05-24 | CHEVY"
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 726
+  cliente_id: 475
+  numero_poliza: '8650090628'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 5203.95 | 2023-06-07 | TIIDA DRIVE 2013
+  notas: no la va a renovar
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 727
+  cliente_id: 336
+  numero_poliza: '93131025'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: vida
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 728
+  cliente_id: 476
+  numero_poliza: '960921789'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MBENZ
+  notas: SE RENOVO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 729
+  cliente_id: 471
+  numero_poliza: '20005003'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: MG MG ELEGANCE
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 730
+  cliente_id: 477
+  numero_poliza: '8650093101'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: "$19.060,00"
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 731
+  cliente_id: 478
+  numero_poliza: '20766271'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JEEP
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 732
+  cliente_id: 259
+  numero_poliza: '20794259'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD LOBO 2004
+  notas: SE RENOVO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 733
+  cliente_id: 479
+  numero_poliza: '6330075001'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | MOTO
+  notas: VENDIDA
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 734
+  cliente_id: 480
+  numero_poliza: '8650105315'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 3273 | FORD ESCAPE SE ECOBOOST 5P L4 2.0L GTDI SYNC R17 N. AUT.
+    | LULU OROZCO | 2023-12-01
+  notas: auto ROBado
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 735
+  cliente_id: 481
+  numero_poliza: '30041339'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: DAÑOS
+  notas: NO SE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 736
+  cliente_id: 423
+  numero_poliza: '20794348'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: JETTA 2018
+  notas: no se renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 737
+  cliente_id: 482
+  numero_poliza: '960999718'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas: SE CANCELO POR ERROR EN EL NOMBRE
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 738
+  cliente_id: 483
+  numero_poliza: '20794400'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: x
+  ramo: rc
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TERRAIN
+  notas: No se renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 739
+  cliente_id: 484
+  numero_poliza: '8650130572'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 5110.91 | JEEP RENEGADE
+  notas: la pidio por otro lado
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 740
+  cliente_id: 268
+  numero_poliza: '20762925'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: SONIC
+  notas: auto vendido
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 741
+  cliente_id: 300
+  numero_poliza: '20786197'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: CHEVY 2008
+  notas: PERDIDA TOTAL RECUPERADO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 742
+  cliente_id: 426
+  numero_poliza: '20005110'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD RANGER 2017
+  notas: SE CANCELO POR PRECIO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 743
+  cliente_id: 485
+  numero_poliza: VRIM
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas: checar vencimiento | checar vencimiento
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 744
+  cliente_id: 342
+  numero_poliza: '960945608'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | PASSAT
+  notas: SE HIZO A NOMBE D ENICO | 1/11 | NO SE PAGO | . SE HIZO ENINBURSA
+  necesita_revision: true
+  motivo_revision: filas duplicadas con datos distintos (forma_pago)
+  observaciones:
+- id: 745
+  cliente_id: 315
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: trimestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | PASSAT
+  notas: se hizo en Inbursa
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 746
+  cliente_id: 321
+  numero_poliza: '960950723'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | TOYOTA SIENNA 2020
+  notas: se hizo en ana con PACO CANO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 747
+  cliente_id: 361
+  numero_poliza: '8650103673'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: NP 300 ESTACAS | MARCELA | 2023-12-01
+  notas: SE PASO A MI CLAVE QS
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 748
+  cliente_id: 339
+  numero_poliza: '8650138789'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 8359.52 | 2023-11-29 | FORD F-150 PICK-UP CUSTOM TIPICA,XL.
+    STD
+  notas: SE PAGOA MI CLAVE QS
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 749
+  cliente_id: 356
+  numero_poliza: '8650142004'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 6358.78 | 5742 (I)SEAT IBIZA 2.0L 4P BLITZ STD. | 2012
+  notas: SE PAGO A MI CLAVE QS
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 750
+  cliente_id: 357
+  numero_poliza: '8650107472'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 12117.82 | 2023-12-15 | PC CHRYSLER RAM | 2019
+  notas: SE PASO A MI CLAVE Q
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 751
+  cliente_id: 489
+  numero_poliza:
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas: no se renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 752
+  cliente_id: 454
+  numero_poliza: '960955199'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: LIMITADA | MOTO
+  notas: SE RENOVO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 753
+  cliente_id: 490
+  numero_poliza: '960916487'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 4289.45 | RC GMOTORS
+  notas: NO SE PAGO EL | 2DO RECIBO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 754
+  cliente_id: 491
+  numero_poliza: '20781281'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: RC PLATINA
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 755
+  cliente_id: 358
+  numero_poliza: '960962194'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: ACURA
+  notas: la pidio SILVIA
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 756
+  cliente_id: 492
+  numero_poliza: '8650115109'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 7097.7 | 2025-02-21 | BMW | PAGADA 19/02
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 757
+  cliente_id: 493
+  numero_poliza: '20005664'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: rc
+  cobertura:
+  forma_pago: contado
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 758
+  cliente_id: 306
+  numero_poliza: '30008704'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 30017482 | MALLORCA
+  notas: SE CANCELO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 759
+  cliente_id: 314
+  numero_poliza: '20783065'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: BMW
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 760
+  cliente_id: 259
+  numero_poliza: '20798889'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: semestral
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD 2012
+  notas: POL DUPLICADA
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 761
+  cliente_id: 494
+  numero_poliza: '960975555'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | MARCH
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 762
+  cliente_id: 362
+  numero_poliza: '6330066722'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | SAVEIRO | vendido
+  notas: auto vendido
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 763
+  cliente_id: 361
+  numero_poliza: '8650155413'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 7377.66 | 2023-04-13 | AUDI 2013
+  notas: perd total
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 764
+  cliente_id: 384
+  numero_poliza: '8650087379'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 10453.92 | 2023-05-05 | suzuki
+  notas: Perdida total
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 765
+  cliente_id: 495
+  numero_poliza: '960978714'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: rc
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: PASSAT
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 766
+  cliente_id: 418
+  numero_poliza: '20783500'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: TORNADO
+  notas: cabio propietario
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 767
+  cliente_id: 496
+  numero_poliza: '960978001'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | BMW
+  notas: No se renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 768
+  cliente_id: 497
+  numero_poliza: '960913696'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 769
+  cliente_id: 497
+  numero_poliza: '6330068194'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | MBENZ
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 770
+  cliente_id: 367
+  numero_poliza: '960979553'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | MOTO 2018
+  notas: se enojo opor siniestro y no renvo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 771
+  cliente_id: 498
+  numero_poliza: '20005762'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10206'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 772
+  cliente_id: 350
+  numero_poliza: '8650159733'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | 2023-05-15 | MARCH
+  notas: venta del vehiculo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 773
+  cliente_id: 499
+  numero_poliza: '8650159741'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | MAZDA
+  notas: vanta del vehiculo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 774
+  cliente_id: 500
+  numero_poliza: '30041348'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: DAÑOS
+  notas: no renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 775
+  cliente_id: 501
+  numero_poliza: '20037782'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 2 | CRUZE
+  notas: siniestro
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 776
+  cliente_id: 502
+  numero_poliza: '30008410'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10213'
+  ramo: danos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 3 | RC HOTEL
+  notas: No la pago
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 777
+  cliente_id: 503
+  numero_poliza: '275240'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '11301'
+  ramo: gmm
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: GMM
+  notas: No la pago
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 778
+  cliente_id: 504
+  numero_poliza: '8650162905'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: AMPLIA | AVEO
+  notas: auto robado
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 779
+  cliente_id: 304
+  numero_poliza: '20784288'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10207'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: 2236.1 | RC ANTIGUO GRAND MARQUIZ
+  notas: NO RENOVAR
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 780
+  cliente_id: 505
+  numero_poliza: '20783993'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: NISSAN NP 300
+  notas: NO RENOVAR
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 781
+  cliente_id: 259
+  numero_poliza: '20784652'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: FORD 2004
+  notas: No se renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 782
+  cliente_id: 454
+  numero_poliza: '960991866'
+  aseguradora: qualitas
+  canal: directo
+  broker:
+  clave_agente:
+  ramo: moto
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: QUALITAS | MOTO YAMAHA FASCINO 2023
+  notas: no se renovo
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 783
+  cliente_id: 261
+  numero_poliza: '20777526'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: autos
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: COROLLA HIBRIDO
+  notas: VENTA DEL VEHICULO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 784
+  cliente_id: 506
+  numero_poliza: '30050015'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: comercio
+  cobertura:
+  forma_pago: anual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion:
+  notas:
+  necesita_revision: false
+  motivo_revision:
+  observaciones:
+- id: 785
+  cliente_id: 259
+  numero_poliza: '20798482'
+  aseguradora: inbursa
+  canal: directo
+  broker:
+  clave_agente: '10202'
+  ramo: otro
+  cobertura:
+  forma_pago: mensual
+  prima_total:
+  moneda: mxn
+  detalle_bien:
+  estatus: cancelada
+  motivo_cancelacion: F 150 2018
+  notas: NOSE PAGO
+  necesita_revision: false
+  motivo_revision:
+  observaciones:

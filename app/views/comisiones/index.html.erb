@@ -25,7 +25,10 @@
           <% if tipo == "broker" %>
             <%= valor.present? ? etiqueta_broker(valor) : "Broker (sin identificar)" %>
           <% else %>
-            Directo — <%= etiqueta_aseguradora(valor) %>
+            <span class="inline-flex items-center gap-1.5">
+              <span>Directo —</span>
+              <%= badge_aseguradora(valor) %>
+            </span>
           <% end %>
         </h2>
         <p class="text-sm font-bold text-gray-800">
@@ -89,7 +92,16 @@
           <tr class="hover:bg-gray-50">
             <td class="px-4 py-2"><%= link_to poliza.cliente.nombre, cliente_path(poliza.cliente), class: "text-primary-700 hover:underline" %></td>
             <td class="px-4 py-2"><%= link_to poliza.numero_poliza || "s/n", poliza_path(poliza), class: "text-primary-700 hover:underline" %></td>
-            <td class="px-4 py-2"><%= poliza.broker.present? ? etiqueta_broker(poliza.broker) : "Directo — #{etiqueta_aseguradora(poliza.aseguradora)}" %></td>
+            <td class="px-4 py-2">
+              <% if poliza.broker.present? %>
+                <%= etiqueta_broker(poliza.broker) %>
+              <% else %>
+                <span class="inline-flex items-center gap-1.5">
+                  <span>Directo —</span>
+                  <%= badge_aseguradora(poliza.aseguradora) %>
+                </span>
+              <% end %>
+            </td>
             <td class="px-4 py-2 text-right font-medium"><%= moneda(comision.monto) %></td>
             <td class="px-4 py-2"><%= fecha(comision.fecha_cobro) %></td>
             <td class="px-4 py-2 text-right">

@@ -27,7 +27,7 @@
                 class: "text-primary-700 hover:underline font-medium" %>
           </td>
           <td class="px-4 py-2"><%= poliza.cliente.nombre %></td>
-          <td class="px-4 py-2"><%= etiqueta_aseguradora(poliza.aseguradora) %></td>
+          <td class="px-4 py-2"><%= badge_aseguradora(poliza.aseguradora) %></td>
           <td class="px-4 py-2 text-red-700"><%= poliza.motivo_revision %></td>
           <td class="px-4 py-2 text-right">
             <%= link_to "Revisar y editar", edit_poliza_path(poliza),

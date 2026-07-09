@@ -15,8 +15,9 @@ Requisitos: Docker y Docker Compose.
 docker compose up
 ```
 
-Levanta Postgres 17 y la app en `http://localhost:3000` con datos sintéticos
-(seeds). La cuenta de desarrollo es `irma@example.com` / `cambiame123`.
+Levanta Postgres 17 y la app en `http://localhost:3000`. En el primer arranque
+`db:seed` carga los datos reales desde `db/seeds/data/*.yml`.
+La cuenta de desarrollo es `irma@example.com` / `cambiame123`.
 
 Sin Docker (Ruby 3.4+ y un Postgres local en el puerto 5433):
 
@@ -33,15 +34,31 @@ bin/rails test            # modelos, importador y controladores
 bin/rails test:system     # los 3 flujos críticos (Chrome headless)
 ```
 
-## Importar el Excel real
+## Datos iniciales (seeds)
 
-Migración de una sola vez del archivo `COMISIONES-IRMA.xlsx`:
+`bin/rails db:seed` crea la cuenta de admin y carga clientes, pólizas, recibos y
+comisiones desde `db/seeds/data/*.yml` (snapshot de la migración del Excel).
+Es idempotente: si ya hay pólizas, no vuelve a cargar.
+
+```bash
+bin/rails db:seed
+
+# Borrar clientes/pólizas/recibos/comisiones y volver a cargar:
+LIMPIAR=1 bin/rails db:seed
+```
+
+Para regenerar los YAML desde una BD ya importada:
+
+```bash
+bin/rails seed:dump
+```
+
+Importación manual del Excel (solo si necesitas refrescar desde el archivo):
 
 ```bash
 bin/rails "import:excel[/ruta/a/COMISIONES-IRMA.xlsx]"
-
-# Para borrar todo y reimportar durante pruebas:
 LIMPIAR=1 bin/rails "import:excel[/ruta/a/COMISIONES-IRMA.xlsx]"
+bin/rails seed:dump   # luego actualiza db/seeds/data/
 ```
 
 El importador:
@@ -67,7 +84,7 @@ Postgres es el del servidor (no va en contenedor).
 
 | Variable | Descripción |
 |---|---|
-| `DATABASE_URL` | `postgres://usuario:password@host:5432/control_clientes` (Postgres existente del servidor). La app, Solid Queue y Solid Cache usan esta misma base. |
+| `DATABASE_URL` | `postgres://usuario:password@host:5432/control_cartera` (Postgres existente del servidor). La app, Solid Queue y Solid Cache usan esta misma base. |
 | `RAILS_MASTER_KEY` | Contenido de `config/master.key` |
 | `SECRET_KEY_BASE` | Generar con `bin/rails secret` |
 | `ADMIN_EMAIL` / `ADMIN_PASSWORD` | Credenciales de la cuenta única (solo las usa `db:seed` la primera vez) |
@@ -84,7 +101,7 @@ docker build -t control-cartera .
 docker run -d --name control-cartera \
   --restart unless-stopped \
   -p 127.0.0.1:8300:80 \
-  -e DATABASE_URL="postgres://usuario:password@172.17.0.1:5432/control_clientes" \
+  -e DATABASE_URL="postgres://usuario:password@172.17.0.1:5432/control_cartera" \
   -e RAILS_MASTER_KEY="..." \
   -e SECRET_KEY_BASE="..." \
   control-cartera
@@ -124,10 +141,10 @@ Cron diario de `pg_dump` en el host (ajustar usuario/base):
 
 ```cron
 # /etc/cron.d/backup-control-cartera
-0 3 * * * postgres pg_dump -Fc control_clientes > /var/backups/control-cartera/$(date +\%F).dump && find /var/backups/control-cartera -name "*.dump" -mtime +30 -delete
+0 3 * * * postgres pg_dump -Fc control_cartera > /var/backups/control-cartera/$(date +\%F).dump && find /var/backups/control-cartera -name "*.dump" -mtime +30 -delete
 ```
 
-Restaurar: `pg_restore -d control_clientes --clean archivo.dump`.
+Restaurar: `pg_restore -d control_cartera --clean archivo.dump`.
 
 ### 5. Cambiar la contraseña
 

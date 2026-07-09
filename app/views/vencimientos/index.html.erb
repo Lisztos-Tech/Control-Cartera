@@ -1,6 +1,6 @@
 <% content_for :title, "Vencimientos — #{t('app.nombre')}" %>
 
-<div class="flex items-center justify-between mb-4">
+<div class="flex items-center justify-between mb-1">
   <h1 class="text-2xl font-bold">Vencimientos</h1>
   <%= link_to "Exportar a Excel", vencimientos_path(format: :xlsx, **@filtro.to_params),
       class: "text-sm font-medium text-primary-700 border border-primary-200 hover:bg-primary-50 px-3 py-1.5 rounded-lg" %>
@@ -50,11 +50,17 @@
 <% end %>
 
 <%= turbo_frame_tag "tabla_recibos" do %>
+  <p class="text-sm text-gray-500 mb-4">
+    <%= @pagy.count %> recibos pendientes de pólizas vigentes.
+    <% if @filtro.activos? %>
+      <%= link_to "Limpiar filtros", vencimientos_path, class: "text-primary-700 hover:underline font-medium", data: { turbo_frame: "_top" } %>
+    <% end %>
+  </p>
+
   <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
     <table class="w-full text-sm">
       <thead class="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500">
         <tr>
-          <th class="px-3 py-2 w-8"></th>
           <th class="px-3 py-2">Vence</th>
           <th class="px-3 py-2">Cliente</th>
           <th class="px-3 py-2">Póliza</th>
@@ -69,11 +75,11 @@
       </thead>
       <tbody id="recibos" class="divide-y divide-gray-100">
         <% if @recibos.none? %>
-          <tr><td colspan="11" class="px-3 py-8 text-center text-gray-400">Sin recibos pendientes con estos filtros.</td></tr>
+          <tr><td colspan="10" class="px-3 py-8 text-center text-gray-400">Sin recibos pendientes con estos filtros.</td></tr>
         <% end %>
         <%= render partial: "vencimientos/recibo", collection: @recibos %>
       </tbody>
     </table>
-    <%= render "shared/paginacion", pagy: @pagy %>
+    <%= render "shared/paginacion", pagy: @pagy, turbo_frame: "tabla_recibos" %>
   </div>
 <% end %>

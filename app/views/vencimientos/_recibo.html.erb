@@ -1,6 +1,5 @@
 <tr id="<%= dom_id(recibo) %>" class="hover:bg-gray-50">
-  <td class="px-3 py-2"><%= semaforo_punto(recibo) %></td>
-  <td class="px-3 py-2 whitespace-nowrap font-medium <%= "text-red-600" if recibo.vencido? %>"><%= fecha(recibo.fecha_vencimiento) %></td>
+  <td class="px-3 py-2 whitespace-nowrap font-medium <%= semaforo_fecha_clases(recibo) %>"><%= fecha(recibo.fecha_vencimiento) %></td>
   <td class="px-3 py-2">
     <%= link_to recibo.poliza.cliente.nombre, cliente_path(recibo.poliza.cliente),
         class: "text-primary-700 hover:underline", data: { turbo_frame: "_top" } %>
@@ -9,7 +8,7 @@
     <%= link_to recibo.poliza.numero_poliza || "s/n", poliza_path(recibo.poliza),
         class: "text-primary-700 hover:underline", data: { turbo_frame: "_top" } %>
   </td>
-  <td class="px-3 py-2"><%= etiqueta_aseguradora(recibo.poliza.aseguradora) %></td>
+  <td class="px-3 py-2"><%= badge_aseguradora(recibo.poliza.aseguradora) %></td>
   <td class="px-3 py-2"><%= etiqueta_ramo(recibo.poliza.ramo) %></td>
   <td class="px-3 py-2 text-gray-500 max-w-40 truncate" title="<%= recibo.poliza.detalle_bien %>"><%= recibo.poliza.detalle_bien %></td>
   <td class="px-3 py-2 text-gray-500 max-w-40 truncate" title="<%= recibo.poliza.observaciones %>"><%= recibo.poliza.observaciones %></td>
@@ -17,6 +16,6 @@
   <td class="px-3 py-2"><%= etiqueta_forma_pago(recibo.poliza.forma_pago) %></td>
   <td class="px-3 py-2 text-right">
     <%= enlace_editar edit_recibo_path(recibo, volver_a: "vencimientos"),
-        titulo: "Editar recibo", data: { turbo_frame: "_top" } %>
+        titulo: "Editar vencimiento", data: { turbo_frame: "_top" } %>
   </td>
 </tr>

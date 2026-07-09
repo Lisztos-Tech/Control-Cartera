@@ -11,7 +11,7 @@
     </h1>
     <p class="text-gray-500 mt-1">
       <%= link_to @poliza.cliente.nombre, cliente_path(@poliza.cliente), class: "text-primary-700 hover:underline font-medium" %>
-      · <%= etiqueta_aseguradora(@poliza.aseguradora) %>
+      · <%= badge_aseguradora(@poliza.aseguradora) %>
       · <%= etiqueta_canal(@poliza.canal) %><%= " (#{etiqueta_broker(@poliza.broker)})" if @poliza.broker.present? %>
     </p>
   </div>

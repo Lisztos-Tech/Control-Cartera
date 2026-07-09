@@ -49,4 +49,38 @@ class RecibosControllerTest < ActionDispatch::IntegrationTest
     end
     assert_redirected_to poliza_path(poliza)
   end
+
+  test "editar desde vencimientos muestra campos de póliza y recibo" do
+    recibo = recibos(:vencido_juan)
+    get edit_recibo_path(recibo, volver_a: "vencimientos")
+
+    assert_response :success
+    assert_match "Editar vencimiento", response.body
+    assert_match "poliza[numero_poliza]", response.body
+    assert_match "poliza[observaciones]", response.body
+    assert_match "recibo[fecha_vencimiento]", response.body
+  end
+
+  test "actualizar desde vencimientos guarda recibo y póliza" do
+    recibo = recibos(:vencido_juan)
+    poliza = recibo.poliza
+
+    patch recibo_path(recibo, volver_a: "vencimientos"), params: {
+      recibo: { importe: 999.99, fecha_vencimiento: recibo.fecha_vencimiento },
+      poliza: {
+        numero_poliza: poliza.numero_poliza,
+        aseguradora: poliza.aseguradora,
+        ramo: poliza.ramo,
+        forma_pago: poliza.forma_pago,
+        moneda: poliza.moneda,
+        detalle_bien: "AUTO ACTUALIZADO",
+        observaciones: "Nota nueva"
+      }
+    }
+
+    assert_redirected_to vencimientos_path
+    assert_equal 999.99, recibo.reload.importe.to_f
+    assert_equal "AUTO ACTUALIZADO", poliza.reload.detalle_bien
+    assert_equal "Nota nueva", poliza.observaciones
+  end
 end

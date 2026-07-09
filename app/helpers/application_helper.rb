@@ -1,7 +1,9 @@
 module ApplicationHelper
   include Pagy::Frontend
 
-  # Enlace del sidebar con estado activo. Acepta texto o un bloque.
+  def app_shell?
+    authenticated? && !(controller_name == "sessions" && action_name == "new")
+  end
   def enlace_sidebar(texto_o_path, path = nil, activo:, &block)
     path = texto_o_path if block
     clases = activo ? "bg-white/10 text-white" : "text-primary-200 hover:bg-white/5 hover:text-white"
@@ -33,6 +35,20 @@ module ApplicationHelper
     verde: "bg-green-500"
   }.freeze
 
+  SEMAFORO_TEXTO_CLASES = {
+    rojo: "text-red-600",
+    ambar: "text-amber-500",
+    verde: "text-green-600"
+  }.freeze
+
+  ASEGURADORA_PILLS = {
+    "inbursa" => { bg: "#1F3454", text: "#FFFFFF" },
+    "qualitas" => { bg: "#90288C", text: "#FFFFFF" },
+    "seguros_atlas" => { bg: "#FF922A", text: "#1F3454" },
+    "ana_seguros" => { bg: "#BD1034", text: "#FFFFFF" },
+    "otra" => { bg: "#6B7280", text: "#FFFFFF" }
+  }.freeze
+
   def moneda(importe, moneda = "mxn")
     return "—" if importe.blank?
 
@@ -41,7 +57,9 @@ module ApplicationHelper
   end
 
   def fecha(valor)
-    valor.present? ? l(valor, format: :default) : "—"
+    return "—" if valor.blank?
+
+    l(valor, format: :default).sub(/(?<=\d{2}\.\s)[[:alpha:]]+/) { |mes| mes.capitalize }
   end
 
   def semaforo_punto(recibo)
@@ -49,7 +67,18 @@ module ApplicationHelper
              title: t("app.estatus_recibo.#{recibo.vencido? ? 'vencido' : 'pendiente'}")
   end
 
+  def semaforo_fecha_clases(recibo)
+    SEMAFORO_TEXTO_CLASES.fetch(recibo.semaforo)
+  end
+
   def etiqueta_aseguradora(valor) = t("app.aseguradoras.#{valor}", default: valor.to_s)
+
+  def badge_aseguradora(valor)
+    estilo = ASEGURADORA_PILLS.fetch(valor.to_s, ASEGURADORA_PILLS["otra"])
+    tag.span etiqueta_aseguradora(valor),
+      class: "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium whitespace-nowrap",
+      style: "background-color: #{estilo[:bg]}; color: #{estilo[:text]};"
+  end
   def etiqueta_canal(valor) = t("app.canales.#{valor}", default: valor.to_s)
   def etiqueta_broker(valor) = valor.present? ? t("app.brokers.#{valor}", default: valor.to_s) : "—"
   def etiqueta_ramo(valor) = t("app.ramos.#{valor}", default: valor.to_s)

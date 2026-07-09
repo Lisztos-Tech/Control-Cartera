@@ -1,0 +1,1073 @@
+---
+- id: 145
+  recibo_id: 557
+  prima_neta:
+  porcentaje:
+  monto: '115.76'
+  estatus: pagada
+  fecha_cobro: '2023-09-14'
+  notas:
+- id: 146
+  recibo_id: 560
+  prima_neta:
+  porcentaje:
+  monto: '10.92'
+  estatus: pagada
+  fecha_cobro: '2023-09-14'
+  notas:
+- id: 147
+  recibo_id: 561
+  prima_neta:
+  porcentaje:
+  monto: '88.18'
+  estatus: pagada
+  fecha_cobro: '2023-08-26'
+  notas:
+- id: 148
+  recibo_id: 562
+  prima_neta:
+  porcentaje:
+  monto: '21.83'
+  estatus: pagada
+  fecha_cobro: '2023-09-21'
+  notas:
+- id: 149
+  recibo_id: 563
+  prima_neta:
+  porcentaje:
+  monto: '753.68'
+  estatus: pagada
+  fecha_cobro: '2023-08-24'
+  notas:
+- id: 150
+  recibo_id: 564
+  prima_neta:
+  porcentaje:
+  monto: '2.19'
+  estatus: pagada
+  fecha_cobro: '2023-09-17'
+  notas:
+- id: 151
+  recibo_id: 565
+  prima_neta: '4534.57'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 152
+  recibo_id: 566
+  prima_neta: '7377.66'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 153
+  recibo_id: 567
+  prima_neta: '6904.74'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 154
+  recibo_id: 568
+  prima_neta: '5288.34'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 155
+  recibo_id: 569
+  prima_neta: '9070.28'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 156
+  recibo_id: 570
+  prima_neta: '5203.95'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 157
+  recibo_id: 571
+  prima_neta: '9471.86'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 158
+  recibo_id: 572
+  prima_neta: '3262.0'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 159
+  recibo_id: 573
+  prima_neta: '9339.11'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 160
+  recibo_id: 574
+  prima_neta: '9135.88'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 161
+  recibo_id: 575
+  prima_neta: '4767.63'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 162
+  recibo_id: 555
+  prima_neta:
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 163
+  recibo_id: 576
+  prima_neta: '10453.92'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 164
+  recibo_id: 577
+  prima_neta: '4500.1'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 165
+  recibo_id: 578
+  prima_neta:
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 166
+  recibo_id: 545
+  prima_neta: '11790.16'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 167
+  recibo_id: 579
+  prima_neta: '4534.57'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 168
+  recibo_id: 580
+  prima_neta: '8082.9'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 169
+  recibo_id: 581
+  prima_neta: '3262.0'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 170
+  recibo_id: 582
+  prima_neta: '6915.51'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 171
+  recibo_id: 550
+  prima_neta: '5464.99'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 172
+  recibo_id: 583
+  prima_neta: '4921.5'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 173
+  recibo_id: 584
+  prima_neta: '4498.99'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 174
+  recibo_id: 585
+  prima_neta: '9135.88'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 175
+  recibo_id: 586
+  prima_neta: '4767.63'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 176
+  recibo_id: 587
+  prima_neta: '7377.66'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 177
+  recibo_id: 588
+  prima_neta: '10453.92'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 178
+  recibo_id: 589
+  prima_neta: '4500.1'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 179
+  recibo_id: 590
+  prima_neta: '6904.74'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 180
+  recibo_id: 591
+  prima_neta: '24783.57'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 181
+  recibo_id: 592
+  prima_neta: '5288.34'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 182
+  recibo_id: 593
+  prima_neta: '9070.28'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 183
+  recibo_id: 594
+  prima_neta: '5203.95'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 184
+  recibo_id: 595
+  prima_neta: '8929.71'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 185
+  recibo_id: 596
+  prima_neta: '6592.58'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 186
+  recibo_id: 597
+  prima_neta: '9471.86'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 187
+  recibo_id: 598
+  prima_neta: '9339.11'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 188
+  recibo_id: 599
+  prima_neta: '4824.49'
+  porcentaje: '10.0'
+  monto: '482.45'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 189
+  recibo_id: 600
+  prima_neta: '4936.7'
+  porcentaje: '10.0'
+  monto: '493.67'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 190
+  recibo_id: 601
+  prima_neta: '5165.78'
+  porcentaje: '10.0'
+  monto: '516.58'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 191
+  recibo_id: 602
+  prima_neta: '19060.0'
+  porcentaje: '10.0'
+  monto: '1906.0'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 192
+  recibo_id: 603
+  prima_neta: '2543.02'
+  porcentaje: '10.0'
+  monto: '254.3'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 193
+  recibo_id: 604
+  prima_neta: '4246.89'
+  porcentaje: '10.0'
+  monto: '424.69'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 194
+  recibo_id: 605
+  prima_neta: '6278.71'
+  porcentaje: '10.0'
+  monto: '627.87'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 195
+  recibo_id: 606
+  prima_neta: '7770.82'
+  porcentaje: '10.0'
+  monto: '777.08'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 196
+  recibo_id: 607
+  prima_neta: '5110.91'
+  porcentaje: '10.0'
+  monto: '511.09'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 197
+  recibo_id: 608
+  prima_neta: '3897.09'
+  porcentaje: '10.0'
+  monto: '389.71'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 198
+  recibo_id: 609
+  prima_neta: '5837.23'
+  porcentaje: '10.0'
+  monto: '583.72'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 199
+  recibo_id: 610
+  prima_neta: '4295.07'
+  porcentaje: '10.0'
+  monto: '429.51'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 200
+  recibo_id: 611
+  prima_neta: '8915.91'
+  porcentaje: '10.0'
+  monto: '891.59'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 201
+  recibo_id: 612
+  prima_neta: '11416.57'
+  porcentaje: '8.0'
+  monto: '913.33'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 202
+  recibo_id: 613
+  prima_neta: '3273.0'
+  porcentaje: '10.0'
+  monto: '327.3'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 203
+  recibo_id: 614
+  prima_neta: '6656.48'
+  porcentaje: '8.0'
+  monto: '532.52'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 204
+  recibo_id: 615
+  prima_neta: '2774.25'
+  porcentaje: '10.0'
+  monto: '277.43'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 205
+  recibo_id: 616
+  prima_neta: '7041.51'
+  porcentaje: '8.0'
+  monto: '563.32'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 206
+  recibo_id: 617
+  prima_neta: '12365.12'
+  porcentaje: '10.0'
+  monto: '1236.51'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 207
+  recibo_id: 618
+  prima_neta: '6631.41'
+  porcentaje: '10.0'
+  monto: '663.14'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 208
+  recibo_id: 619
+  prima_neta: '1367.45'
+  porcentaje: '10.0'
+  monto: '136.75'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 209
+  recibo_id: 620
+  prima_neta: '4345.72'
+  porcentaje: '10.0'
+  monto: '434.57'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 210
+  recibo_id: 621
+  prima_neta: '6935.46'
+  porcentaje: '10.0'
+  monto: '693.55'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 211
+  recibo_id: 622
+  prima_neta: '6479.07'
+  porcentaje: '10.0'
+  monto: '647.91'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 212
+  recibo_id: 623
+  prima_neta: '2397.57'
+  porcentaje: '10.0'
+  monto: '239.76'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 213
+  recibo_id: 624
+  prima_neta: '3226.26'
+  porcentaje: '10.0'
+  monto: '322.63'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 214
+  recibo_id: 625
+  prima_neta: '4080.0'
+  porcentaje: '10.0'
+  monto: '408.0'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 215
+  recibo_id: 626
+  prima_neta: '5518.71'
+  porcentaje: '10.0'
+  monto: '551.87'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 216
+  recibo_id: 627
+  prima_neta: '3892.24'
+  porcentaje: '10.0'
+  monto: '389.22'
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 217
+  recibo_id: 628
+  prima_neta: '6421.01'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 218
+  recibo_id: 629
+  prima_neta: '8548.13'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 219
+  recibo_id: 630
+  prima_neta: '10048.92'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 220
+  recibo_id: 553
+  prima_neta: '3992.58'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 221
+  recibo_id: 631
+  prima_neta: '4226.06'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 222
+  recibo_id: 632
+  prima_neta: '20852.44'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 223
+  recibo_id: 633
+  prima_neta: '4239.07'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 224
+  recibo_id: 634
+  prima_neta: '1935.64'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 225
+  recibo_id: 635
+  prima_neta: '1671.63'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 226
+  recibo_id: 636
+  prima_neta: '7833.01'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 227
+  recibo_id: 637
+  prima_neta: '2774.25'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 228
+  recibo_id: 638
+  prima_neta: '8248.93'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 229
+  recibo_id: 639
+  prima_neta: '10057.28'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 230
+  recibo_id: 640
+  prima_neta: '2028.16'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 231
+  recibo_id: 641
+  prima_neta: '7918.44'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 232
+  recibo_id: 642
+  prima_neta: '5440.86'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 233
+  recibo_id: 643
+  prima_neta: '5393.87'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 234
+  recibo_id: 644
+  prima_neta: '5449.7'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 235
+  recibo_id: 645
+  prima_neta: '4055.31'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 236
+  recibo_id: 646
+  prima_neta: '4769.41'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 237
+  recibo_id: 647
+  prima_neta: '8591.68'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 238
+  recibo_id: 648
+  prima_neta: '5069.29'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 239
+  recibo_id: 649
+  prima_neta: '11953.17'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 240
+  recibo_id: 650
+  prima_neta: '2365.95'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 241
+  recibo_id: 651
+  prima_neta: '8101.11'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 242
+  recibo_id: 652
+  prima_neta: '5069.29'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 243
+  recibo_id: 653
+  prima_neta: '5483.17'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 244
+  recibo_id: 654
+  prima_neta: '6720.86'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 245
+  recibo_id: 655
+  prima_neta: '5714.55'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 246
+  recibo_id: 656
+  prima_neta: '14718.12'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 247
+  recibo_id: 657
+  prima_neta: '2365.96'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 248
+  recibo_id: 658
+  prima_neta: '4604.44'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 249
+  recibo_id: 659
+  prima_neta: '9521.67'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 250
+  recibo_id: 660
+  prima_neta: '2741.58'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 251
+  recibo_id: 661
+  prima_neta: '5557.43'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 252
+  recibo_id: 662
+  prima_neta: '7208.31'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 253
+  recibo_id: 663
+  prima_neta: '8418.86'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 254
+  recibo_id: 664
+  prima_neta: '5789.06'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 255
+  recibo_id: 665
+  prima_neta: '1864.48'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 256
+  recibo_id: 666
+  prima_neta: '5557.43'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 257
+  recibo_id: 667
+  prima_neta: '6462.22'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 258
+  recibo_id: 668
+  prima_neta: '4756.44'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 259
+  recibo_id: 669
+  prima_neta: '4960.02'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 260
+  recibo_id: 670
+  prima_neta: '9121.77'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 261
+  recibo_id: 671
+  prima_neta: '3409.21'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 262
+  recibo_id: 672
+  prima_neta: '1864.5'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 263
+  recibo_id: 516
+  prima_neta:
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 264
+  recibo_id: 673
+  prima_neta:
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 265
+  recibo_id: 674
+  prima_neta: '6704.24'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 266
+  recibo_id: 675
+  prima_neta:
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 267
+  recibo_id: 676
+  prima_neta: '6710.83'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 268
+  recibo_id: 677
+  prima_neta:
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 269
+  recibo_id: 678
+  prima_neta: '812.37'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 270
+  recibo_id: 679
+  prima_neta: '812.37'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 271
+  recibo_id: 680
+  prima_neta: '1864.5'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 272
+  recibo_id: 681
+  prima_neta: '4435.56'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 273
+  recibo_id: 682
+  prima_neta: '3491.02'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 274
+  recibo_id: 683
+  prima_neta: '8310.69'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 275
+  recibo_id: 684
+  prima_neta: '4391.62'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 276
+  recibo_id: 685
+  prima_neta: '8519.57'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 277
+  recibo_id: 686
+  prima_neta: '14430.89'
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
+- id: 278
+  recibo_id: 556
+  prima_neta:
+  porcentaje:
+  monto:
+  estatus: por_cobrar
+  fecha_cobro:
+  notas:
