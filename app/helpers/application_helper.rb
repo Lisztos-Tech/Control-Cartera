@@ -1,6 +1,4 @@
 module ApplicationHelper
-  include Pagy::Frontend
-
   def app_shell?
     authenticated? && !(controller_name == "sessions" && action_name == "new")
   end

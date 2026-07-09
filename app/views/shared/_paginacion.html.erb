@@ -5,8 +5,8 @@
   <p class="text-gray-500"><%= pagy.from %>–<%= pagy.to %> de <%= pagy.count %></p>
   <% if pagy.pages > 1 %>
     <div class="flex items-center gap-1">
-      <% if pagy.prev %>
-        <%= link_to "‹ Anterior", pagy_url_for(pagy, pagy.prev),
+      <% if pagy.previous %>
+        <%= link_to "‹ Anterior", pagy.page_url(pagy.previous),
             data: link_data,
             class: "px-3 py-1.5 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" %>
       <% end %>
@@ -16,13 +16,13 @@
         <% elsif item.is_a?(String) %><%# la página actual viene como String %>
           <span class="px-3 py-1.5 rounded-lg bg-primary-600 text-white font-semibold"><%= item %></span>
         <% else %>
-          <%= link_to item, pagy_url_for(pagy, item),
+          <%= link_to item, pagy.page_url(item),
               data: link_data,
               class: "px-3 py-1.5 rounded-lg text-gray-600 hover:bg-gray-100" %>
         <% end %>
       <% end %>
       <% if pagy.next %>
-        <%= link_to "Siguiente ›", pagy_url_for(pagy, pagy.next),
+        <%= link_to "Siguiente ›", pagy.page_url(pagy.next),
             data: link_data,
             class: "px-3 py-1.5 rounded-lg text-gray-600 hover:bg-gray-100 font-medium" %>
       <% end %>

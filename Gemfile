@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.0.2", ">= 8.0.2.1"
+gem "rails", "~> 8.1.3"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use postgresql as the database for Active Record
@@ -21,10 +21,10 @@ gem "tailwindcss-rails"
 gem "bcrypt", "~> 3.1.7"
 
 # Traducciones base de Rails en español
-gem "rails-i18n", "~> 8.0"
+gem "rails-i18n", "~> 8.1"
 
 # Lectura del Excel fuente (importador)
-gem "roo", "~> 2.10"
+gem "roo", "~> 3.0"
 gem "csv" # requerido por roo en Ruby >= 3.4
 # Exportación a XLSX
 gem "caxlsx", "~> 4.1"
@@ -69,6 +69,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "pagy", "~> 9.3"
+gem "pagy", "~> 43.6"
 
 gem "rails_icons", "~> 1.9"
