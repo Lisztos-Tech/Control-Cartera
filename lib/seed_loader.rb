@@ -51,11 +51,11 @@ class SeedLoader
   def self.import_records(klass, records, id_maps)
     fk = FK[klass.name]
     parent_map = case klass.name
-                 when "Poliza" then id_maps.fetch("Cliente")
-                 when "Recibo" then id_maps.fetch("Poliza")
-                 when "Comision" then id_maps.fetch("Recibo")
-                 else {}
-                 end
+    when "Poliza" then id_maps.fetch("Cliente")
+    when "Recibo" then id_maps.fetch("Poliza")
+    when "Comision" then id_maps.fetch("Recibo")
+    else {}
+    end
 
     records.each_with_object({}) do |row, map|
       attrs = row.stringify_keys

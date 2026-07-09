@@ -65,9 +65,7 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     poliza.update!(necesita_revision: true, motivo_revision: "importe ilegible")
 
     visit edit_poliza_path(poliza)
-    fill_in "Cobertura", with: "AMPLIA PLUS"
-    fill_in "Detalle del bien", with: "FORD RANGER 2014"
-    enviar_formulario_principal
+    actualizar_campos_poliza("cobertura" => "AMPLIA PLUS", "detalle_bien" => "FORD RANGER 2014")
 
     using_wait_time(10) do
       assert_current_path poliza_path(poliza)

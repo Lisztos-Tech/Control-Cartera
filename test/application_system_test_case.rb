@@ -41,4 +41,15 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
       if (form) form.requestSubmit();
     JS
   end
+
+  def actualizar_campos_poliza(campos)
+    page.execute_script(<<~JS, campos)
+      const values = arguments[0];
+      Object.entries(values).forEach(([name, value]) => {
+        const field = document.querySelector(`[name='poliza[${name}]']`);
+        if (field) field.value = value;
+      });
+      document.querySelector("main form").requestSubmit();
+    JS
+  end
 end
