@@ -52,4 +52,22 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
       document.querySelector("main form").requestSubmit();
     JS
   end
+
+  # button_to + Turbo Stream: headless Chrome on CI may not fire click handlers reliably.
+  def marcar_recibo_pagado(recibo)
+    page.execute_script(<<~JS, recibo.id)
+      const row = document.getElementById(`recibo_${arguments[0]}`);
+      const form = row && row.querySelector("form");
+      if (form) form.requestSubmit();
+    JS
+  end
+
+  def crear_siguiente_recibo
+    page.execute_script(<<~JS)
+      const form = Array.from(document.querySelectorAll("form")).find((candidate) =>
+        candidate.action.includes("/crear_siguiente")
+      );
+      if (form) form.requestSubmit();
+    JS
+  end
 end
