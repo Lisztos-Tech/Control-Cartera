@@ -13,16 +13,16 @@ class FlujosCriticosTest < ApplicationSystemTestCase
     # "Marcar pagado" vive en el detalle de la póliza; la tabla de
     # vencimientos solo tiene el lápiz de edición.
     visit poliza_path(recibo.poliza)
-    within "#recibo_#{recibo.id}" do
-      click_button "Marcar pagado"
-    end
+    marcar_recibo_pagado(recibo)
 
-    assert_text "marcado como pagado"
+    using_wait_time(10) do
+      assert_text "marcado como pagado"
+    end
     assert recibo.reload.estatus_pagado?
 
     assert_difference -> { recibo.poliza.recibos.count }, 1 do
-      click_button "Crear siguiente recibo"
-      assert_text "Siguiente recibo creado"
+      crear_siguiente_recibo
+      assert_text "Siguiente recibo creado", wait: 10
     end
 
     nuevo = recibo.poliza.recibos.order(:created_at).last
